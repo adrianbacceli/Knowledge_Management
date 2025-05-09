@@ -1,11 +1,13 @@
 ---
-title: Example Title
+title: Cyber Kill Chain and Tools
 draft: false
 tags:
   - example-tag
 ---
  
 Attack lifecycle (a.k.a. the cyber kill chain)
+
+
 Recoinasance: Target choosing and Information Gathering
 
 -   Pasive Recoinasance
@@ -50,5 +52,5 @@ Command and Control:
 
 Action: The objective of the attack is excecuted.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzIzOTM3MDRdfQ==
+eyJoaXN0b3J5IjpbMjI0NjgzODUyXX0=
 -->
