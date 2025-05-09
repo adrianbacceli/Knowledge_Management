@@ -1,6 +1,5 @@
-
 ---
-title: {{title}}
+title: 
 draft: false
 tags:
   - tag1

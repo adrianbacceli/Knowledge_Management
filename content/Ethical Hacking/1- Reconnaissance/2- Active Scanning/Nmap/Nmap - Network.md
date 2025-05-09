@@ -1,6 +1,5 @@
-
----  
-title: Network Enumeration with Nmap
+---
+title: Nmap - Network
 draft: false  
 tags:  
 - enumeration
@@ -161,4 +160,4 @@ sudo nmap -sU -p 53,161,162 target.com
 ---
 
 ## Related Notes
-- [[2 Nmap Cheatsheet]]
+- [[Nmap Cheatsheet]]

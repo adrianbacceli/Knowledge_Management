@@ -1,4 +1,4 @@
----  
+---
 title: Common Scenarios Catalog
 draft: false  
 tags:  
@@ -17,12 +17,12 @@ tags:
 
 ---
 
-### **Nmap Scenario Catalog**  
+## **Nmap Scenario Catalog**  
 **Organized by: Frequency of Use → Depth of Enumeration → Risk Level**  
 
 ---
 
-#### **1. Quick Recon (Top-Ports Scan)**  
+### **1. Quick Recon (Top-Ports Scan)**  
 **Use Case**: Rapid initial assessment  
 **Command**:  
 ```bash
@@ -42,7 +42,7 @@ PORT     STATE SERVICE    VERSION
 
 ---
 
-#### **2. Full Service Enumeration**  
+### **2. Full Service Enumeration**  
 **Use Case**: Comprehensive service fingerprinting  
 **Command**:  
 ```bash
@@ -57,7 +57,7 @@ nmap -p- -sV -sC -O --script=banner 10.129.2.28 -oA full_enum
 
 ---
 
-#### **3. Vulnerability Probing**  
+### **3. Vulnerability Probing**  
 **Use Case**: Identifying known vulnerabilities  
 **Command**:  
 ```bash
@@ -73,7 +73,7 @@ nmap -sV --script="vuln and safe" 10.129.2.28
 
 ---
 
-#### **4. UDP Service Discovery**  
+### **4. UDP Service Discovery**  
 **Use Case**: Finding DNS/NTP/Snmp services  
 **Command**:  
 ```bash
@@ -84,7 +84,7 @@ sudo nmap -sU -p 53,123,161,162 -Pn --max-retries 1 10.129.2.28
 
 ---
 
-#### **5. Web App Focused**  
+### **5. Web App Focused**  
 **Use Case**: HTTP/S service deep-dive  
 **Command**:  
 ```bash
@@ -99,7 +99,7 @@ nmap -p 80,443,8080,8443 --script=http* 10.129.2.28
 
 ---
 
-#### **6. SMB Enumeration**  
+### **6. SMB Enumeration**  
 **Use Case**: Windows/File share audits  
 **Command**:  
 ```bash
@@ -114,7 +114,7 @@ nmap -p 139,445 --script="smb* and not brute" 10.129.2.28
 
 ---
 
-#### **7. Stealthy Scan w/ Decoys**  
+### **7. Stealthy Scan w/ Decoys**  
 **Use Case**: Evading basic IDS  
 **Command**:  
 ```bash
@@ -128,7 +128,7 @@ sudo nmap -sS -D RND:5,ME -T2 --scan-delay 10s 10.129.2.28
 
 ---
 
-#### **8. IPv6 Scanning**  
+### **8. IPv6 Scanning**  
 **Use Case**: Modern network assessment  
 **Command**:  
 ```bash
@@ -137,7 +137,7 @@ nmap -6 --script=targets-ipv6-multicast-echo 2001:db8::/64
 
 ---
 
-#### **9. ICS/SCADA Scanning**  
+### **9. ICS/SCADA Scanning**  
 **Use Case**: Industrial system audits  
 **Command**:  
 ```bash
@@ -152,7 +152,7 @@ nmap -p 502,102,161 --script=modbus* 10.129.2.28 -T2
 
 ---
 
-### **Scenario Comparison Matrix**  
+## **Scenario Comparison Matrix**  
 | Scenario                | Speed  | Stealth | Info Gathered          | Risk  |  
 |-------------------------|--------|---------|------------------------|-------|  
 | Quick Recon             | ★★★★★ | ★★☆☆☆  | Basic services         | Low   |  
