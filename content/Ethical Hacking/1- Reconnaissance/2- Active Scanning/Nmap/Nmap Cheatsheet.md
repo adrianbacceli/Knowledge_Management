@@ -7,7 +7,10 @@ tags:
 - cheatsheet
 - examples
 ---
+> [!summary] Summary  
+> This cheat sheet aims to provide a quick graphical description of all the possible commands using nmap during a network scanning.
 
+# Tables of options
 ## Scanning Options
 
 | **Nmap Option**              | **Description**                                                                 |

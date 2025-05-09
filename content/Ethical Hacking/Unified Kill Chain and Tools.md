@@ -1,5 +1,5 @@
 ---
-title: Unified Kill Chain (UKC) - The Complete Attack Lifecycle Framework
+title: Unified Kill Chain (UKC)
 draft: false
 tags:
   - cybersecurity
@@ -8,12 +8,9 @@ tags:
   - mitre-attack
   - attack-lifecycle
 ---
+> [!summary] Core Concept  
+> The **Unified Kill Chain (UKC)** is an advanced framework that combines the structured phases of Lockheed Martin's Cyber Kill Chain with the granular techniques of MITRE ATT&CK. Unlike traditional models, UKC accommodates **both malware and non-malware attacks** (e.g., credential theft, cloud compromises, insider threats) and explicitly includes critical stages like **Defense Evasion** and **Cleanup** that are often overlooked.
 
-# ⛓️ Unified Kill Chain (UKC): The Modern Attacker's Playbook
-
-The **Unified Kill Chain (UKC)** is an advanced framework that combines the structured phases of Lockheed Martin's Cyber Kill Chain with the granular techniques of MITRE ATT&CK. Unlike traditional models, UKC accommodates **both malware and non-malware attacks** (e.g., credential theft, cloud compromises, insider threats) and explicitly includes critical stages like **Defense Evasion** and **Cleanup** that are often overlooked.
-
----
 
 ## 🔍 1. Reconnaissance: The Attacker's Blueprint
 **Objective:** Systematically gather intelligence to identify vulnerabilities and plan attacks.
