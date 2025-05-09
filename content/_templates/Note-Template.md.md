@@ -1,8 +1,10 @@
+
 ---
-title: "{{title}}"
-date: {{date}}
-tags: []
-aliases: []
+title: {{title}}
+draft: false
+tags:
+  - tag1
+  - tag2
 ---
 
 # {{title}}
@@ -11,7 +13,4 @@ aliases: []
 > A brief description of this note.  
 
 ## Notes  
-- 
-
-## References  
 - 
