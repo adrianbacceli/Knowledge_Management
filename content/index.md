@@ -3,6 +3,8 @@ title: Welcome to Quartz by Adrian
 draft: false
 NeedsReview: false
 ---
+> [!abstract] Important  
+> Check [[Next Steps]] to view the upcoming changes
 
 # 📚 Adrian's Knowledge Vault
 
