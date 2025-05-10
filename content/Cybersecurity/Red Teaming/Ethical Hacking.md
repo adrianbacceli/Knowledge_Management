@@ -7,6 +7,7 @@ tags:
   - unified-kill-chain
   - mitre-attack
   - attack-lifecycle
+NeedsReview: false
 ---
 
 > [!summary] Core Concept  

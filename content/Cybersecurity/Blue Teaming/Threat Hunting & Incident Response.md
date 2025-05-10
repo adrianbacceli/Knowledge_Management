@@ -1,9 +1,10 @@
 ---
-title: Wappalizer
-draft: true
+title: Threat Hunting & Incident Response
+draft: false
 tags:
   - tag1
   - tag2
+NeedsReview: true
 ---
 
 # {{title}}

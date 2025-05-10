@@ -1,6 +1,6 @@
 ---
-title: 
-draft: false
+title: Wappalizer
+draft: true
 tags:
   - tag1
   - tag2

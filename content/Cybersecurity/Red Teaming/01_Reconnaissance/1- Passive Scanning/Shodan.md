@@ -1,9 +1,11 @@
 ---
-title: 
-draft: false
+title: Shodan
+draft: true
 tags:
-  - tag1
-  - tag2
+  - Shodan
+  - passive
+  - enumeration
+  - scan
 NeedsReview: true
 ---
 

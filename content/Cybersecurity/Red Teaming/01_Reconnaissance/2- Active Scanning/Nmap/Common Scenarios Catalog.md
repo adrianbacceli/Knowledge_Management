@@ -1,11 +1,13 @@
 ---
 title: Common Scenarios Catalog
-draft: false  
-tags:  
-- nmap
-- enumeration
-- scenarios
-- use case
+draft: false
+tags:
+  - nmap
+  - enumeration
+  - scenarios
+  - use
+  - case
+NeedsReview: false
 ---
 > [!abstract] Summary  
 > Here’s a comprehensive expansion of Nmap scenarios covering service enumeration, vulnerability discovery, and real-world use cases, structured for your Quartz/Obsidian knowledge base

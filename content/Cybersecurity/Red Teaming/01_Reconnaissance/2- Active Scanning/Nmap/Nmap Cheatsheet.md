@@ -1,11 +1,12 @@
 ---
 title: Nmap Cheatsheet
-draft: false  
-tags:  
-- nmap
-- commands
-- cheatsheet
-- examples
+draft: false
+tags:
+  - nmap
+  - commands
+  - cheatsheet
+  - examples
+NeedsReview: false
 ---
 > [!summary] Summary  
 > This cheat sheet aims to provide a quick graphical description of all the possible commands using nmap during a network scanning.

@@ -1,9 +1,67 @@
 ---
 title: Welcome to Quartz by Adrian
+draft: false
+NeedsReview: false
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODAxNDAzNzVdfQ==
--->
+# 📚 Adrian's Knowledge Vault
+
+Welcome to my personal cybersecurity and IT knowledge base. This repository is structured as a living documentation system covering everything from hands-on offensive security to systems architecture and incident response.
+
+Use the categories below to navigate to specific domains of interest.
+
+---
+
+## 🔒 Cybersecurity
+
+- [[Ethical Hacking]]
+- [[Threat Hunting & Incident Response]]
+- [[Vulnerability Assessment & Hardening]]
+- [[CVE Analysis and Remediation]]
+
+---
+
+## 🧱 Infrastructure & Systems
+
+- [[Data Center Implementation]]
+  - Compute, Storage, Network, Security
+- [[Systems Administration]]
+  - Linux, Windows, VMware
+- [[Virtualization & Backup Technologies]]
+- [[Identity & Access Management (IAM)]]
+
+---
+
+## 🌐 Networking
+
+- [[Network Design, Troubleshooting, and Security]]
+- [[Protocol Analysis]]
+  - TCP/IP, DNS, HTTP/S, etc.
+- [[Firewall and Segmentation Knowledge]]
+
+---
+
+## ☁️ Cloud Technologies
+
+- [[AWS & GCP Hands-on Experience]]
+- [[Cloud Security Best Practices]]
+- [[Cloud Provisioning & Hardening]]
+
+---
+
+## 🧑‍💻 Programming & Scripting
+
+- [[Programming Languages]]
+  - Python, Bash, C/C++, PHP, Java, HTML/CSS
+- [[Automation & Tooling]]
+
+---
+
+## 🗣️ Soft Skills
+
+- [[Technical Documentation & Public Writing]]
+- [[Incident & Escalation Management]]
+
+---
+
+> 🧠 This space is always evolving. Notes are added, refined, and improved as I learn, work, and build new expertise.
