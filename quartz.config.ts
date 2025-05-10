@@ -98,6 +98,7 @@ export const ignorePatterns = [
   "private",
   "templates",
   "content/_templates",
+  "_templates",
   ...
 ];
 
