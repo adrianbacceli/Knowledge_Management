@@ -1,6 +1,6 @@
 ---
 title: Hashcat - Password Crack
-draft: true
+draft: false
 tags:
   - brute-force
   - password
@@ -8,6 +8,7 @@ tags:
   - dictionary
   - hashcat
   - encryption
+NeedsReview: true
 ---
 
 # Example of Hashcat Password Cracking
