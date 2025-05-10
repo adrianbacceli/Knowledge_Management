@@ -94,4 +94,11 @@ const config: QuartzConfig = {
   },
 }
 
+export const ignorePatterns = [
+  "private",
+  "templates",
+  "content/_templates",
+  ...
+];
+
 export default config
