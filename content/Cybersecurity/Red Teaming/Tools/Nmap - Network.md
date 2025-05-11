@@ -159,4 +159,4 @@ sudo nmap -sU -p 53,161,162 target.com
 ---
 
 ## Related Notes
-- [[Nmap Cheatsheet]]
+- [[Network Enumeration]]

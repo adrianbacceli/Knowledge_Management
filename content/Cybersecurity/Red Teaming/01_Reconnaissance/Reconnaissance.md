@@ -25,7 +25,7 @@ Tools and techniques that don't directly interact with the target systems, thus 
 
 Involves direct interaction with the target, potentially triggering alerts.
 
-- [Nmap](Nmap%20-%20Network): Network scanner used to discover hosts and services.
+- [Nmap](Nmap%20-%20Network.md): Network scanner used to discover hosts and services.
 
 ---
 
