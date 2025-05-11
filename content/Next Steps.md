@@ -6,7 +6,7 @@ NeedsReview: false
 ---
 
 # This is the list of next steps  
-- Edit Github Presentantion
+- Finish Drafts and NeedsReview
 - Finish importing CherryTree
 - Finish Importing Onenote Notes
 - Finish Importing Personal Notes
