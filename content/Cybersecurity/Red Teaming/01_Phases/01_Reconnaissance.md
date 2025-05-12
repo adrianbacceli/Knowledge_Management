@@ -2,8 +2,6 @@
 title: 01_Reconnaissance
 draft: false
 tags:
-  - tag1
-  - tag2
   - offensive-security
   - reconnaissance
   - unified-kill-chain
@@ -12,7 +10,11 @@ NeedsReview: true
 # Reconnaissance
 
 > [!abstract] Summary  
-> Reconnaissance is the initial phase in the [Unified Kill Chain](Unified%20Kill%20Chain%20(UKC).md), where the attacker gathers information about the target without actively engaging with it.  
+> Reconnaissance is the initial phase in the [Unified Kill Chain](00_Unified%20Kill%20Chain%20(UKC).md), where the attacker gathers information about the target without actively engaging with it.  
+> 
+> **"Reconnaissance is 90% of the job in Ethical Hacking. This is where you find most vulnerabilities. The rest is about scaling the impact."** - Adrian Bacceli
+
+
 
 This phase is typically divided into two types:
 
@@ -22,13 +24,16 @@ Tools and techniques that don't directly interact with the target systems, thus 
 
 - [Shodan](Shodan.md): Search engine for internet-connected devices.
 - [Wappalyzer](Wappalyzer.md): Browser extension or CLI tool to identify technologies used by a target website.
+- Dark Web & Breach Reconnaissance ==**(Work In Progress)**==
+- App Specific Passive Reconnaissance: Reverse engineering APKs, firmware analysis ==**(Work In Progress)**==
+- Social Engineering Passive Reconnaissance - LinkedIn stalking, email scraping ==**(Work In Progress)**==
 
 ---
 ## ⚡ Active Reconnaissance
 
 Involves direct interaction with the target, potentially triggering alerts.
 
-### Network Active Reconnaissance
+### Network Reconnaissance
 #### 🔍 `nc` [[Netcat]] vs [[Nmap]]
 
 **Manual Banner Grabbing / Custom Payloads**
@@ -177,11 +182,79 @@ amass enum -d example.com
 | OS/service detection   | ❌               | ✅                    |
 | Scriptable enumeration | ❌               | ✅ (NSE)              |
 
+####  Additional Techniques (Work In Progress)
 
+##### 1. **SMB/NetBIOS Enumeration**
+
+- Useful in internal networks for discovering shares, users, and machines.
+- Tools:
+    - `enum4linux`
+    - `smbclient`
+    - `smbmap`
+    - `nmap` NSE scripts (`smb-enum-shares`, `smb-enum-users`)
+
+##### 2. **SNMP Enumeration**
+
+- If SNMP is open (UDP 161), it can leak system info, routing tables, etc.
+- Tools:
+    - `snmpwalk`
+    - `onesixtyone`
+    - `nmap` NSE (`snmp-info`, `snmp-interfaces`)
+
+##### 3. **LDAP Enumeration**
+
+- Common in Active Directory environments.
+- Tools:
+    - `ldapsearch`
+    - `nmap` NSE (`ldap-search`, `ldap-rootdse`)
+
+##### 4. **RPC Enumeration**
+
+- Useful for enumerating users and groups on Windows systems.
+- Tools:
+    - `rpcclient`
+    - `nmap` NSE (`rpcinfo`, `msrpc-enum`)
+
+##### 5. **VoIP Enumeration (SIP)**
+
+- If SIP (port 5060) is open, you can enumerate extensions.
+- Tools:
+    - `svmap`, `svwar`, `sipvicious`
+
+##### 6. **NFS Enumeration**
+
+- If NFS is exposed, you can list and mount shares.
+- Tools:
+    - `showmount`
+    - `mount`
+    - `nmap` NSE (`nfs-showmount`, `nfs-ls`)
+
+##### 7. **RDP/SSH/VNC Banner Grabbing**
+
+- Use `nmap`, `hydra`, or `rdpscan` to identify versions and test brute-force.
+
+##### 8. **Nmap NSE Scripting (Deep Dive)**
+
+- You mention NSE, but it’s worth emphasizing:
+    - Vulnerability detection (`http-vuln-*`, `smb-vuln-*`)
+    - Auth bypass (`http-auth-finder`)
+    - Brute-force (`ftp-brute`, `ssh-brute`, etc.)
+    - Malware detection (`http-malware-host`)
+
+---
+
+##### 🧰 Optional Tools to Mention
+
+| Tool           | Purpose                               |
+| -------------- | ------------------------------------- |
+| `Responder`    | LLMNR/NBT-NS poisoning (internal)     |
+| `CrackMapExec` | Post-recon enumeration & exploitation |
+| `Metasploit`   | Auxiliary scanners and exploits       |
+| `Ncrack`       | Network authentication brute-forcer   |
 
 
 --- 
-### Web Active Reconnaissance
+### Web Reconnaissance
 
 #### 🕸️ What is Spidering?
 
@@ -319,7 +392,7 @@ It’s called “brute-force” because it doesn’t rely on logic or discovery 
 - **Rate-limited**: Many systems throttle or block repeated requests.
 - **Ethical use only**: Always have permission before performing brute-force enumeration.
 
-#### Other steps to check (Work In Progress)
+#### Other steps to check ==**(Work In Progress)**==
 ##### 🔍 **1. HTTP/HTTPS Inspection**
 
 - **Inspect headers** for server info, cookies, security headers.
@@ -379,6 +452,16 @@ It’s called “brute-force” because it doesn’t rely on logic or discovery 
 - **Error Message Analysis**: Trigger and analyze stack traces or debug info.
 
 ---
+
+### **Host-Based Reconnaissance** ==**(Work In Progress)**==
+### **Wireless Reconnaissance** ==**(Work In Progress)**==
+### **Cloud Reconnaissance** ==**(Work In Progress)**==
+### **Application-Specific Recon** ==**(Work In Progress)**==
+
+E.g. Interacting with APIs, fuzzing, hooking with Frida
+### **Social Engineering Active Reconnaissance** ==**(Work In Progress)**==
+Phishing, pretext calls, impersonation
+
 ## 🔗 See Also
 
 - [02_Resource Development](02_Resource%20Development.md) *(next stage in the Unified Kill Chain)*

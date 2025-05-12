@@ -16,7 +16,7 @@ Use the categories below to navigate to specific domains of interest.
 
 ## 🔒 Cybersecurity
 
-- [[Unified Kill Chain (UKC)]]
+- [[00_Unified Kill Chain (UKC)]]
 - [[Threat Hunting & Incident Response]]
 - [[Vulnerability Assessment & Hardening]]
 - [[CVE Analysis and Remediation]]
