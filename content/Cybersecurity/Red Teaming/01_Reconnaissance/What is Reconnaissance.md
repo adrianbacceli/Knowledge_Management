@@ -1,5 +1,5 @@
 ---
-title: Reconnaissance - Offensive Security
+title: Reconnaissance
 draft: false
 tags:
   - offensive-security
@@ -7,6 +7,14 @@ tags:
   - unified-kill-chain
 NeedsReview: false
 ---
+
+# {{title}}
+
+> [!abstract] Summary  
+> A brief description of this note.  
+
+## Notes  
+- 
 
 # Reconnaissance
 
@@ -31,5 +39,4 @@ Involves direct interaction with the target, potentially triggering alerts.
 
 ## 🔗 See Also
 
-- [Weaponization - Offensive Security](Weaponization%20-%20Offensive%20Security.md) *(next stage in the Unified Kill Chain)*
-- [Footprinting](Footprinting%20-%20Reconnaissance.md) *(for more detailed techniques and subcategories)*
+- [Resource Development](Resource%20Development.md) *(next stage in the Unified Kill Chain)*

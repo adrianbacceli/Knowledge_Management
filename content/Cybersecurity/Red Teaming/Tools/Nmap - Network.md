@@ -7,10 +7,15 @@ tags:
   - network
   - services
   - ports
-NeedsReview: false
+NeedsReview: true
 ---
 > [!summary] Core Concept  
 > Nmap (Network Mapper) is a versatile tool for network discovery and security auditing. This note covers essential techniques from basic host discovery to advanced scanning.
+
+
+> [!warning] Need to add
+> Talk about nmap scripting
+
 
 ## File Output Formats
 

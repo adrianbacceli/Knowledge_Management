@@ -1,5 +1,5 @@
 ---
-title: MSSQL Enumeration - Credential Access
+title: MSSQL Enumeration
 draft: false
 tags:
   - mssql
@@ -15,7 +15,7 @@ NeedsReview: true
 
 ---
 
-## 🔸 Automatic Enumeration ([[nmap -scripts]])
+## 🔸 Automatic Enumeration [Nmap](Nmap%20-%20Network) Scripts
 
 ```bash
 nmap -sV -p1433 --script \
