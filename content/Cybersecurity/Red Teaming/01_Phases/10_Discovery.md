@@ -1,5 +1,5 @@
 ---
-title: Wappalizer
+title: 
 draft: true
 tags:
   - tag1

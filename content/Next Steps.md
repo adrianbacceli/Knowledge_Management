@@ -10,3 +10,4 @@ NeedsReview: false
 - Finish importing CherryTree
 - Finish Importing Onenote Notes
 - Finish Importing Personal Notes
+- Add sources for https://book.hacktricks.wiki/en/network-services-pentesting/pentesting-mssql-microsoft-sql-server/index.html
