@@ -1,5 +1,5 @@
 ---
-title: Hashcat - Password Crack
+title: Hashcat
 draft: false
 tags:
   - brute-force

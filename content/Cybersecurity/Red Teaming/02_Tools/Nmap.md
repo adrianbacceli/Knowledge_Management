@@ -1,5 +1,5 @@
 ---
-title: Nmap - Network
+title: Nmap
 draft: false
 tags:
   - enumeration

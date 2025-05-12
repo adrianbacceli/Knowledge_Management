@@ -1,5 +1,5 @@
 ---
-title: MSSQL Enumeration
+title: 1433 - MSSQL
 draft: false
 tags:
   - mssql

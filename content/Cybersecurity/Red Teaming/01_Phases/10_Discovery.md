@@ -1,5 +1,5 @@
 ---
-title: 
+title: 10_Discovery
 draft: true
 tags:
   - tag1

@@ -1,5 +1,5 @@
 ---
-title: 
+title: 02_Resource Development
 draft: true
 tags:
   - tag1

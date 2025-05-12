@@ -1,5 +1,5 @@
 ---
-title: 
+title: Netcat
 draft: false
 tags:
   - netcat

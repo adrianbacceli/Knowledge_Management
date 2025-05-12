@@ -1,5 +1,5 @@
 ---
-title: Reconnaissance
+title: 01_Reconnaissance
 draft: false
 tags:
   - tag1
@@ -28,7 +28,8 @@ Tools and techniques that don't directly interact with the target systems, thus 
 
 Involves direct interaction with the target, potentially triggering alerts.
 
-### 🔍 **Things `nc` [[Netcat]] Can Do That [[Nmap]] Cannot (or Not Easily)**
+### Network Active Reconnaissance
+#### 🔍 `nc` [[Netcat]] vs [[Nmap]]
 
 **Manual Banner Grabbing / Custom Payloads**
 `nc` allows you to **manually connect to a port** and send **custom input** to see how the service responds.
@@ -85,118 +86,75 @@ nc -l -p 1234 < file.txt
 # Receiver 
 nc target.com 1234 > file.txt`
 ```
+
 ---
-
-### 🛠️ What `nmap` Does Better
-
+#### 🛠️ What `nmap` Does Better
 - **Automated scanning and service detection**
 - **OS fingerprinting**
 - **Scriptable interactions via NSE (Nmap Scripting Engine)**
 - **Network topology mapping**
-- **Vulnerability detection**
-
+- **Vulnerability detection
+- **
 ---
-
-### 🧠 Summary
-
-|Feature|`nc` (Netcat) ✅|`nmap` ✅|
-|---|---|---|
-|Manual banner grabbing|✅|⚠️ (limited via NSE)|
-|Reverse/bind shell|✅|❌|
-|File transfer|✅|❌|
-|Port scanning|⚠️ (basic)|✅|
-|OS/service detection|❌|✅|
-|Scriptable enumeration|❌|✅ (NSE)|
-
----
-
-## 🧰 Other Essential Network Enumeration Tools
-
-### 1. **Masscan**
-
+#### 🧰 Other Essential Network Enumeration Tools
+##### 1. **Masscan**
 - **Purpose**: Extremely fast port scanner (like `nmap` but faster).
 - **Use Case**: Scanning large IP ranges quickly.
 - **Note**: Doesn't do service detection like `nmap`.
-
 ``` bash
 masscan -p1-65535 192.168.1.0/24 --rate=10000
 ```
 
 ---
 
-### 2. **Netdiscover**
-
+##### 2. **Netdiscover**
 - **Purpose**: ARP-based network discovery tool.
 - **Use Case**: Identifying live hosts on a local subnet (great for internal networks).
-
 ``` bash
 netdiscover -r 192.168.1.0/24
 ```
 
 ---
-
-### 3. **Fping**
-
+##### 3. **Fping**
 - **Purpose**: Fast ICMP ping sweeper.
 - **Use Case**: Quickly identify live hosts.
-
 ``` bash
 fping -a -g 192.168.1.0/24
 ```
 
-
 ---
-
-### 4. **Hping3**
-
+##### 4. **Hping3**
 - **Purpose**: Packet crafting tool.
 - **Use Case**: Advanced scanning, firewall testing, and TCP/IP stack auditing.
-
 ``` bash
 hping3 -S -p 80 -c 1 target.com
 ```
 
-
 ---
-
-### 5. **ZMap**
-
+##### 5. **ZMap**
 - **Purpose**: Internet-wide network scanner.
 - **Use Case**: High-speed scanning of large address spaces (used in research).
 
-
 ---
-
-### 6. **Amass**
-
+##### 6. **Amass**
 - **Purpose**: DNS enumeration and attack surface mapping.
 - **Use Case**: Subdomain discovery and external asset mapping.
-
 ``` bash
 amass enum -d example.com
 ```
 
-
 ---
-
-### 7. **Nessus / OpenVAS**
-
+##### 7. **Nessus / OpenVAS**
 - **Purpose**: Vulnerability scanners.
 - **Use Case**: Deep enumeration of services and known vulnerabilities.
 
-
-
 ---
-
-### 8. **Recon-ng**
-
+##### 8. **Recon-ng**
 - **Purpose**: Web-based reconnaissance framework.
 - **Use Case**: OSINT and passive network enumeration.
 
-
 ---
-
-### 🧠 Summary
+#### 🧠 Summary
 
 | Tool               | Primary Use                      | Strengths                      |
 | ------------------ | -------------------------------- | ------------------------------ |
@@ -210,8 +168,217 @@ amass enum -d example.com
 | `amass`            | DNS and subdomain enumeration    | External recon                 |
 | `Nessus`/`OpenVAS` | Vulnerability scanning           | Deep service analysis          |
 
---- 
+| Feature                | `nc` (Netcat) ✅ | `nmap` ✅             |
+| ---------------------- | --------------- | -------------------- |
+| Manual banner grabbing | ✅               | ⚠️ (limited via NSE) |
+| Reverse/bind shell     | ✅               | ❌                    |
+| File transfer          | ✅               | ❌                    |
+| Port scanning          | ⚠️ (basic)      | ✅                    |
+| OS/service detection   | ❌               | ✅                    |
+| Scriptable enumeration | ❌               | ✅ (NSE)              |
 
+
+
+
+--- 
+### Web Active Reconnaissance
+
+#### 🕸️ What is Spidering?
+
+**Spidering** (also called **web crawling**) is the process of **automatically browsing a website** to discover and map its structure, content, and links. It’s a foundational technique in both **ethical hacking** and **search engine indexing**.
+
+---
+
+##### 🔍 How Spidering Works
+
+A **spider** (or crawler) starts at a given URL and:
+
+1. **Downloads the page**
+2. **Extracts all links** (internal and sometimes external)
+3. **Follows those links** to new pages
+4. Repeats the process recursively
+
+This builds a **map of the site**, including:
+
+- Pages
+- Forms
+- Parameters
+- Scripts
+- Hidden or unlinked content
+
+---
+
+##### 🧰 Spidering in Ethical Hacking
+
+|**Purpose**|**Example**|
+|---|---|
+|**Reconnaissance**|Discover hidden pages or admin panels|
+|**Attack Surface Mapping**|Identify all reachable endpoints|
+|**Parameter Discovery**|Find GET/POST parameters for fuzzing or injection|
+|**Session/Token Analysis**|Observe how cookies and tokens are used|
+|**Form Enumeration**|Detect login, search, or upload forms|
+
+---
+
+##### 🛠️ Tools That Perform Spidering
+
+- **Burp Suite Spider**: Interactive and passive crawling with session handling
+- **OWASP ZAP Spider**: Open-source alternative with automation support
+- **Nikto**: Includes basic spidering for vulnerability scanning
+- **Custom Scripts**: Python (e.g., `requests + BeautifulSoup`), Go, etc.
+
+---
+
+##### 🧠 Spidering vs. Brute-Forcing
+
+|Spidering|Brute-Forcing|
+|---|---|
+|Follows real links|Guesses paths using wordlists|
+|Passive or semi-passive|Active and noisy|
+|Maps known content|Finds hidden/unlinked content|
+
+##### 🚫Limitations of Spidering
+
+- **JavaScript-heavy sites** may hide content from basic spiders.
+- **Authentication walls** can block access to deeper pages.
+- **Rate-limiting or WAFs** may detect and block spiders.
+- **Robots.txt** may restrict crawling (though not enforced in hacking contexts).
+
+
+
+
+
+---
+#### 🧩 What is "Burping"?
+
+**Burping** is a slang term used by penetration testers to describe the process of:
+
+1. **Intercepting web traffic** using [[Burpsuite|Burp Suite]]’s proxy.
+2. **Inspecting and modifying requests/responses**.
+3. **Spidering the application** to discover endpoints.
+4. **Testing for vulnerabilities** like SQL injection, XSS, CSRF, etc.
+
+---
+
+##### 🧰 What You Do When You “Burp” a Site
+
+|Step|Action|
+|---|---|
+|**1. Configure Proxy**|Set your browser to route traffic through Burp (usually `127.0.0.1:8080`)|
+|**2. Intercept Requests**|Use the **Proxy** tab to view and modify HTTP/S requests|
+|**3. Spider the Site**|Automatically crawl the site to discover pages and parameters|
+|**4. Send to Repeater/Intruder**|Manually test or automate attacks on specific requests|
+|**5. Analyze Responses**|Look for anomalies, errors, or signs of vulnerabilities|
+
+---
+
+##### 🔍 Why Burping is Useful
+
+- Helps you understand how the application works behind the scenes.
+- Reveals hidden parameters, cookies, headers, and tokens.
+- Allows you to test how the app handles malformed or malicious input.
+
+> 🧠 **In short**: “Burping a site” means **analyzing and manipulating its traffic using Burp Suite** to uncover vulnerabilities or hidden behavior.
+
+
+
+
+---
+#### 🛠️ What is Brute-Force Enumeration?
+
+**Brute-force enumeration** is a technique used in ethical hacking to **systematically guess or test values** (like usernames, directories, subdomains, or passwords) by trying many possibilities from a predefined list — often called a **wordlist**.
+
+It’s called “brute-force” because it doesn’t rely on logic or discovery — it simply **tries everything** until something works.
+
+---
+
+##### 🔍 Common Types of Brute-Force Enumeration
+
+| **Type**                   | **Target**                                 | **Example Tool**                      |
+| -------------------------- | ------------------------------------------ | ------------------------------------- |
+| **Directory Enumeration**  | Hidden folders/files on a web server       | `Gobuster`, `ffuf`, `dirsearch`       |
+| **Subdomain Enumeration**  | Hidden subdomains of a domain              | `Gobuster dns`, `Amass`, `Sublist3r`  |
+| **Username Enumeration**   | Valid usernames on a login page or service | `Hydra`, `Medusa`, `Burp Intruder`    |
+| **Password Brute-Forcing** | Passwords for known usernames              | `Hydra`, `John the Ripper`, `Hashcat` |
+| **VHost Enumeration**      | Virtual hosts on a shared IP               | `Gobuster vhost`, `ffuf`              |
+
+---
+
+##### 🧠 How It Works
+
+1. **Choose a target** (e.g., a login form or web server).
+2. **Select a wordlist** (e.g., common passwords, directory names).
+3. **Run the tool** to test each word in the list.
+4. **Analyze the responses** to identify valid entries (e.g., 200 OK, login success, etc.).
+
+---
+
+##### ⚠️ Considerations
+
+- **Noisy**: Brute-force attacks generate a lot of traffic and can trigger alarms.
+- **Rate-limited**: Many systems throttle or block repeated requests.
+- **Ethical use only**: Always have permission before performing brute-force enumeration.
+
+#### Other steps to check (Work In Progress)
+##### 🔍 **1. HTTP/HTTPS Inspection**
+
+- **Inspect headers** for server info, cookies, security headers.
+- Tools: `curl`, `httpie`, Burp, OWASP ZAP
+
+##### 🧪 **2. Input Field Testing (Manual or Automated)**
+
+- Check how forms handle input (e.g., login, search, contact).
+- Tools: Burp Repeater, ZAP, `wfuzz`, `ffuf`
+
+##### 🧬 **3. JavaScript & Client-Side Recon**
+
+- Analyze JS files for hidden endpoints, API keys, logic.
+- Tools: `LinkFinder`, `JSParser`, browser dev tools
+
+##### 🔐 **4. Authentication & Session Handling**
+
+- Test login/logout, session fixation, token reuse, cookie flags.
+- Tools: Burp Suite, Postman
+
+##### 📡 **5. WebSocket & API Enumeration**
+
+- Discover and interact with WebSocket or REST/GraphQL APIs.
+- Tools: Burp WebSocket history, Postman, GraphQL Voyager
+
+##### 🧭 **6. CORS & CSP Testing**
+
+- Look for misconfigurations in CORS or Content Security Policy.
+- Tools: `Corsy`, Burp extensions
+
+##### 🧱 **7. WAF/Rate Limiting Detection**
+
+- Identify protections that may block or throttle your scans.
+- Tools: `wafw00f`, manual testing with delays
+
+##### 🧰 **8. CMS/Framework-Specific Recon**
+
+- Target known CMS like WordPress, Joomla, etc.
+- Tools: `wpscan`, `droopescan`, `joomscan`
+
+##### 🧪 **9. Active Vulnerability Scanning**
+
+- Scan for known CVEs or misconfigurations.
+- Tools: `Nikto`, `Nuclei`, `OpenVAS`, `Burp Scanner` (Pro)
+
+##### 🧠 **10. Logic & Workflow Testing**
+
+- Test how the app behaves in edge cases (e.g., bypassing steps, skipping tokens).
+- Tools: Manual + Burp Suite
+
+---
+
+##### 🧩 Optional Advanced Additions
+
+- **Fuzzing**: Discover unexpected behavior by sending malformed input (`wfuzz`, `ffuf`, Burp Intruder).
+- **Timing Attacks**: Detect blind SQLi or logic flaws via response delays.
+- **Error Message Analysis**: Trigger and analyze stack traces or debug info.
+
+---
 ## 🔗 See Also
 
 - [02_Resource Development](02_Resource%20Development.md) *(next stage in the Unified Kill Chain)*
