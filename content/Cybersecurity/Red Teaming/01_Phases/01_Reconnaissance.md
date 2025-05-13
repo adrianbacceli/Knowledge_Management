@@ -27,6 +27,7 @@ Tools and techniques that don't directly interact with the target systems, thus 
 - Dark Web & Breach Reconnaissance ==**(Work In Progress)**==
 - App Specific Passive Reconnaissance: Reverse engineering APKs, firmware analysis ==**(Work In Progress)**==
 - Social Engineering Passive Reconnaissance - LinkedIn stalking, email scraping ==**(Work In Progress)**==
+- OSINT
 
 ---
 ## ⚡ Active Reconnaissance

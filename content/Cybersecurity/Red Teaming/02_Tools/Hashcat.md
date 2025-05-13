@@ -10,7 +10,6 @@ tags:
   - encryption
 NeedsReview: false
 ---
-
 # Example of Hashcat Password Cracking
 
 > [!abstract] Summary  

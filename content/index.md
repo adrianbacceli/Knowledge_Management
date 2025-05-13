@@ -31,6 +31,7 @@ Use the categories below to navigate to specific domains of interest.
   - Linux, Windows, VMware
 - [[Virtualization & Backup Technologies]]
 - [[Identity & Access Management (IAM)]]
+- [[What is SQL|Databases]]
 
 ---
 
@@ -63,6 +64,7 @@ Use the categories below to navigate to specific domains of interest.
 
 - [[Technical Documentation & Public Writing]]
 - [[Incident & Escalation Management]]
+- [[Self Development Books]]
 
 ---
 

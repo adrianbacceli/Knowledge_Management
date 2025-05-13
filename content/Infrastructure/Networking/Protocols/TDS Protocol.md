@@ -32,9 +32,9 @@ TDS is important in **enumeration**, **exploitation**, and **lateral movement
 
 ### 🔐 Common Attacks Involving TDS:
 
-- **Brute-force or password spraying** via TDS login
+- **[[13_Credential_Access#Brute Force|Brute Force]] or [[13_Credential_Access#Password Spraying|Password Spraying]]** via TDS login
 - **SQL injection** over TDS
-- **Impacket’s `mssqlclient.py`** uses TDS to interact with MSSQL
+- **[[Impacket]]’s `mssqlclient.py`** uses TDS to interact with MSSQL
 - **[[13_Credential_Access#Kerberoasting|Kerberoasting]]** targets MSSQL service accounts (which use TDS)
 - **Command execution** via `xp_cmdshell` over TDS
 

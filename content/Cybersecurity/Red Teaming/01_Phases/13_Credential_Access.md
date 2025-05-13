@@ -4,8 +4,19 @@ draft: false
 tags:
   - Kerberoasting
   - credential-access
-NeedsReview: false
+  - brute-force
+  - Password-Spraying
+NeedsReview: true
 ---
+# Brute Force
+
+
+
+# Password Spraying
+
+
+
+
 # Kerberoasting
 
 Is a post-exploitation technique used by attackers to extract service account credentials from a Windows Active Directory (AD) environment. It targets **Kerberos**, the authentication protocol used in AD, and is particularly effective against accounts with **Service Principal Names (SPNs)**.
@@ -53,3 +64,4 @@ Is a post-exploitation technique used by attackers to extract service account cr
 - Monitor for **unusual TGS requests**.
 - Use **Managed Service Accounts (MSAs)** or **Group Managed Service Accounts (gMSAs)**.
 - Enable **AES encryption** for Kerberos tickets (harder to crack than RC4).
+
