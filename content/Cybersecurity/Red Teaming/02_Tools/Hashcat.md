@@ -121,4 +121,6 @@ hashcat -m 5600 -a 0 -o ~/Documents/NetNTMLv2_Cracked.txt --status --status-time
 - Use **Example 1** when the password length and charset are unknown but you're sure it's alphanumeric lowercase and within 8–12 characters.
 - Use **Example 2** for **faster attacks** when you have a dictionary (like `rockyou.txt`) and believe the password is common.
 
-> 💡 **Tip:** Always start with a dictionary attack before using brute-force—it's exponentially faster.
+> [!tip] **Pro Tip**  
+> 💡 Always start with a dictionary attack before using brute-force—it's exponentially faster.
+

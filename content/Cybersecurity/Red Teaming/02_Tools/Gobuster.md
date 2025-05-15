@@ -30,11 +30,7 @@ NeedsReview: true
     - `/backup.zip`
 - Helps find **unprotected resources**, **admin panels**, or **sensitive files**.
 
-### 🛠️ Tools:
-
-- `Gobuster`
-- `ffuf`
-- `dirsearch`
+---
 
 ### 🧠 Use Case: Directory Brute-Forcing
 
