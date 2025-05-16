@@ -18,218 +18,7 @@ Prompt Engineering is the art and science of crafting inputs to AI tools to elic
 
 ---
 
-## 📘 Learning Objectives
-
-By the end of this course, you will be able to:
-- Understand the fundamentals of NLP and LLMs.
-- Gather stakeholder requirements for prompt design.
-- Structure and format prompts effectively.
-- Optimize prompt techniques for better AI responses.
-- Address ethical, legal, and technical considerations.
-- Communicate clearly when designing AI interactions.
-    
-
-```mermaid
-graph TD
-    A[Prompt Engineering] --> B[NLP & LLMs]
-    B --> C[AI Architectures]
-    C --> D[Prompt Design]
-    D --> E[Refinement & Testing]
-    E --> F[Ethical and Legal Use]
-    F --> G[Documentation & Scaling]
-```
-
----
-
-## 🧠 Natural Language Processing (NLP) and LLMs
-
-NLP enables machines to understand, interpret, and generate human language. Large Language Models (LLMs) like GPT use this capability to perform tasks such as:
-
-- Translation
-- Summarization
-- Content generation
-    
-
-### LLM Capabilities
-
-| Task Type         | Examples                                  |
-|------------------|-------------------------------------------|
-| Translation       | English to Spanish                        |
-| Content Creation  | Blog posts, product descriptions          |
-| Summarization     | Research papers, articles                 |
-
----
-
-## 🔧 AI Architectures: What Powers the AI?
-
-### Neural Network Overview
-
-
-### Components
-
-- **Input Signals:** Sent to neurons from previous layers or directly from the input data.
-- **Weights & Biases:** Control influence of inputs. Multiply Inputs. 
-- **Activation Functions:** Introduce non-linearity, allows the network to learn complex patterns.
-- **Layer Types:** ANN, RNN, CNN, Transformers
-    * Input Layer: Receives raw data.
-	* Hidden Layers: Process data, learning features at various abstraction levels.
-	* Output Layer: Produces the final output based on processed information.
-
-### Comparison of Architectures
-
-| Feature      | ANN         | RNN             | CNN                   | Transformer          |
-| ------------ | ----------- | --------------- | --------------------- | -------------------- |
-| Use Case     | General     | Sequential Data | Images & Spatial Data | Language/Text        |
-| Key Strength | Simplicity  | Memory          | Feature Detection     | Contextual Awareness |
-| Mechanism    | Feedforward | Feedback Loops  | Convolutions          | Self-Attention       |
-|              |             |                 |                       |                      |
-
-
----
-
-## 🧩 Enhancing Model Performance
-
-### Retrieval-Augmented Generation (RAG)
-
-```mermaid
-graph TD
-    A[Prompt] --> B[Retriever: Search DB/Docs]
-    B --> C[Relevant Information]
-    C --> D[LLM Generator]
-    D --> E[Enhanced Response]
-```
-
----
-
-## ✍️ Prompt Fundamentals
-
-### Prompt Lifecycle
-
-```mermaid
-graph LR
-  A[Write] --> B[Refine]
-  B --> C[Test]
-  C --> D[Iterate]
-```
-
-### Prompt Structure
-
-| Element       | Description                            |
-| ------------- | -------------------------------------- |
-| Objective     | What you want the AI to achieve        |
-| Context       | Background needed for relevance        |
-| Input Data    | Any files or text referenced           |
-| Constraints   | Length, tone, output type              |
-| Output Format | Bullet points, paragraphs, code blocks |
-
-
----
-
-## 🛠️ Prompt Techniques
-
-### Prompt Typology
-
-```mermaid
-graph TB
-  A[Prompt Techniques]
-  A --> B[Zero-shot]
-  A --> C[Few-shot]
-  A --> D[Chain-of-Thought]
-  A --> E[Goal-Oriented]
-  A --> F[Role-Based]
-  A --> G[System Prompts]
-```
-
----
-
-## 🧠 Writing for Audience and Complexity
-
-### Prompt Complexity Pyramid
-
-```mermaid
-graph TD
-    A[Complex Analysis] --> B[Compare and Contrast]
-    B --> C[Simple Description]
-```
-
-### Audience Examples
-
-| Audience         | Prompt Type Example                           |
-| ---------------- | --------------------------------------------- |
-| Small Businesses | Write product email under 200 words, with CTA |
-| College Students | Social media post about new app               |
-
-
----
-
-## ❌ Common Prompt Pitfalls
-
-| Pitfall             | Fix                                                       |
-|---------------------|------------------------------------------------------------|
-| Ambiguity           | Be specific: Who, what, when, where                       |
-| Overloading         | Split into multiple prompts                               |
-| Bias                | Ask neutral, open-ended questions                         |
-| Complexity          | Tailor to audience level                                  |
-| Lack of Context     | Include background, title, or source                      |
-
-
----
-
-## ⚖️ Legal and Ethical Prompt Design
-
-### Ethics Checklist
-
-
-- Use gender-neutral language
-- Avoid stereotypes
-- Include diverse perspectives
-- Provide context
-- Conduct audits
-
-### Copyright & Privacy Warning
-
-```ad-note
-Avoid prompts that:
-- Generate text/images close to copyrighted material
-- Include personal or sensitive data
-- Accept terms on behalf of users
-```
-
----
-
-## 🧾 Metadata and Prompt Templates
-
-### Template Sample
-
-
-Template Name: Content Summary
-Purpose: Summarize articles or reports
-Input: Long-form content
-Output: Executive summary (under 150 words)
-LLM Instructions: Maintain key points and neutral tone
-
-```ad-note
-Template Name: Sentiment Analysis - Movie Reviews
-Purpose: Classify reviews as Positive, Negative, or Neutral
-Input: Movie Review Text
-Output: Sentiment classification
-LLM Instructions: Identify and explain tone
-Examples:
-- "I loved the movie" → Positive
-- "It was okay" → Neutral
-- "Terrible experience" → Negative
-```
-
-
-
-
-#### 🧠 AI Essentials: A Guide to Prompt Engineering and Generative AI
-
-> A concise guide to designing better prompts, understanding NLP, leveraging LLMs, and applying ethical AI practices.
-
----
-
-### 🎯 What You’ll Learn
+## 🎯 What You’ll Learn
 
 - How NLP and LLMs process and generate language.
 - Techniques to gather and apply stakeholder requirements.
@@ -241,7 +30,7 @@ Examples:
 
 ---
 
-### 💬 NLP and LLMs: The Foundation of AI Responses
+## 💬 NLP and LLMs: The Foundation of AI Responses
 
 **Natural Language Processing (NLP)** allows AI to understand and generate human language.  
 **Large Language Models (LLMs)** like GPT use NLP to complete tasks such as:
@@ -254,7 +43,7 @@ Examples:
 
 ---
 
-### 🏗️ AI Architectures in Action
+## 🏗️ AI Architectures in Action
 
 AI is built on neural network models inspired by the brain. Here's a breakdown:
 
@@ -278,7 +67,7 @@ graph LR
 
 ---
 
-### 📦 Enhancing LLMs with RAG
+## 📦 Enhancing LLMs with RAG
 
 RAG = Retrieval-Augmented Generation
 
@@ -294,7 +83,7 @@ It boosts LLM accuracy by fetching external info in real-time.
 # 🔄 The Prompt Engineering Process
 
 This document outlines the **core workflow** for designing, refining, and evaluating prompts in Generative AI. Each step is critical for producing high-quality, aligned outputs from language models (LLMs).
-### ✍️ Designing Prompts that Deliver
+####  Designing Prompts that Deliver
 
 ```mermaid
 graph LR
@@ -384,7 +173,7 @@ Keep refining based on feedback and metrics until your prompt performs as expect
 
 ---
 
-### 🔂 Summary Diagram
+## 🔂 Summary Diagram
 
 ```mermaid
 graph TD
