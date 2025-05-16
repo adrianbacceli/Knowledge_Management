@@ -1,9 +1,11 @@
 ---
-title: 
+title: Google Cloud Security
 draft: false
 tags:
-  - tag1
-  - tag2
+  - GCP
+  - Cloud
+  - Google
+  - offensive-security
 NeedsReview: true
 ---
 ## 🔐 Google Cloud Security Architecture Overview
@@ -11,7 +13,6 @@ NeedsReview: true
 > [!summary] Google Cloud Architecture  
 > Google’s cloud infrastructure is built on a multi-layered security model, designed to protect data from physical to application level.
 
----
 
 ### 1. 🧱 Secure Low-Level Infrastructure
 
