@@ -235,7 +235,7 @@ graph TD
 
 ---
 
-### 🧱 Common Pitfalls (And Fixes)
+## 🧱 Common Pitfalls (And Fixes)
 
 |Pitfall|Solution|
 |---|---|
@@ -247,7 +247,7 @@ graph TD
 
 ---
 
-### ⚖️ Ethics & Legal Design
+## ⚖️ Ethics & Legal Design
 
 **Checklist:**
 
@@ -267,7 +267,7 @@ graph TD
 
 ---
 
-### 📋 Templates and Metadata
+## 📋 Templates and Metadata
 
 ```ad-note
 Template Name: Sentiment Analysis - Movie Reviews
@@ -286,7 +286,7 @@ Prompt templates improve clarity, consistency, and reusability across teams.
 
 ---
 
-### 🧰 Tools & Formats
+## 🧰 Tools & Formats
 
 |Tool|Use Case|
 |---|---|
@@ -299,7 +299,7 @@ Prompt templates improve clarity, consistency, and reusability across teams.
 
 ---
 
-### ✅ Best Practices Recap
+# ✅ Best Practices Recap
 
 - Use structured instructions and examples
 - Add context and constraints
@@ -310,7 +310,7 @@ Prompt templates improve clarity, consistency, and reusability across teams.
 
 ---
 
-### 📌 Final Tip
+# 📌 Final Tip
 
 > [!quote] ✨ Final Tip
 > **“A good prompt is like a good question—it gets the right conversation started.”**
@@ -318,7 +318,7 @@ Prompt templates improve clarity, consistency, and reusability across teams.
 
 ---
 
-### 🔗 Resources
+# 🔗 Resources
 
 - [OpenAI Cookbook](https://github.com/openai/openai-cookbook)
 - [Prompt Engineering Guide (dair-ai)](https://github.com/dair-ai/Prompt-Engineering-Guide)
