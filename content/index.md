@@ -46,7 +46,7 @@ Use the categories below to navigate to specific domains of interest.
 
 ## ☁️ Cloud Technologies
 
-- [[AWS & GCP Hands-on Experience]]
+- [[Google Cloud Security]]
 - [[Cloud Security Best Practices]]
 - [[Cloud Provisioning & Hardening]]
 

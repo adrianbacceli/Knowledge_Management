@@ -7,10 +7,5 @@ tags:
 NeedsReview: true
 ---
 
-# {{title}}
-
-> [!abstract] Summary  
-> A brief description of this note.  
-
-## Notes  
-- 
+# Redundancy
+The practice of having multiple copies of data in different locations to avoid a single point of failure
