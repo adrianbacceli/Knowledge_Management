@@ -76,3 +76,15 @@ graph TD
 
 [[Security in the cloud (5 Layers).canvas|Security in the cloud (5 Layers)]]
 
+---
+# Defense In Depth (Based in [[NIST CSF 2.0]]
+
+## Layered approach that uses multiple security control
+
+* Identity Control: Measure that authenticates user before resource access (MFA)
+* Protective Control: Protect access to resources and shields against malicious (AV, WAF, IaaC Policies)
+* Network Controls: Firewalls, IPS
+* Detective Controls: IDS, Cloud Security Command Center
+* Responsive Controls: Actions after detection
+* Recovery Controls: Actions after damage, like reverting to backups, 
+

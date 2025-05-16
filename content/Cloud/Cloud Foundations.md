@@ -58,23 +58,23 @@ Google Cloud → Storage
 Each service operates **independently**, selected based on the best fit for the application or department.
 
 ---
-## IaaS
+## 🟥 IaaS
 
 ---
-## PaaS
+## 🟧 PaaS
 
 ---
-## SaaS
+## 🟦 SaaS
 
 ---
-## Backend as a service (BaaS)
+## 🟩 BaaS
 
-BaaS is a form of serverless computing where the CSP manages all aspects of the backend infrastructure. This includes servers, containers, and virtual machines. Developers use BaaS to speed the creation of web applications. With BaaS, developers can focus on writing the front end code, which is the code that builds the user interface. Organizations have access to other services, like databases, file storage, and authentication services that can be native or third party to the platform
+Backend as a service is a form of serverless computing where the CSP manages all aspects of the backend infrastructure. This includes servers, containers, and virtual machines. Developers use BaaS to speed the creation of web applications. With BaaS, developers can focus on writing the front end code, which is the code that builds the user interface. Organizations have access to other services, like databases, file storage, and authentication services that can be native or third party to the platform
 
 ---
-## Function as a service (FaaS)
+## 🟪 FaaS
 
-FaaS is a form of serverless computing that runs functions. A function is a small piece of code. Functions are ephemeral, meaning they only exist for a short period of time. Developers can use their choice of programming language to create functions, which makes adopting serverless computing more convenient.
+Function as a service is a form of serverless computing that runs functions. A function is a small piece of code. Functions are ephemeral, meaning they only exist for a short period of time. Developers can use their choice of programming language to create functions, which makes adopting serverless computing more convenient.
 
 > [!info] 🔒 Did You Know? 
 > The short lifespan of functions contributes to their [[Google Cloud Security|Security]]. Since each function is short-lived, malicious actors have a very limited window to impose threats. 
@@ -85,3 +85,7 @@ FaaS is a form of serverless computing that runs functions. A function is a smal
 ---
 
 # Infrastructure as Code (IaC)
+
+
+---
+

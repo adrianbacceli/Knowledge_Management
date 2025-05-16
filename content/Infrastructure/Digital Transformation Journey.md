@@ -32,3 +32,8 @@ Optimization
 
 1. Multi-Cloud: Using multiple public cloud providers to avoid vendor lock-in, optimize costs, and leverage specific services from different providers.
 2. Edge Computing: Deploying compute and storage resources closer to the data source (e.g., IoT devices) to reduce latency and improve performance for specific use cases.
+
+
+--- 
+
+Extract more from ISMv5 Material
