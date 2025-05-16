@@ -47,7 +47,7 @@ Use the categories below to navigate to specific domains of interest.
 ## ☁️ Cloud Technologies
 
 - [[Cloud Foundations]]
-- [[Cloud Security Best Practices]]
+- [[Google Cloud Security]]
 - [[Cloud Provisioning & Hardening]]
 
 ---

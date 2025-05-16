@@ -1,9 +1,10 @@
 ---
-title: 
+title: Cloud Foundations
 draft: false
 tags:
-  - tag1
-  - tag2
+  - Cloud
+  - Foundations
+  - Cloud-Computing
 NeedsReview: true
 ---
 > [!summary] 🌐 Failure Domains in Cloud Architecture  
@@ -33,9 +34,7 @@ NeedsReview: true
 
 ---
 
-## 🔄 Hybrid Cloud vs. Multi-Cloud Operations
-
-### 🔸 Hybrid Cloud
+## 🔸 Hybrid Cloud
 > **Hybrid Cloud** is the integration of **Public Cloud**, **Private Cloud**, and possibly **Traditional IT** (on-prem datacenters).  
  
 Use case: when workloads need to shift across environments based on compliance, latency, or cost.
@@ -46,7 +45,7 @@ flowchart LR
 
 ```
 
-### 🔹 Multi-Cloud
+## 🔹 Multi-Cloud
 > **Multi-Cloud** refers to using **multiple independent public cloud services** in parallel for different workloads.
 
 Example Toolbox:
@@ -59,22 +58,28 @@ Google Cloud → Storage
 Each service operates **independently**, selected based on the best fit for the application or department.
 
 ---
+## IaaS
 
-### IaaS
-### PaaS
-### SaaS
+---
+## PaaS
 
-### Backend as a service (BaaS)
+---
+## SaaS
 
+---
+## Backend as a service (BaaS)
 
 BaaS is a form of serverless computing where the CSP manages all aspects of the backend infrastructure. This includes servers, containers, and virtual machines. Developers use BaaS to speed the creation of web applications. With BaaS, developers can focus on writing the front end code, which is the code that builds the user interface. Organizations have access to other services, like databases, file storage, and authentication services that can be native or third party to the platform
 
-### Function as a service (FaaS)
+---
+## Function as a service (FaaS)
 
 FaaS is a form of serverless computing that runs functions. A function is a small piece of code. Functions are ephemeral, meaning they only exist for a short period of time. Developers can use their choice of programming language to create functions, which makes adopting serverless computing more convenient.
 
 > [!info] 🔒 Did You Know? 
-> The short lifespan of functions contributes to their [[Google Cloud Security|Security]]. Since each function is short-lived, malicious actors have a very limited window to impose threats. Also, each function has a single role in a software application. If a malicious actor were to gain access to a function, they could only threaten the part of the application that uses that function.
+> The short lifespan of functions contributes to their [[Google Cloud Security|Security]]. Since each function is short-lived, malicious actors have a very limited window to impose threats. 
+> 
+> Each function has a single role in a software application. If a malicious actor were to gain access to a function, they could only threaten the part of the application that uses that function.
 
 
 ---
