@@ -7,10 +7,79 @@ tags:
 NeedsReview: true
 ---
 
-# {{title}}
+### 🔹 `> [!note]` — **Note**
 
-> [!abstract] Summary  
-> A brief description of this note.  
+> [!note] Quick Reminder  
+> This is general-purpose information you want to keep in mind.
 
-## Notes  
-- 
+---
+
+### 🔹 `> [!tip]` — **Tip**
+
+> [!tip] Helpful Tip  
+> 💡 Try running small variations in your prompts to test model sensitivity.
+
+
+---
+
+### 🔹 `> [!info]` — **Info**
+
+> [!info] Did You Know?  
+> You can chain prompts to simulate multi-turn conversations.
+
+
+---
+
+### 🔹 `> [!warning]` — **Warning**
+
+> [!warning] Caution Ahead  
+> ⚠️ Incorrect prompt phrasing may lead to hallucinated outputs.
+
+
+---
+
+### 🔹 `> [!danger]` — **Danger**
+
+> [!danger] Risk Zone  
+> 🚨 Avoid copying prompts blindly without verifying context.
+
+
+---
+
+### 🔹 `> [!quote]` — **Quote**
+
+> [!quote] Prompt Wisdom  
+> “A good prompt is like a good question—it gets the right conversation started.”
+
+
+---
+
+### 🔹 `> [!example]` — **Example**
+
+> [!example] Prompt Example  
+> "Summarize this article in 3 bullet points, using plain language."
+
+
+---
+
+### 🔹 `> [!abstract]` — **Abstract**
+
+> [!abstract] Key Concept  
+> Prompt engineering involves crafting input that guides the model’s response effectively.
+
+
+---
+
+### 🔹 `> [!question]` — **Question**
+
+> [!question] Ask Yourself  
+> ❓What is the *true* goal of this prompt?
+
+
+---
+
+### 🔹 `> [!success]` — **Success**
+
+> [!success] Well Done!  
+> ✅ Your prompt returned the expected output with clarity and precision.
+
