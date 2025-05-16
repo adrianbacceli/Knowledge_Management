@@ -13,3 +13,4 @@ Composed of Zones: The collective number of data centers in an area
 And Regions: A group of zones
 
 Failure Domains enable [[Data Center Implementation#Redundancy|Redundancy]] with reduced [[Infrastructure/Networking/Foundations#Latency|Latency]] for end users, and provide [[Infrastructure/Data Protection/Foundations#Resiliency|Resiliency]]resiliency across the operations.
+
