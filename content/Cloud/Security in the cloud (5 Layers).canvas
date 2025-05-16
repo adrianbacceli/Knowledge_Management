@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"d113610f74a9a3ac","x":-220,"y":10,"width":480,"height":334,"type":"group"},
+		{"id":"4da5a3c4750bd580","type":"text","text":"        Secure Service Deployment","x":-160,"y":200,"width":360,"height":60,"color":"2"},
+		{"id":"ea8d64c3c92ed2f9","type":"text","text":"          Secure Low-Level Infrastructure","x":-200,"y":260,"width":440,"height":64,"color":"1"},
+		{"id":"6b2dd30fc666e2e7","type":"text","text":"      Secure Data Storage","x":-120,"y":140,"width":280,"height":60,"color":"3"},
+		{"id":"b3516c131afc459f","type":"text","text":"Communication","x":-80,"y":80,"width":200,"height":60,"color":"4"},
+		{"id":"f9fc16fed7adda84","type":"text","text":"SecOps","x":-40,"y":30,"width":120,"height":50,"color":"5"}
+	],
+	"edges":[]
+}
