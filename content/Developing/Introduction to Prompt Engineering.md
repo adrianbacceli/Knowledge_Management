@@ -173,7 +173,7 @@ Keep refining based on feedback and metrics until your prompt performs as expect
 
 ---
 
-## 🔂 Summary Diagram
+## 📃 Summary Diagram
 
 ```mermaid
 graph TD
