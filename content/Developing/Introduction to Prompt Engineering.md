@@ -196,7 +196,7 @@ For team-wide usage, consider documenting each version and embedding it into you
 
 ---
 
-### 🔧 Prompting Strategies
+# 🔧 Prompting Strategies
 
 ```mermaid
 graph TD
@@ -217,7 +217,10 @@ graph TD
 
 ---
 
-### 🧠 Matching Prompt to Audience
+# 💭 Considerations
+
+Whether you're crafting prompts as an engineer or simply using AI to get answers, complete tasks, or explore creatively, these key principles will help you achieve better results and reduce the risk of misuse.
+## 🧠 Matching Prompt to Audience
 
 ```mermaid
 graph TD
