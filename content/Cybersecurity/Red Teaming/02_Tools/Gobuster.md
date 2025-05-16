@@ -61,13 +61,6 @@ gobuster dir -u https://www.lolguides.com -w ../Documents/BruteForcing/dsstorewo
     - TXT records (SPF, DKIM, etc.)
 - Can reveal **internal infrastructure**, **third-party services**, or **shadow IT**.
 
-### 🛠️ Tools:
-
-- `dnsenum`
-- `dnsrecon`
-- `Gobuster dns`
-- `Amass`
-
 ### 🧠 Use Case:
 
 Used in **external recon** to map the full attack surface of a target domain.
@@ -86,12 +79,6 @@ Used in **external recon** to map the full attack surface of a target domain.
     - `dev.example.com`
     - `staging.example.com`
 - Useful when multiple sites share a single IP (common in shared hosting or internal environments).
-
-### 🛠️ Tools:
-
-- `Gobuster vhost`
-- `ffuf`
-- `vhostscan`
 
 ### 🧠 Use Case: VHost Enumeration
 

