@@ -67,10 +67,13 @@ NLP enables machines to understand, interpret, and generate human language. Larg
 
 ### Components
 
-- **Weights & Biases:** Control influence of inputs
-- **Activation Functions:** Introduce non-linearity
+- **Input Signals:** Sent to neurons from previous layers or directly from the input data.
+- **Weights & Biases:** Control influence of inputs. Multiply Inputs. 
+- **Activation Functions:** Introduce non-linearity, allows the network to learn complex patterns.
 - **Layer Types:** ANN, RNN, CNN, Transformers
-    
+    * Input Layer: Receives raw data.
+	* Hidden Layers: Process data, learning features at various abstraction levels.
+	* Output Layer: Produces the final output based on processed information.
 
 ### Comparison of Architectures
 
@@ -302,7 +305,7 @@ graph LR
 
 Begin with clear, structured instructions to guide the AI’s behavior.
 
-### ✅ Components of a Good Initial Prompt
+#### ✅ Components of a Good Initial Prompt
 
 |Component|Description|Example|
 |---|---|---|
@@ -320,7 +323,7 @@ Begin with clear, structured instructions to guide the AI’s behavior.
 
 If the output is not satisfactory, adjust your prompt based on what didn’t work.
 
-### 🔍 Refinement Checklist
+#### 🔍 Refinement Checklist
 
 - Add or tighten constraints (word count, format, tone)
     
@@ -331,7 +334,7 @@ If the output is not satisfactory, adjust your prompt based on what didn’t wor
 - Specify the expected level of detail
     
 
-### ✨ Example: Refined Prompt
+#### ✨ Example: Refined Prompt
 
 ```markdown
 "Craft a launch email for an exciting new AI writing tool designed for freelance writers. Keep the email under 200 words. Use a friendly yet professional tone. Output Format: Bullet points with a compelling call-to-action (CTA) at the end. Add a personal touch: Include a brief anecdote or message to connect with the reader."
@@ -365,14 +368,14 @@ Run your prompt through the LLM and evaluate the response. Use the following cri
 
 Keep refining based on feedback and metrics until your prompt performs as expected.
 
-### 🔄 Iteration Tips
+#### 🔄 Iteration Tips
 
 - **Document Changes**: Keep a version history of prompts and results.
 - **Compare Outputs**: Side-by-side comparisons highlight progress.
 - **Involve Stakeholders**: Feedback from target users ensures alignment.
     
 
-### 🚦 When to Stop Iterating
+#### 🚦 When to Stop Iterating
 
 - ✅ Stakeholders provide **positive feedback**.
 - ✅ Outputs meet **defined objectives**.
