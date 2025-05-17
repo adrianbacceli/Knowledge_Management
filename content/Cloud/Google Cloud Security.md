@@ -14,7 +14,7 @@ NeedsReview: true
 > Google’s cloud infrastructure is built on a multi-layered security model, designed to protect data from physical to application level.
 
 
-### 1. 🧱 Secure Low-Level Infrastructure
+### 1. 🏗️ Secure Low-Level Infrastructure
 
 - **Physical Security**
   - Camera surveillance
@@ -99,3 +99,8 @@ graph TD
 Granting external identities access to your cloud environment. Like using SSO.
 It is recommended to allow MFA to users using federation.
 
+# 🧱 Firewall best practices 
+Here are a few best practices you can apply when using firewalls: 
+* Always use the principle of least privilege. When creating firewall rules, only allow necessary traffic to traverse the network. 
+* Use hierarchical firewall policies, which will allow your organization to apply firewall policies to the organization and folder levels. Invoking hierarchical policy structure promotes consistency across organizational resources and the firewalls that protect them. 
+* If your organization isn’t using their CSP’s firewall service, choose a FWaaS solution developed by a company that tailors their product to the specific CSP’s environment. There are many companies that provide FWaaS solutions to organizations.

@@ -166,3 +166,31 @@ Increases level of trust by ensuring the CSP onboards with the customer to meet 
 
 ---
 
+# 🔹 Virtual Private Cloud (VPC) / Multi-Tenancy
+
+> [!summary] Core Concept  
+> A **Virtual Private Cloud (VPC)** is a logically isolated section of a public cloud, offering private network space and enhanced control over traffic flow and access.
+
+---
+
+A **VPC** enables organizations to leverage the scalability and infrastructure of a public cloud while maintaining **segregated, private environments** for compute and storage. This architecture ensures that tenant workloads remain isolated from others within the same cloud provider ecosystem.
+
+In platforms like **Google Cloud**, VPCs are **global resources**, not tied to a specific zone or region. This allows for **high availability and flexible network design** across geographies.
+
+Key VPC Features:
+
+- **Network Segmentation**: VPCs allow subdivision into **subnets**, enabling fine-grained control over traffic flows. This segmentation minimizes the attack surface and helps isolate incidents more efficiently.
+- **Firewall Rules**: Customizable access controls can be enforced at the subnet or instance level based on IPs and ports, supporting the **principle of least privilege**.
+- **Secure Connectivity**: Integration with **VPNs** enables encrypted communication between on-premises environments and cloud-hosted VPCs.
+- **Dedicated Interconnect Services**: Some providers offer **direct connections** (e.g., Google Cloud Interconnect) for high-throughput, low-latency hybrid setups.
+
+> [!info] Did You Know?  
+> Cloud VPNs can be deployed in minutes, offering rapid secure remote access compared to traditional VPN setups.
+
+---
+
+**Use Case in Cloud Security**:  
+VPCs are fundamental for cloud security architecture, supporting **network isolation, traffic control, and hybrid infrastructure** integration—all critical for maintaining secure cloud operations.
+
+> [!quote] Prompt Wisdom  
+> “With VPCs, your data always has a reserved place at the table.”
