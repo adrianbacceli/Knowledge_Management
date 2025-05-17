@@ -77,9 +77,9 @@ graph TD
 [[Security in the cloud (5 Layers).canvas|Security in the cloud (5 Layers)]]
 
 ---
-# Defense In Depth ([[NIST CSF 2.0|NIST Cybersecurity Framework]])
+# 🧑‍🚒 Defense In Depth ([[NIST CSF 2.0|NIST Cybersecurity Framework]])
 
-## Layered approach that uses multiple security control
+##### **Layered approach that uses multiple security control**
 
 * Identity Control: Measure that authenticates user before resource access (MFA)
 * Protective Control: Protect access to resources and shields against malicious (AV, WAF, IaaC Policies)
@@ -90,12 +90,12 @@ graph TD
 
 ---
 
-# IAM and Cloud IAM
+# 🪪 IAM and Cloud IAM
 * Roles: Collection of permissions, policies and constrains to principals
 * Principals: Users or Apps (Service Accounts) // Groups: Combine them depending on Org.
 * Policies: Rules that allow/deny access.
 
-## Federation
+##### **Federation**
 Granting external identities access to your cloud environment. Like using SSO.
 It is recommended to allow MFA to users using federation.
 
