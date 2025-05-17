@@ -90,3 +90,12 @@ graph TD
 
 ---
 
+# IAM and Cloud IAM
+* Roles: Collection of permissions, policies and constrains to principals
+* Principals: Users or Apps (Service Accounts) // Groups: Combine them depending on Org.
+* Policies: Rules that allow/deny access.
+
+## Federation
+Granting external identities access to your cloud environment. Like using SSO.
+It is recommended to allow MFA to users using federation.
+
