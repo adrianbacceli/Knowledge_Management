@@ -57,7 +57,8 @@ Google Cloud → Storage
 
 Each service operates **independently**, selected based on the best fit for the application or department.
 
----## 🟥 IaaS
+---
+## 🟥 IaaS
 
 **Infrastructure as a Service** provides virtualized computing resources over the internet. This includes servers, storage, and networking hardware, along with virtualization or hypervisor layers. Organizations manage the OS, apps, and data, while the cloud provider manages the underlying infrastructure.
 
