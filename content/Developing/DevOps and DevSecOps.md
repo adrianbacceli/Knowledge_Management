@@ -1,87 +1,110 @@
 ---
-title: 
-draft: true
+title: DevOps and DevSecOps
+draft: false
 tags:
-  - tag1
-  - tag2
-NeedsReview: true
+  - DevSecOps
+  - DevOps
+NeedsReview: false
 ---
+---
+title: DevSecOps - Exploitation
+draft: false
+tags:
+  - devsecops
+  - secure-development
+  - shift-left
+NeedsReview: false
+---
+> [!summary] Core Concept  
+DevSecOps integrates security into each phase of the DevOps lifecycle. Rather than treating security as an afterthought, the DevSecOps model emphasizes a *shift left* approach, embedding security practices early in development workflows to reduce risk and increase resilience.
 
-DevOps
+## 🔐 What is DevSecOps?
 
-Developing, testing, and monitoring software:
+DevSecOps enhances the traditional DevOps approach by integrating **security across the entire software lifecycle**. While DevOps focuses on **development, deployment, and operations**, DevSecOps embeds **code analysis, compliance checks, threat modeling**, and **secure coding standards** from the very beginning.
 
-Dev team: develops the software
-Ops Team: Manage the infrastructure, Deploys finished product, Monitor the release
-
-Security was the afterthought. 
-
-The DevSecOps lifecycle typically has seven phases, including:
-1. Plan
-2. Code
-3. Build
-4. Test
-5. Release
-6. Deploy
-7. Operate
-
-## Phases of the DevSecOps lifecycle
-
-### Plan
-The first phase is planning. In this phase, the development team plans the initial parts of the
-software development project. First, the team conducts a threat analysis to determine the
-types of threats that could create problems for the software. Then, they plan the type of
-security scans, tools, and tests that should be used throughout the lifecycle. During this phase,
-team members are assigned identity and access management (IAM) roles and permissions to
-ensure the correct access is granted to the correct people. Teams also outline the application’s
-asset types, data, and templates, and the scope of the project is determined.
-
-### Code
-In the coding phase, the software artifacts outlined in the plan phase are translated into source
-code. In DevSecOps culture, developers incorporate safe coding practices, like implementing
-code reviews and following secure code design practices. Development tools use automation
-to compile code and integrate security features. Tools might include plugins that monitor for
-bugs or policy and compliance requirements. Developers should use automation within their
-existing tools to streamline receiving security scan reports directly. This will enable them to
-quickly fix any identified vulnerabilities during the coding process.
-
-### Build
-In the build phase, the software starts taking a more structured form, while automated tools
-build artifacts and services from the source code. While the application is being built, the
-DevSecOps team incorporates automated security elements like vulnerability checks and
-security scans. With shift left methodology in place, developers are alerted to these
-vulnerabilities early in the process.
-
-### Test
-Once the software or application is built, the lifecycle moves into the test phase. During this
-phase, the software goes through several rounds of both manual and automated testing to
-ensure its build integrity. Tests assess software features ranging from integration and system
-capabilities, to functions and performance. For example, one purpose of a manual test is to
-perform quality assurance and triage any areas of concern for improvement. Automated tests
-check that security and compliance requirements are met.
-
-
-### Release
-During the release phase, the configuration environment is evaluated against automated
-security checks to determine readiness for the production environment. The source code and
-software artifacts are reviewed and receive final sign-offs. Once the configuration has met all
-of these requirements, it’s ready to be released in the deploy phase.
-
-### Deploy
-The deployment stage is a huge moment for the DevSecOps team; the application goes live! In
-this phase, the team uses automation to push the software into production and to end users.
-
-### Operate
-After the software is deployed, the operate phase monitors the deployment for any event or
-alert relating to functionality and vulnerabilities that need patching. A continuous feedback
-loop of the software’s performance keeps operations, development, and security teams up to
-date and consistent.
+> [!note] Quick Reminder  
+> Dev = Development, Ops = Operations, Sec = Security — All teams collaborate throughout.
 
 ---
 
-# DevSecOps
-* Includes Code Analysis 
-* Change and compliance management
-* Security Training
-* Threat Modeling
-Through all the DevOps Process with security first approach (Shift Left)
+## 🌀 DevSecOps Lifecycle: 7 Phases
+
+### 1. 🧠 Plan
+- Define scope, assets, and data templates
+- Perform threat modeling and analysis
+- Assign IAM roles for proper access control
+- Choose security tools and testing frameworks
+
+### 2. 💻 Code
+- Apply secure coding practices
+- Conduct peer code reviews
+- Integrate plugins for static analysis, bug detection, and policy enforcement
+- Automate vulnerability scanning during coding
+
+### 3. 🏗 Build
+- Compile code and generate build artifacts
+- Integrate vulnerability scanning and security gates
+- Use automated CI/CD tools for early detection
+- Enforce shift-left strategies to catch issues earlier
+
+### 4. 🧪 Test
+- Execute both manual and automated tests
+- Validate build integrity, functionality, and performance
+- Perform compliance verification
+- Conduct QA and triage for any security-related findings
+
+### 5. 🚀 Release
+- Validate readiness of the environment using automated security checks
+- Review and sign off final configuration and artifacts
+- Confirm all security and compliance checks have passed
+
+### 6. 📦 Deploy
+- Automate production deployment
+- Push software to end users using secured pipelines
+- Ensure secure containerization and environment isolation
+
+### 7. 🔍 Operate
+- Monitor for real-time vulnerabilities and anomalies
+- Implement continuous feedback loops to improve future builds
+- Patch issues proactively
+- Share insights between Dev, Sec, and Ops teams
+
+---
+
+## 🔐 DevSecOps Key Components
+
+- **Code Analysis**: Continuous scanning for weaknesses and bugs
+- **Change Management**: Controlled and auditable updates
+- **Compliance Checks**: Automated verification of regulatory standards
+- **Security Training**: Empower teams to code and deploy securely
+- **Threat Modeling**: Anticipate and mitigate risk early
+
+> [!tip] Helpful Tip  
+> 💡 The earlier you find a vulnerability (left in the lifecycle), the cheaper and easier it is to fix it.
+
+---
+
+## 🌱 Culture Shift: “**Shift Left**” Mentality
+
+> [!abstract] Key Concept  
+> Shift Left refers to integrating security practices early in the development pipeline — rather than waiting for post-deployment fixes. It reduces time to remediation, improves code quality, and lowers breach risk.
+
+---
+
+## 🧭 Summary
+
+| Phase      | Focus                             | Security Approach                         |
+|------------|-----------------------------------|--------------------------------------------|
+| Plan       | Threat modeling, IAM              | Define risks and controls                  |
+| Code       | Development                       | Secure coding, static analysis             |
+| Build      | Compiling                         | Integrated security checks                 |
+| Test       | Validation                        | Manual & automated testing                 |
+| Release    | Final checks                      | Compliance review and sign-off             |
+| Deploy     | Go live                           | Secured deployment pipelines               |
+| Operate    | Monitoring                        | Real-time feedback & patching              |
+
+---
+
+> [!success] Takeaway  
+> ✅ DevSecOps shifts security from being a bottleneck to becoming a collaborative enabler — making secure software development faster, smarter, and safer.
+
