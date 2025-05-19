@@ -104,3 +104,37 @@ Here are a few best practices you can apply when using firewalls:
 * Always use the principle of least privilege. When creating firewall rules, only allow necessary traffic to traverse the network. 
 * Use hierarchical firewall policies, which will allow your organization to apply firewall policies to the organization and folder levels. Invoking hierarchical policy structure promotes consistency across organizational resources and the firewalls that protect them. 
 * If your organization isn’t using their CSP’s firewall service, choose a FWaaS solution developed by a company that tailors their product to the specific CSP’s environment. There are many companies that provide FWaaS solutions to organizations.
+
+---
+## 🛡️ What is **Software Delivery Shield (SDS)**?
+
+SDS is like a **security team + smart kitchen + camera system** built by Google Cloud to protect the software supply chain.
+
+### SDS includes:
+
+- ✅ **Secure workstations**: developers work in the cloud, not risky personal laptops
+- 📜 **SBOMs (Software Bill of Materials)**: a list of everything used in your software — like a food label!
+- 🔍 **Assured Open Source Software (OSS)**: only uses open-source tools that are verified and safe
+- 🚦 **Dashboards**: show you if something’s wrong with your app’s security
+
+---
+
+## 🕒 What does **Shift Left** mean?
+
+Usually, security is added at the **end**, like putting the lock on the pizza box after delivery.
+
+But **shifting left** means putting **security at the beginning**:
+
+- While you’re mixing ingredients
+- While the chef is cooking
+- While the kitchen is open
+
+This helps catch problems **early** and fix them **faster**.
+
+---
+
+## 📦 In short:
+
+> [!summary] Core Concept  
+> The **software supply chain** is everything involved in making software.  
+> **Software Delivery Shield** helps keep that process safe from start to finish — like a super clean, secure pizza kitchen in the cloud.

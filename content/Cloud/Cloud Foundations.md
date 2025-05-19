@@ -195,4 +195,68 @@ VPCs are fundamental for cloud security architecture, supporting **network isola
 > [!quote] Prompt Wisdom  
 > “With VPCs, your data always has a reserved place at the table.”
 
+
 ---
+# 🛠️ What is IaC?
+
+> [!summary] Core Concept  
+Infrastructure as Code (IaC) automates the provisioning and management of cloud infrastructure using reusable scripts, making it a powerful tool in the DevSecOps workflow.
+
+IaC replaces manual infrastructure setup with automated scripts that define the desired system state (declarative model) with tools like [[Terraform]]. This makes environments consistent, scalable, and secure.
+
+### 🌍 Real-World Use Case
+A global plant retailer with seasonal traffic issues and high costs can use IaC to automate infrastructure scaling and meet business goals efficiently.
+
+> [!tip] Helpful Tip  
+💡 IaC uses version-controlled configuration files shared in repositories to improve visibility and collaboration.
+
+### ✅ Key Benefits
+- **Cost Reduction:** Automates repetitive tasks and reduces hardware costs.
+- **Error Reduction:** Eliminates manual configuration, minimizing human errors.
+- **Speed & Efficiency:** Enables consistent deployments across the CI/CD pipeline.
+- **Security Integration:** Early security checks and automated policy enforcement.
+- **Drift Prevention:** Maintains a single source of truth to avoid configuration drift.
+- **Accountability:** Shared codebases improve visibility and auditability.
+
+> [!info] Did You Know?  
+IaC supports **immutable infrastructure**, replacing outdated components instead of patching them.
+
+### 🔐 Security Role in IaC
+Cloud security professionals can:
+- Automate infrastructure scans.
+- Detect policy violations.
+- Prevent drift and misconfigurations.
+- Integrate security checks into the pipeline.
+
+> [!success] Well Done!  
+✅ IaC is a foundational DevSecOps practice for reliable, scalable, and secure cloud operations.
+
+---
+
+# 💡 What is Policy as Code?
+
+> [!summary] Core Concept  
+Policy as Code (PaC) automates the definition, enforcement, and management of security and compliance rules using code—integrating policy checks into the development lifecycle.
+
+PaC uses high-level programming languages to codify security rules and compliance policies. These coded policies can be versioned, tested, and automated—reducing manual errors and increasing security assurance.
+
+### 🔐 Why It Matters in Cloud Security
+- Traditional policy enforcement lacks version control and is time-consuming.
+- Manual and inconsistent security checks lead to compliance gaps.
+- PaC allows automation of vulnerability scans and security alerts.
+
+> [!example] Use Case: HIPAA-Compliant App  
+A heartbeat-tracking app automates HIPAA policy enforcement using PaC, enabling quick detection of misconfigurations and automated alerts for vulnerabilities.
+
+### ✅ Key Benefits
+1. **Improved Security**: Early detection of threats, automated integrity checks.
+2. **Version Control**: Track changes, rollback when needed, improve visibility.
+3. **Efficiency**: Speeds up testing and deployment of policies.
+4. **Collaboration**: Centralized policies improve cross-team coordination.
+5. **Compliance**: Ensures continuous alignment with industry standards.
+
+> [!tip] Helpful Tip  
+💡 Use triggers to notify developers immediately when a policy violation or threat is detected.
+
+> [!success] Well Done!  
+✅ Policy as Code helps embed security and compliance directly into DevSecOps pipelines for safer, faster deployments.

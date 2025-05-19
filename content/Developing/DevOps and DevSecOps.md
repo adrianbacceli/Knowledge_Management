@@ -6,17 +6,8 @@ tags:
   - DevOps
 NeedsReview: false
 ---
----
-title: DevSecOps - Exploitation
-draft: false
-tags:
-  - devsecops
-  - secure-development
-  - shift-left
-NeedsReview: false
----
 > [!summary] Core Concept  
-DevSecOps integrates security into each phase of the DevOps lifecycle. Rather than treating security as an afterthought, the DevSecOps model emphasizes a *shift left* approach, embedding security practices early in development workflows to reduce risk and increase resilience.
+DevSecOps integrates security into each phase of the DevOps lifecycle. Rather than treating security as an afterthought, the DevSecOps model emphasizes a *[[Google Cloud Security#🕒 What does **Shift Left** mean?|Shift Left]]* approach, embedding security practices early in development workflows to reduce risk and increase resilience.
 
 ## 🔐 What is DevSecOps?
 
@@ -45,7 +36,7 @@ DevSecOps enhances the traditional DevOps approach by integrating **security acr
 - Compile code and generate build artifacts
 - Integrate vulnerability scanning and security gates
 - Use automated CI/CD tools for early detection
-- Enforce shift-left strategies to catch issues earlier
+- Enforce _[[Google Cloud Security#🕒 What does **Shift Left** mean?|Shift Left]]_ strategies to catch issues earlier
 
 ### 4. 🧪 Test
 - Execute both manual and automated tests
@@ -84,7 +75,7 @@ DevSecOps enhances the traditional DevOps approach by integrating **security acr
 
 ---
 
-## 🌱 Culture Shift: “**Shift Left**” Mentality
+## 🌱 Culture Shift: “**_[[Google Cloud Security#🕒 What does **Shift Left** mean?|Shift Left]]” Mentality
 
 > [!abstract] Key Concept  
 > Shift Left refers to integrating security practices early in the development pipeline — rather than waiting for post-deployment fixes. It reduces time to remediation, improves code quality, and lowers breach risk.

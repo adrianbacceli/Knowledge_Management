@@ -56,7 +56,7 @@ Use the categories below to navigate to specific domains of interest.
 
 - [[DevOps and DevSecOps]]
   - Python, Bash, C/C++, PHP, Java, HTML/CSS
-- [[Automation & Tooling]]
+- [[Developing Methodologies]]
 
 ---
 
