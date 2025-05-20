@@ -31,6 +31,7 @@ Tools and techniques that don't directly interact with the target systems, thus 
 
 ---
 ## ⚡ Active Reconnaissance
+* [[Vulnerability Assessment & Hardening]] -- Include in every step
 * [[Application-Specific Recon]]: Specific to a certain application
 * [[Cloud Reconnaissance]]: Focus on Cloud vulnerabilities
 * [[Host-Based Reconnaissance]]: Host OS (Linux, Windows, ESXi, MacOS, AHV, Etc).

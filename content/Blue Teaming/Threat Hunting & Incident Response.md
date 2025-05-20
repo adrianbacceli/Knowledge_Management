@@ -6,11 +6,11 @@ tags:
   - tag2
 NeedsReview: true
 ---
+# Threat Hunting
 
-# {{title}}
+* Thread Modeling using [Microsoft Threat Modeling Tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
+* 
 
-> [!abstract] Summary  
-> A brief description of this note.  
+# Incident Response
 
-## Notes  
-- 
+View the [[NIST 800-61 R2 (IRF)|NIST Incident Response Framework]] for more details.

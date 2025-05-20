@@ -82,13 +82,12 @@ flowchart LR
 
 **📸 Imaging Tools**
 
-- Tableau TD4
-- Tableau TX1
-- SuperImager kits
+- [[Tableau]] TD4 /  TX1
+- [[SuperImager]] kits
 
 **🧠 Memory Forensics**
 
-- Volatility
+- [[Volatility]]
 - Rekall
 - Belkasoft RAM Capturer
 
@@ -100,24 +99,24 @@ flowchart LR
 **🗃️ File Recovery & Image Tools**
 
 - X-Ways
-- FTK Imager
-- CAINE
+- [[FTK Imager]]
+- [[CAINE]]
 
 **📂 Case Management Platforms**
 
 - Magnet Axiom
-- Autopsy
-- EnCase
+- [[Autopsy]]
+- [[EnCase]]
 - Forensic Explorer (FEX)
 
 ---
 
 ### 🧪 **Sandbox & Virtual Environments**
 
-- AnyRun (interactive malware analysis)
-- Windows Sandbox
-- Hyper-V
-- VMware ESXi
+- [[AnyRun]] (interactive malware analysis)
+- [[Windows Sandbox]]
+- [[Hyper-V]]
+- [[VMware ESXi]]
 
 ---
 
@@ -125,7 +124,7 @@ flowchart LR
 
 - Cellebrite UFED
 - Oxygen Forensic Kit
-- MOBILedit
+- [[MOBILedit]]
 
 ---
 

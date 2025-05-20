@@ -224,5 +224,3 @@ amass enum -d example.com
 | `CrackMapExec` | Post-recon enumeration & exploitation |
 | `Metasploit`   | Auxiliary scanners and exploits       |
 | `Ncrack`       | Network authentication brute-forcer   |
-
---- 
