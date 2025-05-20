@@ -1,9 +1,11 @@
 ---
-title: 
-draft: false
+title: Create a VPC using Cloud Shell
+draft: true
 tags:
-  - tag1
-  - tag2
+  - Lab
+  - VPC
+  - Cloud
+  - cloud-shell
 NeedsReview: true
 ---
 ## Activity overview
