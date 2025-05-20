@@ -1,5 +1,5 @@
 ---
-title: SLSA Framework - Defense Evasion
+title: SLSA Framework
 draft: false
 tags:
   - supply-chain
@@ -42,9 +42,7 @@ flowchart TD
 ````
 
 1. **Build Integrity**: Verifies correct dependencies and secure workflows.
-    
 2. **Source Integrity**: Ensures code reflects developer intent and can be traced.
-    
 3. **Dependencies**: All libraries and packages are verified and scanned.
     
 

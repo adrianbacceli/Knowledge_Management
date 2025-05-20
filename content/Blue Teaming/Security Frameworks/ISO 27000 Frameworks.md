@@ -1,6 +1,6 @@
 ---
 title: Frameworks
-draft: false
+draft: true
 tags:
   - tag1
   - tag2
@@ -15,7 +15,59 @@ ISO/IEC 27000 — Information security management systems.
 
 ISO/IEC 27001 — Information technology – Security Techniques – Information security management.
 
+	Examples: Establishing the Information security management system (ISMS)
+	
+	Thursday, December 5, 2024
+	
+	12:21 PM
+	
+	An information security management system (ISMS) is a set of policies and procedures for systematically managing an organization's sensitive data. The goal of an ISMS is to minimize risk and ensure business continuity by proactively limiting the impact of a security breach.
+	
+	Scenario: A software development company handling sensitive customer data
+	
+	1. Establishing the ISMS (ISO/IEC 27001):
+
+	Step A: Scope and Definition
+	
+	- Use Case: The company decides to protect customer data, internal project documentation, and HR records.
+	- Action: Define the scope of the ISMS, including all information assets and areas within the organization that need protection.
+	
+	Step B: Risk Assessment and Treatment Plan
+	
+	- Use Case: Identifying risks such as unauthorized access to customer data, data breaches, and data loss.
+	- Action: Conduct a risk assessment to identify and evaluate risks. Develop a risk treatment plan to determine how to mitigate these risks (e.g., by applying specific controls).
+	
+	Step C: Establishing Controls
+	
+	- Use Case: Implementing measures to mitigate identified risks, such as access controls, data encryption, and regular audits.
+	- Action: Based on the risk assessment, establish the necessary controls. This is where ISO/IEC 27002 comes in for detailed guidance.
+
 ISO/IEC 27002 — Code of practice for information security controls.
+	Examples: Implementing and Managing Controls
+	
+	Thursday, December 5, 2024
+	
+	12:22 PM
+	
+	Control A: Access Control
+	
+	- Use Case: Only authorized developers should access the source code repository.
+	- Action: Implement access control policies, such as user authentication, role-based access, secure login procedures, and regular audits of access records. Refer to ISO/IEC 27002 Section 9 for specific guidelines on implementing these controls.
+	
+	Control B: Cryptography
+	
+	- Use Case: Protecting stored customer data to prevent data breaches.
+	- Action: Apply encryption to sensitive customer data both at rest and in transit, based on ISO/IEC 27002 Section 10 guidelines. This includes selecting strong encryption algorithms and managing encryption keys securely.
+	
+	Control C: Physical and Environmental Security
+	
+	- Use Case: Safeguarding server rooms and data centers from unauthorized physical access.
+	- Action: Implement physical security measures such as surveillance cameras, biometric access controls, and secure locking systems. Follow guidance in ISO/IEC 27002 Section 11 for physical and environmental security measures.
+	
+	Control D: Incident Management
+	
+	- Use Case: Promptly responding to security incidents such as unauthorized access or malware infections.
+	- Action: Establish an incident management process, including detection, reporting, and response to security incidents. ISO/IEC 27002 Section 16 provides detailed advice on setting up and managing this process.
 
 ISO/IEC 27003 — Information security management system implementation guidance
 
@@ -151,7 +203,7 @@ ISO/IEC 27019 — Information security for process control in the energy industr
 
 ISO 27799 — Information security management in health using ISO/IEC 27002 – guides health industry organisations on how to protect personal health information using ISO/IEC 27002.
 
-# ISO/IEC 27001 - What are the requirements for ISO27K
+ISO/IEC 27001 - What are the requirements for ISO27K
 
 ISO/IEC 27001:2022 is an Information security management standard that structures how businesses should manage risk associated with information security threats, including policies, procedures and staff training.
 

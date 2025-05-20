@@ -13,4 +13,4 @@ NeedsReview: true
 
 # Incident Response
 
-View the [[NIST 800-61 R2 (IRF)|NIST Incident Response Framework]] for more details.
+View the [[NIST SP 800-61 R2 (IRF)|NIST Incident Response Framework]] for more details.
