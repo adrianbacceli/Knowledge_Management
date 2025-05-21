@@ -260,3 +260,477 @@ NeedsReview: false
 |**Tuna pasta salad**|1 cup pasta + 1 can tuna + olive oil + tomato + onion|
 |**Beef & veggie pasta**|Ground beef + onion + tomato + 1 cup pasta + spices|
 |**Egg pasta stir-fry**|Scrambled eggs + cooked pasta + peppers + soy sauce or garlic|
+
+---
+# Version two
+## 🛒 SUNDAY – SHOP + PREP DAY
+
+### 🛒 Shopping List _(updated for 150g protein/day)_
+
+#### Proteins
+
+-  **3 lbs** chicken breast (boneless, skinless)
+    
+-  **2.5 lbs** lean ground beef
+    
+-  **18 eggs**
+    
+-  **5–6 cans tuna**
+    
+-  **1 pack chicken or turkey sausage**
+    
+-  **Protein powder (~14–16 scoops)**
+    
+
+#### Carbs
+
+-  **3 cups oats**
+    
+-  **2.5 cups dry rice**
+    
+-  **6–7 medium potatoes**
+    
+-  **6 bananas**
+    
+-  **3 apples**
+    
+-  **3 oranges**
+    
+-  **1 bag frozen berries (600g)**
+    
+-  **6–8 tortillas**
+    
+-  **1 box crackers**
+    
+
+#### Extras
+
+-  **Cheese (~300g, mozzarella or Swiss)**
+    
+-  Olive oil or PAM spray
+    
+-  **3 onions**
+    
+-  **3 bell peppers**
+    
+-  Lettuce (optional)
+    
+-  Peanut butter (optional)
+    
+-  Seasonings (garlic powder, salt, pepper, paprika, cumin)
+    
+
+---
+
+### 🍳 Meal Prep Instructions _(Adjusted for more protein meals)_
+
+1. **Rice**
+    
+    - Cook **2.5 cups dry rice** → yields ~6.5 cups
+        
+    - Portion into **6 containers (1 cup each)**, refrigerate
+        
+2. **Chicken Breast**
+    
+    - Season, bake at 400°F for ~25 min
+        
+    - Slice and portion into **6–7 meals (5–6 oz each)**
+        
+    - Freeze 3 portions, refrigerate the rest
+        
+3. **Ground Beef**
+    
+    - Brown **2.5 lbs** with onion + seasoning
+        
+    - Portion into **5 meals (~6 oz cooked beef each)**
+        
+4. **Potatoes**
+    
+    - Dice and roast/boil **6–7 potatoes**
+        
+    - Portion into **4–5 containers**
+        
+5. **Eggs**
+    
+    - Boil **12–15 eggs**
+        
+    - Store for daily use/snacks
+        
+6. **Vegetables**
+    
+    - Dice 3 onions + 3 bell peppers
+        
+    - Store airtight; prep lettuce if using
+        
+7. **Oats**
+    
+    - Prepare **6 jars**:
+        
+        - ½ cup oats
+            
+        - 1 scoop protein powder
+            
+        - Add raisins or berries fresh
+            
+    - Store dry; add liquid fresh daily
+        
+8. **Cheese**
+    
+    - Slice/grate **300g**
+        
+    - Store for wraps/eggs/snacks
+        
+9. **Freeze**
+    
+    - Slice & freeze ripe bananas
+        
+    - Freeze 3 chicken portions
+        
+    - Freeze rice or beef if extra
+        
+
+---
+
+## 📅 DAILY ROUTINE
+
+---
+
+### 🗓️ MONDAY – **~150g protein**
+
+**🍳 Breakfast (~30g)**
+
+- Oat jar + banana + milk + protein scoop
+    
+
+**🥚 Snack 1 (~14g)**
+
+- 2 boiled eggs + apple
+    
+
+**🍱 Lunch (~35g)**
+
+- Ground beef (~6 oz) + rice + 1 boiled egg
+    
+
+**🥤 Snack 2 (~25g)**
+
+- 1 scoop protein + water
+    
+
+**🍗 Dinner (~45g)**
+
+- Chicken breast (~6 oz) + potatoes
+    
+
+---
+
+#### 🌅 Morning
+
+- Heat oat jar w/ banana + milk
+    
+- Pack: beef + rice, apple, 3 boiled eggs
+    
+- Mix protein shake powder in shaker
+    
+- 👜 Pack work bag
+    
+
+#### 🌙 Evening
+
+- Reheat chicken + potatoes
+    
+- Pull banana or apple for Tuesday snack
+    
+- Pull tortilla + cheese for breakfast
+    
+- Prep oat jar (oats + protein) for Tuesday
+    
+
+---
+
+### 🗓️ TUESDAY – **~148g protein**
+
+**🍳 Breakfast (~30g)**
+
+- Scrambled 2 eggs + cheese in tortilla
+    
+
+**🥚 Snack 1 (~25g)**
+
+- Protein shake + 1 boiled egg + orange
+    
+
+**🍱 Lunch (~35g)**
+
+- Tuna can + tomato + crackers + 1 boiled egg
+    
+
+**🧀 Snack 2 (~13g)**
+
+- Apple + cheese slices (~40g)
+    
+
+**🍔 Dinner (~45g)**
+
+- Ground beef burger bowl (~6 oz) + sautéed veg
+    
+
+---
+
+#### 🌅 Morning
+
+- Scramble eggs + cheese, wrap in tortilla
+    
+- Pack: tuna, tomato, crackers, boiled egg, orange, shake
+    
+- 👜 Pack cheese/apple for afternoon
+    
+
+#### 🌙 Evening
+
+- Pull beef for burger bowl
+    
+- Chop onion/lettuce if needed
+    
+- Prep oat jar w/ raisins + protein
+    
+- Move chicken breast from freezer to fridge
+    
+
+---
+
+### 🗓️ WEDNESDAY – **~151g protein**
+
+**🍳 Breakfast (~30g)**
+
+- Oat jar + berries + milk + protein scoop
+    
+
+**🥚 Snack 1 (~14g)**
+
+- 2 boiled eggs + banana
+    
+
+**🍱 Lunch (~35g)**
+
+- Chicken + rice (~6 oz chicken) + small salad
+    
+
+**🥤 Snack 2 (~25g)**
+
+- Protein shake
+    
+
+**🥩 Dinner (~47g)**
+
+- Sautéed steak strips (~6 oz) + onion/peppers
+    
+
+---
+
+#### 🌅 Morning
+
+- Microwave oat jar + milk + berries
+    
+- Pack: chicken + rice, banana, 2 eggs, shaker
+    
+
+#### 🌙 Evening
+
+- Cook steak + veg
+    
+- Freeze leftovers if any
+    
+- Prep toast + eggs for Thursday
+    
+- Set oats + protein for Thursday
+    
+
+---
+
+### 🗓️ THURSDAY – **~149g protein**
+
+**🍳 Breakfast (~30g)**
+
+- Scrambled 2 eggs + toast + banana
+    
+
+**🥚 Snack 1 (~25g)**
+
+- Protein shake + boiled egg + apple
+    
+
+**🍱 Lunch (~35g)**
+
+- Ground beef (~6 oz) + potatoes
+    
+
+**🧀 Snack 2 (~14g)**
+
+- Cheese (~40g) + crackers
+    
+
+**🥪 Dinner (~45g)**
+
+- Tuna wrap (1 can tuna + cheese + tomato/onion)
+    
+
+---
+
+#### 🌅 Morning
+
+- Scramble eggs + toast + banana
+    
+- Pack: beef + potatoes, boiled egg, apple, shake
+    
+- 👜 Cheese/crackers optional for afternoon
+    
+
+#### 🌙 Evening
+
+- Mix tuna + cheese + veg for wrap
+    
+- Prep oat jar w/ protein for Friday
+    
+
+---
+
+### 🗓️ FRIDAY – **~150g protein**
+
+**🍳 Breakfast (~30g)**
+
+- Oats + raisins + milk + protein scoop
+    
+
+**🥚 Snack 1 (~14g)**
+
+- 2 boiled eggs + orange
+    
+
+**🍱 Lunch (~35g)**
+
+- Burger patty (~6 oz) + rice
+    
+
+**🥤 Snack 2 (~25g)**
+
+- Protein shake
+    
+
+**🍗 Dinner (~46g)**
+
+- Chicken (~6 oz) + peppers
+    
+
+---
+
+#### 🌅 Morning
+
+- Heat oat jar + milk
+    
+- Cook or reheat burger patty, pack w/ rice
+    
+- Pack: eggs, orange, shake
+    
+
+#### 🌙 Evening
+
+- Reheat chicken + peppers
+    
+- Pull banana, set oats + berries for Saturday
+    
+- Pull eggs + tortilla for Saturday wrap
+    
+
+---
+
+### 🗓️ SATURDAY – **~148g protein**
+
+**🍳 Breakfast (~30g)**
+
+- Eggs + cheese tortilla wrap
+    
+
+**🥚 Snack 1 (~25g)**
+
+- Protein shake + banana
+    
+
+**🍱 Lunch (~35g)**
+
+- Steak strips (~6 oz) + rice
+    
+
+**🧀 Snack 2 (~13g)**
+
+- Apple + cheese slices
+    
+
+**🌭 Dinner (~45g)**
+
+- Chicken sausage + salad (lettuce + tomato)
+    
+
+---
+
+#### 🌅 Morning
+
+- Scramble eggs + cheese, wrap
+    
+- Pack: steak + rice, banana, shake
+    
+
+#### 🌙 Evening
+
+- Cook sausage + prep salad
+    
+- Slice apple, pair with cheese
+    
+- Set oat jar + berries + protein for Sunday
+    
+
+---
+
+### 🗓️ SUNDAY – **~150g protein**
+
+**🍳 Breakfast (~30g)**
+
+- Oat jar + milk + protein scoop
+    
+
+**🥫 Snack 1 (~25g)**
+
+- Protein shake + orange
+    
+
+**🍱 Lunch (~35g)**
+
+- Tuna + tomato/onion + rice
+    
+
+**🥚 Snack 2 (~14g)**
+
+- 2 boiled eggs
+    
+
+**🍗 Dinner (~46g)**
+
+- Chicken breast + potatoes
+    
+
+---
+
+#### 🌅 Morning
+
+- Heat oat jar + milk
+    
+- Pack: tuna, rice, tomato/onion, shake, orange, eggs
+    
+
+#### 🌙 Night
+
+- Reheat chicken + potatoes
+    
+- ✅ Repeat **Prep + Shop**
+    
+- 🧼 Wash + reset fridge/containers
