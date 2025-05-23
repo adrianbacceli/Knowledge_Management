@@ -7,79 +7,26 @@ tags:
 NeedsReview: true
 ---
 
-### 🔹 `> [!note]` — **Note**
-
-> [!note] Quick Reminder  
-> This is general-purpose information you want to keep in mind.
-
----
-
-### 🔹 `> [!tip]` — **Tip**
-
-> [!tip] Helpful Tip  
-> 💡 Try running small variations in your prompts to test model sensitivity.
+# Backup
 
 
----
 
-### 🔹 `> [!info]` — **Info**
+```mermaid
+graph TB
+A[Avamar Server] -->|Sends Workorder| B[Avamar Agent avagent]
+B -->|Spawns DB Plugin| C[Avsql Plugin]
+C -->|Request VDI creation| E[Windows OS]
+C -->|Calls native backup function| F[MS SQL Server]
+    subgraph Backup Process
+        E -->|Creates a VDI| D
+        F -->|Sends data to VDI| D[VDI]
+    end
 
-> [!info] Did You Know?  
-> You can chain prompts to simulate multi-turn conversations.
-
-
----
-
-### 🔹 `> [!warning]` — **Warning**
-
-> [!warning] Caution Ahead  
-> ⚠️ Incorrect prompt phrasing may lead to hallucinated outputs.
-
-
----
-
-### 🔹 `> [!danger]` — **Danger**
-
-> [!danger] Risk Zone  
-> 🚨 Avoid copying prompts blindly without verifying context.
-
-
----
-
-### 🔹 `> [!quote]` — **Quote**
-
-> [!quote] Prompt Wisdom  
-> “A good prompt is like a good question—it gets the right conversation started.”
-
-
----
-
-### 🔹 `> [!example]` — **Example**
-
-> [!example] Prompt Example  
-> "Summarize this article in 3 bullet points, using plain language."
-
-
----
-
-### 🔹 `> [!abstract]` — **Abstract**
-
-> [!abstract] Key Concept  
-> Prompt engineering involves crafting input that guides the model’s response effectively.
-
-
----
-
-### 🔹 `> [!question]` — **Question**
-
-> [!question] Ask Yourself  
-> ❓What is the *true* goal of this prompt?
-
-
----
-
-### 🔹 `> [!success]` — **Success**
-
-> [!success] Well Done!  
-> ✅ Your prompt returned the expected output with clarity and precision.
+    subgraph Data Flow
+        D -->|Pulls data| H
+        H -->|Sends data to| I[Data Domain]
+    end
+C -->|Spawns process| H[Avtar]
+   
+```
 
