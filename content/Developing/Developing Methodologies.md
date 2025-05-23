@@ -11,188 +11,137 @@ tags:
 NeedsReview: false
 ---
 
-# Waterfall approach
+> [!summary] Core Concept  
+This note outlines various software development methodologies and security strategies—from traditional waterfall approaches to modern CI/CD pipelines, including insights into supply chain security and SBOM implementation.
 
-Divided in 6 steps
-1. Establish project requirements
-2. Design the software
-3. develop the software
-4. test code
-5. release the project
-6. conduct maintenance
+# 🧱 Traditional Development
 
-## Drawbacks
-1. If the test finds an issue, the waterfall stops
-2. When one team is blocked because other teams did not complete their tasks the development is stopped.
+## Waterfall Approach
 
----
-# Software Pipelines 
-is a process that uses automation and tools to facilitate movement through each phase of the software development lifecycle.
+Divided into 6 steps:
+1. Establish project requirements  
+2. Design the software  
+3. Develop the software  
+4. Test code  
+5. Release the project  
+6. Conduct maintenance  
 
-Unlike traditional development, software pipelines help developers release changes quickly.
-Developers can modify an application’s code without disturbing other parts of the project.
-
-**Usually includes**
-1. Automated integration and testing: Consistent process, seamless security, testing through the lifecycle
-2. Code validation
-3. Reporting measures.
-
-
----
-## 🚀 What is CI/CD?
-
-CI/CD is a process that DevSecOps teams use to create software and automate updates.
-stands for:
-
-**CI (Continuous Integration)**:  
-Automatically building and testing your code every time you make changes and are uploaded into a shared repository. (e.g., pushing to GitHub). The goal is to catch bugs early and keep the codebase always in a working state.
-
-**CD (Continuous Delivery or Deployment)**:
-- **Delivery**: Automatically preparing code for deployment (e.g., building a release, sending to staging). Manual Approval in staging phase.
-- **Deployment**: Actually pushing the code to production (e.g., updating a live website or app) automatically.
-
-You don’t need to trigger anything manually — everything happens when code is pushed or merged. Think: **automation for coding workflows**.
-
-
----
-**CI/CD has 4 steps**
-### Source:  
-* developers compile their code into a shared repository.
-* Each developer works solely on the source code in this repository to ensure consistency.
-* The team monitors for any deviation from the source code.
-
-### Build:
-* Developers implement edits to the source code in the shared repository.
-* This triggers a build.
-### Test:
-* Automated security tests check the new build’s integrity.
-* If any bugs are found in the build’s code, the pipeline stops the process until developers fix the problem.
-### Deploy:
-* The software deploys to end users within minutes.
+### Drawbacks
+- Testing failures halt the entire flow  
+- Team interdependency can block progress  
 
 ---
 
-## 🔁 Overview of CI/CD Steps with GitHub Actions
+# 🔄 Modern Software Development
 
-GitHub Actions lets you define **workflows** that automatically run when certain **events** occur (like pushing code). These workflows let you automate **CI/CD pipelines**.
+## Software Pipelines
 
-## 🔹 1. **Source** (Collaborative Coding in Git/GitHub)
+Automated processes used to streamline the software lifecycle:
 
-### What Happens:
+### Common Features:
+1. Automated integration and testing  
+2. Code validation  
+3. Reporting measures  
 
-- Developers clone a GitHub repo, work on code locally, then **commit and push** changes to a **shared GitHub repository**.
-- Git ensures **version control**, while GitHub provides **collaboration**, **branching**, and **pull requests**.
-- Monitoring is done using **branch protection rules**, **code reviews**, and **GitHub Actions triggers** (like when code is pushed to `main`).
-
-### GitHub Example:
-
-- You work offline → make changes → `git push origin main`
-- GitHub records the change; Actions can now respond.
-- 
----
-
-## 🔹 2. **Build** (Compiling or Assembling the Code)
-
-### What Happens:
-
-- Once code is pushed to GitHub, it **triggers a workflow** (like a GitHub Action).
-- This workflow **builds** the app: compiles code, installs dependencies, or assembles a static site.
-
-> 🛠️ In your Quartz site, GitHub Actions builds your static files automatically — that’s a "Build" phase.
+> Helps developers release updates rapidly and reduce disruptions.
 
 ---
 
-## 🔹 3. **Test** (Automated Validation)
+## 🚀 CI/CD Pipeline (Continuous Integration / Continuous Delivery)
 
-### What Happens:
+### What is CI/CD?
+Automation of coding workflows for efficient, secure releases:
 
-- After building, **automated tests** run to catch bugs, check security, or validate functionality.
-- If a test fails, the CI pipeline **stops**, and developers must fix the issues.
-
-
-This might run:
-
-- Unit tests (for logic)
-- Security checks
-- Linting (style and syntax)
-
-If this step fails, the workflow exits early — ensuring bad code doesn’t get deployed.
+- **CI**: Auto-build/test code on changes  
+- **CD**: Deliver (manual gate) or deploy (auto-publish) code  
 
 ---
 
-## 🔹 4. **Deploy** (Automatic Delivery to Users)
+### 📍 CI/CD 4-Step Flow
 
-### What Happens:
+1. **Source**  
+   Code pushed to a shared repo with version control and branch protections.
 
-- If all tests pass, the pipeline **automatically deploys** the code.
-- This could mean:
-    
-    - Publishing to GitHub Pages
-    - Deploying to Vercel, Netlify, Firebase, AWS, etc.
-    - Releasing a Docker image or app build
+2. **Build**  
+   Workflow triggers compile, dependency installation, or static site build.
 
-> In your Quartz setup, your GitHub Action builds your site and **deploys it to GitHub Pages** — that’s CI/CD’s deploy step.
+3. **Test**  
+   Automated validation: unit tests, security scans, linting.
+
+4. **Deploy**  
+   Delivery to platforms like GitHub Pages, Vercel, Docker Hub, etc.
 
 ---
-## 🎯 Summary of Each CI/CD Phase with GitHub:
+
+## 🔧 CI/CD with GitHub Actions
+
+### 1. Source (Git)
+- Code is committed and pushed to GitHub  
+- Triggers workflows, reviewed via PRs and protection rules
+
+### 2. Build
+- GitHub Actions compile/build your app/site  
+
+### 3. Test
+- Run checks automatically; stop on failure
+
+### 4. Deploy
+- Auto-release to staging, production, or site hosting platforms  
+
+---
+
+### 📊 CI/CD Summary Table
 
 |**Phase**|**What You Do**|**GitHub Tools**|
 |---|---|---|
-|**Source**|Push code to a shared repo|Git, GitHub|
-|**Build**|Compile or prepare the app/site|GitHub Actions|
-|**Test**|Run automated tests/linting/security scans|GitHub Actions|
-|**Deploy**|Automatically send updates to users|GitHub Pages, Netlify, etc. via Actions|
-
----
-# Security in CI/CD
-CI/CD pipelines support integrated and automated security testing. There are several steps in the CI/CD pipeline, and automation helps streamline the workflow. With automation, DevSecOps teams can introduce security tests at many points throughout the development process. The application is regularly tested without needing human intervention, which results in a more healthy application, and less time investment from developers.
+|Source|Push code|Git, GitHub|
+|Build|Compile app/site|GitHub Actions|
+|Test|Automated checks|GitHub Actions|
+|Deploy|Release to users|GitHub Pages, Vercel|
 
 ---
 
-# Software Supply Chain
+# 🔐 Security in CI/CD
 
-> [!summary] Core Concept  
-Software supply chain attacks exploit weaknesses in the people, processes, and technologies involved in software development and deployment. These vulnerabilities allow threat actors to inject malicious code, manipulate dependencies, or gain unauthorized access to critical infrastructure—potentially compromising end-user systems downstream.
+- Integrated automated security testing  
+- Tests during each stage of CI/CD  
+- Reduces manual effort, improves app health  
+
+---
+
+# 🧩 Software Supply Chain Security
 
 ## 🔐 What is the Software Supply Chain?
 
-The **software supply chain** encompasses all the **people**, **processes**, and **technologies** involved in developing, maintaining, and distributing software. This includes:
+All people, processes, and tools involved in software development:
 
-- Code scripts and source code repositories  
-- CI/CD pipelines  
-- Third-party libraries, plugins, containers  
-- Developers, analysts, and other credentialed personnel  
-- Policy and review cycles  
-- Vendors and service providers
+- Code & repos  
+- CI/CD tools  
+- Third-party packages  
+- Human roles and policies  
 
 > [!info] Did You Know?  
-> A compromised open-source library can affect thousands of downstream applications if not properly monitored.
+> A single compromised library can cascade across thousands of systems.
 
 ---
 
-## 🎯 Attack Surface & Vulnerabilities
+## 🛠️ Attack Surface
 
-### 👥 People
-- Developers, security analysts, and managers can be **phished**, **socially engineered**, or **insider threats**.
-- Anyone with credentials to CI/CD pipelines or repositories is a potential target.
+### 👥 People  
+Targets for phishing, insider threats, credential theft  
+
+### 🔄 Processes  
+Weak policy enforcement, poor access control  
+
+### 🧩 Technology  
+Malicious containers, plugins, or libraries  
 
 > [!warning] Caution Ahead  
-> ⚠️ Employees are often considered the weakest link in the supply chain.
-
-### 🔄 Processes & Policies
-- Poor access control  
-- Weak update/rollback policies  
-- Insecure feedback/review cycles  
-- Ineffective approvals and communication
-
-### 🧩 Technology & Dependencies
-- Open-source libraries with malicious updates  
-- Containers infected at build time  
-- Compromised plugins or third-party tools  
+> ⚠️ People remain the most vulnerable vector.
 
 ---
 
-## 🧨 Threat Actor Tactics
+## 🧨 Threat Actor Flow
 
 ```mermaid
 flowchart TD
@@ -203,153 +152,118 @@ flowchart TD
     E --> F[Exploit Users and Infrastructure]
 ````
 
-> [!note] Quick Reminder  
-> Attacks can occur _at any point_ in the chain—from code writing to final deployment.
-
 ---
 
-## 🛡️ Defensive Strategies
+## 🛡️ Defense Strategies
 
-### 🧰 1. Security Hardening
-Strengthen systems to minimize vulnerabilities and reduce attack surface.
+### 1. Security Hardening
 
-### 🕵️ 2. Continuous Vulnerability Checks
-Implement automated scans during CI/CD stages. Patch immediately when flaws are detected.
+Limit the attack surface via config and infra
 
-### 📜 3. Software Bill of Materials ([[Developing Methodologies#🧾 Software Bill of Materials (SBOM)|SBOM]])
-Maintain a machine-readable list of all components and dependencies in use.
+### 2. Continuous Vulnerability Checks
 
-> [!tip] Helpful Tip  
-> 💡 An SBOM helps prove compliance and provides transparency to stakeholders.
+Run automated scans in CI/CD
+
+### 3. SBOM
+
+Track components in use
+→ [[#🧾 Software Bill of Materials (SBOM)]]
+
+> [!tip] Helpful Tip
+> 💡 SBOMs increase transparency and ensure compliance.
 
 ---
 
 ## ✅ Final Recommendations
 
-- Harden CI/CD pipelines
-- Enforce strict credential and access control
-- Integrate SBOM generation and review
-- Continuously scan and audit dependencies
-- Educate personnel on social engineering risks
+* Harden pipelines
+* Use access controls
+* Generate/review SBOMs
+* Audit dependencies regularly
+* Educate personnel
 
-> [!success] Securing Supply Chain  
-> ✅ Implementing these measures secures your software supply chain and protects both your organization and your users.
-
-
+> [!success] Securing Supply Chain
+> ✅ Your software and users stay protected.
 
 ---
 
-# 🧩 Simplifying the Software Supply Chain?
+# 🍕 Software Supply Chain Analogy
 
-Think of **software** like a **pizza** 🍕.
+> Software is like making a pizza.
 
-To make a pizza, you need:
+* Ingredients = code & tools
+* Recipe = build process
+* Chef = developers
+* Kitchen = infra & clouds
 
-- Ingredients (cheese, sauce, dough)
-- A recipe
-- A chef
-- A kitchen
-
-In the **software world**:
-
-- The _ingredients_ = pieces of code and tools
-- The _recipe_ = how you build the app (process)
-- The _chef_ = developers and engineers
-- The _kitchen_ = computers and cloud systems
-
-➡️ All of this together is called the **software supply chain** — it’s the entire process from writing code to delivering the final app to users.
+> [!note] Quick Reminder
+> Hackers target any part—bad ingredients, tricked chefs, or open kitchens.
 
 ---
 
-## 🔐 Why do we need to secure it?
+## 🛡️ Supply Chain Security Frameworks
 
-Because **hackers** can:
-
-- Mess with the ingredients (bad code)
-- Sneak into the kitchen (unsecure devices)
-- Trick the chef (fake tools or updates)
-
-So we have to **lock down every step** of the pizza-making process!
-
----
-
-## Frameworks to secure the supply chain
-In modern development, securing the software supply chain is essential to protect against tampering, unauthorized changes, and vulnerable dependencies. One of the most robust frameworks for this purpose is **SLSA (Supply-chain Levels for Software Artifacts)**, which provides a structured approach to verifying build integrity, source authenticity, and third-party dependencies. SLSA is particularly relevant for organizations operating CI/CD pipelines in the cloud, where automation and external integrations are common. For a detailed breakdown of the SLSA levels, trust boundaries, and recommended technical controls, refer to the [[SLSA Framework (Software Supply Chain)|SLSA Framework (Software Supply Chain)]] note.
-
-
----
-# 🔐 CVE Detection in Software Components
-
-Understand how to quickly identify if a new CVE affects any component in your software using industry tools and practices.
-
-> [!info] Purpose
-> This note outlines best practices and tools for identifying CVEs via SBOMs, SLSA, vulnerability scanners, and artifact repositories.
-
----
-
-## 🧾 Software Bill of Materials (SBOM)
-
-A **Software Bill of Materials** is a machine-readable inventory of all components used in a software system.
-
-| Tool       | Description                                       | Format         |
-|------------|---------------------------------------------------|----------------|
-| **Syft**   | CLI tool to generate SBOMs from containers/code   | CycloneDX, SPDX |
-| **CycloneDX** | Lightweight SBOM format from OWASP              | JSON, XML       |
-| **SPDX**   | Open standard for SBOMs from the Linux Foundation | RDF, JSON, YAML |
-
-> [!tip] Why It Matters
-> An SBOM lets you match components in your app to known CVEs using automated tools.
-
----
-
-## 🛡️ Vulnerability Scanning
-
-Tools that scan your dependencies and images for known vulnerabilities using CVE databases like the **NVD**.
-
-| Tool               | Scans        | Integrations          |
-|--------------------|--------------|------------------------|
-| **Snyk**           | Code, containers, IaC | GitHub, GitLab, CI/CD |
-| **Trivy**          | Containers, filesystems | Docker, Kubernetes     |
-| **Dependabot**     | GitHub repos | Auto pull requests     |
-| **OWASP DC**       | Java, .NET   | CI/CD compatible       |
-
----
-
-## 🧬 SLSA: Supply Chain Levels for Software Artifacts
-
-**SLSA** is a security framework that defines increasing levels of integrity for software builds.
+### SLSA Framework
 
 ```mermaid
 graph TD
     A[Level 1: Provenance] --> B[Level 2: Build Integrity]
     B --> C[Level 3: Reproducible Builds]
     C --> D[Level 4: Hermetic Builds]
-````
+```
 
-> [!quote] SLSA  
-> "SLSA is not about detecting CVEs directly but ensuring the components you're using are trusted and verifiable."
+> [!quote] Prompt Wisdom
+> “SLSA ensures trust and verification, not just CVE detection.”
 
----
-
-## 📦 Artifact Repositories
-
-Registries often integrate scanning tools to flag known CVEs in stored artifacts.
-
-|Registry|CVE Scanning|Notes|
-|---|---|---|
-|**JFrog Artifactory**|✅|Built-in Xray scanner|
-|**GitHub Packages**|✅|Integrated with Dependabot|
-|**Docker Hub**|✅|Shows scan results|
+→ See: [[SLSA Framework (Software Supply Chain)]]
 
 ---
 
-## 🔁 CVE Identification Workflow
+# 🧾 Software Bill of Materials (SBOM)
+
+Machine-readable inventory of software components:
+
+| Tool          | Description                  | Format          |
+| ------------- | ---------------------------- | --------------- |
+| **Syft**      | SBOM from code/containers    | CycloneDX, SPDX |
+| **CycloneDX** | OWASP SBOM format            | JSON, XML       |
+| **SPDX**      | Linux Foundation open format | RDF, JSON, YAML |
+
+> [!tip] Why It Matters
+> CVEs are easier to trace when SBOMs are available.
+
+---
+
+# 🛡️ CVE Detection in Software
+
+## Vulnerability Scanners
+
+| Tool           | Scans          | Integrations       |
+| -------------- | -------------- | ------------------ |
+| **Snyk**       | Code, IaC      | GitHub, GitLab     |
+| **Trivy**      | Containers, FS | Docker, K8s        |
+| **Dependabot** | GitHub PRs     | Native integration |
+| **OWASP DC**   | Java, .NET     | CI/CD pipelines    |
+
+---
+
+## 📦 Artifact Registries with CVE Tools
+
+| Registry          | CVE Scanning | Notes                  |
+| ----------------- | ------------ | ---------------------- |
+| JFrog Artifactory | ✅            | Built-in Xray          |
+| GitHub Packages   | ✅            | Linked with Dependabot |
+| Docker Hub        | ✅            | Basic scan shown       |
+
+---
+
+## 🔁 CVE Scan Workflow
 
 ```mermaid
 flowchart TD
     A[CVE Published] --> B{CVE Database Updated}
-    B --> C[Vulnerability Scanner Checks SBOM/Artifacts]
-    C --> D{Vulnerable Component Found?}
+    B --> C[Scanner Checks SBOM/Artifacts]
+    C --> D{Vulnerability Found?}
     D -- Yes --> E[Alert Developer]
     D -- No --> F[Continue Monitoring]
 ```
@@ -358,12 +272,10 @@ flowchart TD
 
 ## ✅ Best Practices
 
-- ✅ Generate and store an SBOM for every release.
-- ✅ Use scanners like Trivy or Snyk in CI/CD.
-- ✅ Prefer SLSA-compliant artifacts. 
-- ✅ Monitor CVE feeds (e.g., NVD, GitHub Advisories).
+* ✅ SBOM for every release
+* ✅ Use CI-integrated scanners
+* ✅ Favor SLSA-compliant artifacts
+* ✅ Monitor CVE feeds regularly
 
----
-
-> [!warning] Stay Ahead  
-> Regularly scan both development and deployed environments to catch vulnerabilities introduced post-deployment.
+> [!warning] Stay Ahead
+> ⚠️ Scan dev and prod environments consistently.
