@@ -1,10 +1,14 @@
 ---
-title: 
-draft: true
+title: Developing Methodologies
+draft: false
 tags:
-  - tag1
-  - tag2
-NeedsReview: true
+  - SBOM
+  - Software-Bill-of-materials
+  - Waterfall
+  - SLSA
+  - Software-Pipelines
+  - CI/CD
+NeedsReview: false
 ---
 
 # Waterfall approach
@@ -212,7 +216,7 @@ Strengthen systems to minimize vulnerabilities and reduce attack surface.
 ### 🕵️ 2. Continuous Vulnerability Checks
 Implement automated scans during CI/CD stages. Patch immediately when flaws are detected.
 
-### 📜 3. Software Bill of Materials (SBOM)
+### 📜 3. Software Bill of Materials ([[Developing Methodologies#🧾 Software Bill of Materials (SBOM)|SBOM]])
 Maintain a machine-readable list of all components and dependencies in use.
 
 > [!tip] Helpful Tip  
@@ -271,3 +275,95 @@ So we have to **lock down every step** of the pizza-making process!
 
 ## Frameworks to secure the supply chain
 In modern development, securing the software supply chain is essential to protect against tampering, unauthorized changes, and vulnerable dependencies. One of the most robust frameworks for this purpose is **SLSA (Supply-chain Levels for Software Artifacts)**, which provides a structured approach to verifying build integrity, source authenticity, and third-party dependencies. SLSA is particularly relevant for organizations operating CI/CD pipelines in the cloud, where automation and external integrations are common. For a detailed breakdown of the SLSA levels, trust boundaries, and recommended technical controls, refer to the [[SLSA Framework (Software Supply Chain)|SLSA Framework (Software Supply Chain)]] note.
+
+
+---
+# 🔐 CVE Detection in Software Components
+
+Understand how to quickly identify if a new CVE affects any component in your software using industry tools and practices.
+
+> [!info] Purpose
+> This note outlines best practices and tools for identifying CVEs via SBOMs, SLSA, vulnerability scanners, and artifact repositories.
+
+---
+
+## 🧾 Software Bill of Materials (SBOM)
+
+A **Software Bill of Materials** is a machine-readable inventory of all components used in a software system.
+
+| Tool       | Description                                       | Format         |
+|------------|---------------------------------------------------|----------------|
+| **Syft**   | CLI tool to generate SBOMs from containers/code   | CycloneDX, SPDX |
+| **CycloneDX** | Lightweight SBOM format from OWASP              | JSON, XML       |
+| **SPDX**   | Open standard for SBOMs from the Linux Foundation | RDF, JSON, YAML |
+
+> [!tip] Why It Matters
+> An SBOM lets you match components in your app to known CVEs using automated tools.
+
+---
+
+## 🛡️ Vulnerability Scanning
+
+Tools that scan your dependencies and images for known vulnerabilities using CVE databases like the **NVD**.
+
+| Tool               | Scans        | Integrations          |
+|--------------------|--------------|------------------------|
+| **Snyk**           | Code, containers, IaC | GitHub, GitLab, CI/CD |
+| **Trivy**          | Containers, filesystems | Docker, Kubernetes     |
+| **Dependabot**     | GitHub repos | Auto pull requests     |
+| **OWASP DC**       | Java, .NET   | CI/CD compatible       |
+
+---
+
+## 🧬 SLSA: Supply Chain Levels for Software Artifacts
+
+**SLSA** is a security framework that defines increasing levels of integrity for software builds.
+
+```mermaid
+graph TD
+    A[Level 1: Provenance] --> B[Level 2: Build Integrity]
+    B --> C[Level 3: Reproducible Builds]
+    C --> D[Level 4: Hermetic Builds]
+````
+
+> [!quote] SLSA  
+> "SLSA is not about detecting CVEs directly but ensuring the components you're using are trusted and verifiable."
+
+---
+
+## 📦 Artifact Repositories
+
+Registries often integrate scanning tools to flag known CVEs in stored artifacts.
+
+|Registry|CVE Scanning|Notes|
+|---|---|---|
+|**JFrog Artifactory**|✅|Built-in Xray scanner|
+|**GitHub Packages**|✅|Integrated with Dependabot|
+|**Docker Hub**|✅|Shows scan results|
+
+---
+
+## 🔁 CVE Identification Workflow
+
+```mermaid
+flowchart TD
+    A[CVE Published] --> B{CVE Database Updated}
+    B --> C[Vulnerability Scanner Checks SBOM/Artifacts]
+    C --> D{Vulnerable Component Found?}
+    D -- Yes --> E[Alert Developer]
+    D -- No --> F[Continue Monitoring]
+```
+
+---
+
+## ✅ Best Practices
+
+- ✅ Generate and store an SBOM for every release.
+- ✅ Use scanners like Trivy or Snyk in CI/CD.
+- ✅ Prefer SLSA-compliant artifacts. 
+- ✅ Monitor CVE feeds (e.g., NVD, GitHub Advisories).
+
+---
+
+> [!warning] Stay Ahead  
+> Regularly scan both development and deployed environments to catch vulnerabilities introduced post-deployment.

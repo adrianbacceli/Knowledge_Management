@@ -734,3 +734,57 @@ NeedsReview: false
 - ✅ Repeat **Prep + Shop**
     
 - 🧼 Wash + reset fridge/containers
+
+---
+# Real Approach
+
+Wednesday
+Bought super
+Cooked chicken in oven
+- Added salt, pepper, paprika, complete seasoning (Next time do both sides)
+- Brushed with olive oil top only (Next time do both sides)
+- preheat oven 250C for 20 minutes
+- Place chicken for 25 minutes.
+- Rinse chicken water and store it for chicken broth
+- replace in oven for 10 more minutes
+- rinse the remaining water into chicken broth recipient
+- freeze 4 breasts, use one, cool the other one in the fridge
+
+Dinner:
+Ate grapes
+2 Hotdog buns with one chicken breast
+
+Thursday: 
+
+Breakfast
+1 banana
+10 grapes
+Bought omellette at Dell with vegetables
+1 Hojaldre
+Sausage in sauce
+
+Lunch
+Chicken
+Bought buns
+
+Dinner
+1 Tuna can
+3 Onion rings chopped
+2 tortillas
+2 tbsp mayo
+1 tbsp mustard
+
+Next time, pan cook
+
+Friday 
+Morning
+- boil 2 eggs
+- Rinse 1 1/2 cups of rice
+- Use 1cup chicken broth + 2 cups of water
+- place the rise, rotate the salt grinder twice back and forth and stir. Set a 20 min timer
+- 5 minutes later, Add red paprika for color and black peppermint for flavor and stir
+- after 8 minutes have passed, put powdered onion, and stir again (Rice should be at the same level as water, by now)
+- by 10 minutes, reduce heat, stir one last time, and cover top
+- Serve 1 cup of Oats with 1 sliced banana and 1 cup of cold milk, add cinnamon
+- Top with mapple syrup (Try a better healthier way, like 0 sugar syrupes)
+- Prepare coffee, 4 overflowing tsp of coffee, 8 cups of water in the jar.
