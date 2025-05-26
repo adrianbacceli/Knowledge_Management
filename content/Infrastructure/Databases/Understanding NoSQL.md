@@ -200,6 +200,3 @@ NoSQL is often **use-case specific**:
 
 > 📌 _You’ll need to match the right NoSQL type to the problem you're solving._
 
----
-
-Would you like a **side-by-side comparison table** or a **visual diagram** showing how these concepts differ between SQL and NoSQL?

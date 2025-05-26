@@ -94,7 +94,6 @@ graph TD
 - Social Engineering
 - Wireless Security
 - Application Security
-    
 
 ---
 
@@ -105,7 +104,6 @@ graph TD
 - Once hired: Buddy Program for onboarding
 - Focus on continuous learning and day-to-day practice
 - Promotion based on growth into mobile apps, API testing, and purple teaming
-    
 
 ---
 
