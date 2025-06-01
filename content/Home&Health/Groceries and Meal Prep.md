@@ -114,3 +114,11 @@ D: 3 hot dogs
 | Prefume           | $5.00      |
 | Hair Conditioner  | $5.00      |
 | Mouthwash         | $5.00      |
+| Ear Cleaner       | $5.00      |
+| Deodorant         | $5.00      |
+| Shampoo           | $5.00      |
+| Hair cream        | $5.00      |
+| Baby Powder       | $5.00      |
+| Razor             | $5.00      |
+| Detergent         | $20.00     |
+|                   |            |
