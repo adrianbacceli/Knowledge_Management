@@ -63,7 +63,7 @@ D: 3 hot dogs
 
 | Ingredient                      | Unit      | Price  | Week 1 | Week 2 | Week 3 | Week 4 |
 | ------------------------------- | --------- | ------ | ------ | ------ | ------ | ------ |
-| Eggs*                           | 20 huevos | $3.36  | ✅      |        | ✅      |        |
+| Eggs *                          | 20 huevos | $3.36  | ✅      |        | ✅      |        |
 | Arepas                          | 1 Paquete | $4.57  | ✅      |        |        |        |
 | Ham                             | 1 Paquete | $3.25  | ✅      |        | ✅      |        |
 | Mozzarella                      | 1 Bola    | $5.99  | ✅      |        | ✅      |        |
@@ -73,8 +73,8 @@ D: 3 hot dogs
 | Banana                          | 1 kg      | $0.95  | ✅      | ✅      | ✅      | ✅      |
 | Orange                          | 1 kg      | $3.29  | ✅      |        | ✅      |        |
 | Beef steak                      | 1 kg      | $13.50 | 1/2 ✅  | 1/2 ✅  | 1/2 ✅  | 1/2 ✅  |
-| Rice*                           | 1kg       | $1.35  | ✅      |        |        |        |
-| Onion*                          | 4kg       | $4.00  | ✅      |        |        |        |
+| Rice *                          | 1kg       | $1.35  | ✅      |        |        |        |
+| Onion *                         | 4kg       | $4.00  | ✅      |        |        |        |
 | Bell peppers                    | 1 kg      | $4.90  | 1/2✅   |        | 1/2 ✅  |        |
 | Oats                            | 1 pack    | $0.90  | 4 ✅    |        |        |        |
 | Chicken breast                  | 1 bandeja | $12.54 | ✅      |        |        |        |
@@ -85,7 +85,7 @@ D: 3 hot dogs
 | Salted crackers                 | 9 pack    | $1.89  | ✅      |        | ✅      |        |
 | Ground beef / meatballs         | 8 pack    | $3.99  | ✅      |        | ✅      |        |
 | Pasta                           | 1 pack    | $1.05  | 2 ✅    |        | 2 ✅    |        |
-| Mushrooms*                      | 1/2 box   | $2.00  | ✅      |        | ✅      |        |
+| Mushrooms *                     | 1/2 box   | $2.00  | ✅      |        | ✅      |        |
 | Tomato sauce                    | 1 jar     | $4.99  | ✅      |        |        |        |
 | Parmesan cheese                 | 1 can     | $5.43  | ✅      |        |        |        |
 | Sauces (mustard, ketchup, etc.) |           | $6.00  | ✅      |        |        |        |
@@ -113,3 +113,4 @@ D: 3 hot dogs
 | PAM               | $5.00      |
 | Prefume           | $5.00      |
 | Hair Conditioner  | $5.00      |
+| Mouthwash         | $5.00      |
