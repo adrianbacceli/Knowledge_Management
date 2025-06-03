@@ -10,53 +10,55 @@ tags:
 NeedsReview: false
 ---
 Monday
-B: 3 fried eggs with Arepa and ham/cheese
-S: Apple
-L: steak + Rice + onion + peppers
-S: oats + Banana + Milk + Protein
-D: Chicken Breast + Potatoes
+* B: 3 fried eggs with Arepa and ham/cheese
+* S: Apple
+* L: steak + Rice + onion + peppers
+* S: oats + Banana + Milk + Protein
+* D: Chicken Breast + Potatoes
 
 Tuesday
-B: 3 Scrambled eggs + milk + cheese + and Tortillas
-S: Orange
-L: Tuna + Onion + Tomato + Crackers 
-S: Banana Protein Shake 
-D: Burguer + Onion + Tomato + sauces + cheese 
+- B: 3 Scrambled eggs + milk + cheese + and Tortillas
+- S: Orange
+- L: Tuna + Onion + Tomato + Crackers 
+- S: Banana Protein Shake 
+- D: Burger + Onion + Tomato + sauces + cheese 
 
 Wednesday
-B: 3 Ranch Eggs (with sausage, onions, tomatoes) + ???
-S: Banana + Orange
-L: Sliced Chicken in mushroom sauce + Pasta
-S: Oat jar + apple + milk + protein scoop
-D: Canned Sardines with crackers
+- B: 3 Ranch Eggs (with sausage, onions, tomatoes) + ???
+- S: Banana + Orange
+- L: Sliced Chicken in mushroom sauce + Pasta
+- S: Oat jar + apple + milk + protein scoop
+- D: Canned Sardines with crackers
 
 Thursday
-B: Tomato & 3 Eggs Stir-Fry 
-S: Tuna with Crackers
-L: Ready to cook - meatballs + Rice
-S: Protein Shake
-D: Mozzarella + Tomato Stack
+- B: Tomato & 3 Eggs Stir-Fry 
+- S: Tuna with Crackers
+- L: Ready to cook - meatballs + Rice
+- S: Protein Shake
+- D: Mozzarella + Tomato Stack
 
 Friday
-B: 3 Boiled eggs with Bread
-S: Banana
-L: Steak + Potatoes 
-S: Protein Shake 
-D: Tuna sandwich with Tomato and cheese 
+- B: 3 Boiled eggs with Bread
+- S: Banana
+- L: Steak + Potatoes 
+- S: Protein Shake 
+- D: Tuna sandwich with Tomato and cheese
+
 
 Saturday
-B: 3 eggs French toasts + Bread + Banana
-S: Orange
-L: Ready to cook - meatballs + Tomato Paste + Pasta + Parmesan cheese
-S: Protein Shake
-D: Burguers with mushroom sauce 
+- B: 3 eggs French toasts + Bread + Banana
+- S: Orange
+- L: Ready to cook - meatballs + Tomato Paste + Pasta + Parmesan cheese
+- S: Protein Shake
+- D: Burgers with mushroom sauce 
+
 
 Sunday - Cheat day
-B: bacon Egg Muffins + Arepa
-S: whatever
-L: Tuna Wraps
-S: whatever 
-D: 3 hot dogs
+- B: bacon Egg Muffins + Arepa
+- S: whatever
+- L: Tuna Wraps
+- S: whatever 
+- D: 3 hot dogs
 
 ---
 # Supermarket List
