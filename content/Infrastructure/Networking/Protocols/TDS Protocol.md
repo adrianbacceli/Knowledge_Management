@@ -55,3 +55,4 @@ TDS is important in **enumeration**, **exploitation**, and **lateral movement
 - **Credential Access**: Brute-forcing or dumping credentials
 - **Execution**: Running commands via `xp_cmdshell`
 - **Lateral Movement**: Using linked servers or SQL Agent jobs
+
