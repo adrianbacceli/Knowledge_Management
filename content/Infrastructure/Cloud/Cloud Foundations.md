@@ -202,7 +202,7 @@ VPCs are fundamental for cloud security architecture, supporting **network isola
 > [!summary] Core Concept  
 Infrastructure as Code (IaC) automates the provisioning and management of cloud infrastructure using reusable scripts, making it a powerful tool in the DevSecOps workflow.
 
-IaC replaces manual infrastructure setup with automated scripts that define the desired system state (declarative model) with tools like [[Terraform]]. This makes environments consistent, scalable, and secure.
+IaC replaces manual infrastructure setup with automated scripts that define the desired system state (declarative model) with tools like [[Infrastructure/Cloud/Terraform]]. This makes environments consistent, scalable, and secure.
 
 ### 🌍 Real-World Use Case
 A global plant retailer with seasonal traffic issues and high costs can use IaC to automate infrastructure scaling and meet business goals efficiently.

@@ -123,7 +123,7 @@ nc -l -p 4444 -e /bin/bash
 
 - Netcat works well with tools like:
     - [[Nmap]] (for scanning)
-    - [[bash]] (for scripting)
+    - [[Bash Scripting]] (for scripting)
     - [[tcpdump]] or [[Wireshark]] (for monitoring)
 
 ### 🔄 Use Flags Wisely
