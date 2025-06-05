@@ -195,7 +195,6 @@ ora_pmon_FINDB
 - Use `/ as sysdba` only as Oracle user (not root)
 - Create `spfile` from `pfile` once the DB is stable
 - Only one `$ORACLE_SID` is active per shell session
-    
 
 ---
 

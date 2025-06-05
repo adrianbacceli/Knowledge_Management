@@ -139,8 +139,6 @@ ISO/IEC 27034-7 — Application security — Part 7: Assurance prediction framew
 
 ### **Incident Management**
 
-:
-
 ISO/IEC 27035 — Information security incident management
 
 ISO/IEC 27035-1 — Information security incident management – Part 1: Principles of incident management.

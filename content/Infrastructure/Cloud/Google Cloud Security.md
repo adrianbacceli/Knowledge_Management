@@ -138,3 +138,58 @@ This helps catch problems **early** and fix them **faster**.
 > [!summary] Core Concept  
 > The **software supply chain** is everything involved in making software.  
 > **Software Delivery Shield** helps keep that process safe from start to finish — like a super clean, secure pizza kitchen in the cloud.
+
+---
+
+# Cloud Security Controls
+
+## Types of Cloud Security Controls
+
+### Deterrent Controls
+- Serve as a barrier to a potential attacker.
+- Example: A passphrase, which is more complex than a traditional password, is difficult and time-consuming to crack.
+
+### Preventative Controls
+- Manage, strengthen, and protect assets.
+- Example: Code that disables unnecessary ports to ensure there are fewer entry points for attackers.
+
+### Corrective Controls
+- Reduce the aftereffects of an attack.
+- Example: Code that corrects or repairs damage after unwanted or unauthorized activity and notifies administrators.
+
+### Detective Controls
+- Identify or detect an attack.
+- Example: Antivirus software and network or service monitoring.
+
+### Compensating Controls
+- Mitigate a risk that cannot be fully addressed by the organization's existing security controls.
+- Example: A lock on a door handle made more effective by adding a deadbolt lock.
+
+---
+## Levels of Application
+
+### Service Level
+- Applied to storage, computing, and networking.
+
+### Workload Level
+- Applied to a collection of resources or code that delivers business value, like a customer-facing application.
+
+### Platform Level
+- Applied to a common environment for running applications, like operating systems, programming languages, and runtime environments.
+
+## Control Mapping Process
+
+1. **Identify Controls**
+   - Identify the controls that already exist in an organization's cloud infrastructure.
+
+2. **Map Required Controls**
+   - Map required controls to cloud security benchmarks, standards, requirements, regulations, and rules.
+
+3. **Identify Unmapped Controls**
+   - Identify the controls not mapped with cloud security benchmarks and respective policies.
+
+4. **Perform Assessment**
+   - Perform an assessment of platform and service.
+
+5. **Implement Guardrails**
+   - Implement guardrails with policy initiatives using native or third-party tooling.
