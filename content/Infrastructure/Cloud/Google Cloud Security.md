@@ -193,3 +193,15 @@ This helps catch problems **early** and fix them **faster**.
 
 5. **Implement Guardrails**
    - Implement guardrails with policy initiatives using native or third-party tooling.
+
+---
+
+```mermaid
+graph TD
+    A[Organization: Example.com] --> B[Folder: Sales]
+    A --> C[Folder: Engineering]
+    A --> D[Folder: Human Resources]
+    C --> E[Project: example dev]
+    C --> F[Project: Example prod]
+    C --> G[Project: example-test]
+```
