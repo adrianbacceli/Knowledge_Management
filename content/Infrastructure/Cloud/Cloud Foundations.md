@@ -233,7 +233,7 @@ Cloud security professionals can:
 
 ---
 
-# 💡 What is Policy as Code?
+# 💡 What is Policy as Code (PaC)?
 
 > [!summary] Core Concept  
 Policy as Code (PaC) automates the definition, enforcement, and management of security and compliance rules using code—integrating policy checks into the development lifecycle.
@@ -245,15 +245,36 @@ PaC uses high-level programming languages to codify security rules and complianc
 - Manual and inconsistent security checks lead to compliance gaps.
 - PaC allows automation of vulnerability scans and security alerts.
 
-> [!example] Use Case: HIPAA-Compliant App  
-A heartbeat-tracking app automates HIPAA policy enforcement using PaC, enabling quick detection of misconfigurations and automated alerts for vulnerabilities.
+---
+
+```mermaid
+graph TD;
+    A[Policy as Code] --> B[Define and enforce policies using code];
+    A --> C[Languages: Python, YAML, Rego];
+    A --> D[Tools: Terraform, Chef, Puppet, Ansible];
+    A --> E[Automated compliance checks];
+```
+
+```mermaid
+graph TD;
+   F[Infrastructure as Code] --> G[Automates infrastructure setup using scripts];
+    F --> H[Benefits: Consistency, Faster deployment, Reduced risk, Improved efficiency, Cost savings, Stronger security, Accountability];
+```
+
+---
 
 ### ✅ Key Benefits
-1. **Improved Security**: Early detection of threats, automated integrity checks.
-2. **Version Control**: Track changes, rollback when needed, improve visibility.
-3. **Efficiency**: Speeds up testing and deployment of policies.
-4. **Collaboration**: Centralized policies improve cross-team coordination.
-5. **Compliance**: Ensures continuous alignment with industry standards.
+
+| Benefits of PaC      |                                     |
+| -------------------- | ----------------------------------- |
+| Efficiency           | Automates policy enforcement        |
+| Speed                | Faster security operations          |
+| Visibility           | Clear understanding through code    |
+| Collaboration        | Easier cross-team policy management |
+| Accuracy             | Reduces human error                 |
+| Version Control      | Easy rollback to previous policies  |
+| Testing & Validation | Supports automated auditing         |
+
 
 > [!tip] Helpful Tip  
 💡 Use triggers to notify developers immediately when a policy violation or threat is detected.
