@@ -10,14 +10,17 @@ tags:
   - security-controls
   - governance
   - risk
+  - management
+  - NIST-CSF
 NeedsReview: false
 ---
-## 🔐 Google Cloud Security Architecture Overview
+# Google Cloud Security Architecture Overview
 
 > [!summary] Google Cloud Architecture  
 > Google’s cloud infrastructure is built on a multi-layered security model, designed to protect data from physical to application level.
 
 
+## 🔐 Security Architecture Overview
 ### 1. 🏗️ Secure Low-Level Infrastructure
 
 - **Physical Security**
@@ -81,9 +84,9 @@ graph TD
 [[Security in the cloud (5 Layers).canvas|Security in the cloud (5 Layers)]]
 
 ---
-# 🧑‍🚒 Defense In Depth ([[NIST CSF 2.0|NIST Cybersecurity Framework]])
+## 🧑‍🚒 Defense In Depth ([[NIST CSF 2.0|NIST Cybersecurity Framework]])
 
-##### **Layered approach that uses multiple security control**
+### **Layered approach that uses multiple security control**
 
 * Identity Control: Measure that authenticates user before resource access (MFA)
 * Protective Control: Protect access to resources and shields against malicious (AV, WAF, IaaC Policies)
@@ -94,16 +97,16 @@ graph TD
 
 ---
 
-# 🪪 IAM and Cloud IAM
+## 🪪 IAM and Cloud IAM
 * Roles: Collection of permissions, policies and constrains to principals
 * Principals: Users or Apps (Service Accounts) // Groups: Combine them depending on Org.
 * Policies: Rules that allow/deny access.
 
-##### **Federation**
+### **Federation**
 Granting external identities access to your cloud environment. Like using SSO.
 It is recommended to allow MFA to users using federation.
 
-# 🧱 Firewall best practices 
+## 🧱 Firewall best practices 
 Here are a few best practices you can apply when using firewalls: 
 * Always use the principle of least privilege. When creating firewall rules, only allow necessary traffic to traverse the network. 
 * Use hierarchical firewall policies, which will allow your organization to apply firewall policies to the organization and folder levels. Invoking hierarchical policy structure promotes consistency across organizational resources and the firewalls that protect them. 
@@ -136,7 +139,6 @@ But **shifting left** means putting **security at the beginning**:
 This helps catch problems **early** and fix them **faster**.
 
 ---
-
 ## 📦 In short:
 
 > [!summary] Core Concept  
@@ -144,6 +146,114 @@ This helps catch problems **early** and fix them **faster**.
 > **Software Delivery Shield** helps keep that process safe from start to finish — like a super clean, secure pizza kitchen in the cloud.
 
 ---
+# Google Cloud NIST CSF Alignment
+
+> [!info]  
+> This note aligns cloud tools with the five pillars of the **NIST Cybersecurity Framework (CSF)**: Identify, Protect, Detect, Respond, and Recover.
+
+## 🧱 NIST CSF Pillars Overview
+
+```mermaid
+graph LR
+  ID[Identify] --> PR[Protect]
+  PR --> DE[Detect]
+  DE --> RS[Respond]
+  RS --> RC[Recover]
+```
+
+---
+
+## 🕵️ Identify
+
+|Tool|Description|
+|---|---|
+|IAM|Role-based access control; bind roles to groups for easier management.|
+|Cloud Asset Inventory|35-day time-series inventory of GCP assets.|
+|Cloud Identity|Centralized user/group management via IDaaS.|
+|SCC (Identify)|Asset discovery, inventory, and vulnerability scans.|
+
+> [!tip]  
+> Use Cloud Asset Inventory with IAM to track access and ensure least-privilege access.
+
+---
+
+## 🛡️ Protect
+
+|Tool|Purpose|
+|---|---|
+|Cloud IDS|Detects network-level intrusions and threats.|
+|reCAPTCHA Enterprise|Prevents bots using adaptive challenges.|
+|Cloud Armor|Defends against DDoS and web application attacks.|
+|BeyondCorp Enterprise|Enforces contextual security policies.|
+|Identity-Aware Proxy|Implements app-level access control.|
+|Two-Factor Auth (2FA)|Adds hardware/software-based secondary authentication.|
+|Service Controls|Prevents data exfiltration within GCP.|
+|Zero Trust|Validates all access, regardless of origin.|
+|SCC (Protect module)|Detects threats and enforces security posture.|
+
+> [!warning]  
+> Adopt a zero-trust model — assume breach and continuously validate access.
+
+---
+
+## 🔍 Detect
+
+|Tool|Functionality|
+|---|---|
+|Cloud Logging|Real-time log collection and alerting.|
+|Cloud Monitoring|Observability and alerting for multicloud/hybrid environments.|
+|SCC (Detect module)|Consolidates threat detection and custom rule definitions.|
+|Chronicle SIEM|Aggregates and analyzes security events in real-time.|
+
+> [!example]  
+> Use Cloud Logging to alert when service accounts are accessed outside business hours.
+
+---
+
+## 🧯 Respond
+
+|Tool|Role in Incident Response|
+|---|---|
+|Chronicle SOAR|Automates and orchestrates threat response workflows.|
+|Mandiant|Provides forensic analysis, breach investigation, and remediation.|
+
+> [!tip]  
+> Combine Chronicle SIEM with SOAR to automate detection-to-response pipelines.
+
+---
+
+## 🔄 Recover
+
+|Tool|Capability|
+|---|---|
+|Backup & Restore|Manages incremental backups across all workloads.|
+|Actifio Go|Supports granular, app-aware, and bare-metal recovery.|
+|Cyber Insurance|Covers financial and legal aspects of recovery from breaches.|
+
+> [!note]  
+> Test recovery processes regularly to ensure backup integrity and response readiness.
+
+---
+
+## 🧠 Key Takeaways
+
+> [!summary]
+> 
+> - Use the NIST CSF to guide tool adoption and security maturity.
+>     
+> - Map tools like SCC and Chronicle across multiple pillars.
+>     
+> - Implement layered defenses, automate responses, and maintain tested recovery plans.
+>     
+
+---
+
+## 📚 Resources
+
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+- [Google Cloud Security](https://cloud.google.com/security)
+
+
 # Cloud Security Controls
 
 ## Types of Cloud Security Controls
@@ -212,6 +322,7 @@ graph TD
 
 ---
 
+
 # Google Security Command Center (SCC)
 
 > [!info]  
@@ -219,7 +330,7 @@ graph TD
 
 ## Key Capabilities
 
-- Alignment with **CIS Benchmarks** and **Google Cloud Computing Foundations Benchmark**
+- Alignment with **CIS Google Cloud Computing Foundations Benchmark**
 - **Asset inventory and tracking**
 - **Real-time notifications** for security events
 - **Misconfiguration identification** for cloud resources
@@ -259,7 +370,7 @@ graph TD
 - **Sensitive Data Protection**: Scans buckets and databases for regulated data
 - **SCC Partner Integrations**: Extends capabilities via third-party security tools
 
-## SCC Tiers
+## Google Security Command Center (SCC) Tiers
 
 ```mermaid
 graph TD
@@ -297,4 +408,45 @@ graph TD
   class B,C,E,F,G,H,I feature;
 
   ```
-  
+
+---
+
+# Google Cloud Security Tools 
+
+> [!info] Focus  
+> This summary outlines key cloud-native tools in Google Cloud's Security Command Center (SCC) for managing risk and compliance.
+
+### Risk Manager
+
+|Feature|Description|
+|---|---|
+|**Purpose**|Risk assessment and reporting|
+|**Integration**|Aggregates data from SCC, Cloud Asset Inventory, and more|
+|**Benchmarking**|Aligns with CIS Google Cloud Foundations Benchmark|
+|**Report Use Cases**|Shared with cyber insurers to determine appropriate insurance coverage|
+|**Automation**|Reports can be generated on-demand or scheduled (daily, weekly, monthly)|
+
+### Policy Analyzer
+
+|Feature|Description|
+|---|---|
+|**Purpose**|Reviews IAM policies and enforces least-privilege access|
+|**Output**|Role-binding reports with conditions and access principals|
+|**Query Scope**|Customizable across orgs, projects, or folders|
+|**Export Options**|Results can be written to BigQuery or Cloud Storage|
+
+### Assured Workloads
+
+| Feature                       | Description                                                                          |
+| ----------------------------- | ------------------------------------------------------------------------------------ |
+| **Purpose**                   | Ensures workloads meet industry compliance standards                                 |
+| **Compliance Templates**      | Predefined configurations for healthcare, government, etc.                           |
+| **Data Residency Controls**   | Restricts storage to specified geographic regions                                    |
+| **Personnel Access Controls** | Limits access to authorized Google personnel based on physical and vetting standards |
+| **Encryption**                | Defaults to encryption at rest and in transit; supports customer-managed keys        |
+| **Monitoring**                | Alerts on policy changes that break compliance                                       |
+| **Multi-Framework Support**   | Supports multiple compliance programs for multinational needs                        |
+
+
+---
+_**Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)
