@@ -6,7 +6,11 @@ tags:
   - Cloud
   - Google
   - offensive-security
-NeedsReview: true
+  - Security
+  - security-controls
+  - governance
+  - risk
+NeedsReview: false
 ---
 ## 🔐 Google Cloud Security Architecture Overview
 
@@ -140,59 +144,59 @@ This helps catch problems **early** and fix them **faster**.
 > **Software Delivery Shield** helps keep that process safe from start to finish — like a super clean, secure pizza kitchen in the cloud.
 
 ---
-
 # Cloud Security Controls
 
 ## Types of Cloud Security Controls
 
-### Deterrent Controls
-- Serve as a barrier to a potential attacker.
-- Example: A passphrase, which is more complex than a traditional password, is difficult and time-consuming to crack.
+> [!info] Classification  
+> Cloud security controls are mechanisms that support risk reduction through layered defense and targeted mitigation across digital assets.
 
-### Preventative Controls
-- Manage, strengthen, and protect assets.
-- Example: Code that disables unnecessary ports to ensure there are fewer entry points for attackers.
-
-### Corrective Controls
-- Reduce the aftereffects of an attack.
-- Example: Code that corrects or repairs damage after unwanted or unauthorized activity and notifies administrators.
-
-### Detective Controls
-- Identify or detect an attack.
-- Example: Antivirus software and network or service monitoring.
-
-### Compensating Controls
-- Mitigate a risk that cannot be fully addressed by the organization's existing security controls.
-- Example: A lock on a door handle made more effective by adding a deadbolt lock.
+|Control Type|Purpose|Example|
+|---|---|---|
+|**Deterrent**|Deter attackers psychologically or informatively|Passphrases that are harder to crack than traditional passwords|
+|**Preventative**|Strengthen and proactively secure assets|Disabling unused ports to reduce attack surfaces|
+|**Corrective**|Mitigate damage after incidents|Scripts that repair damage and notify admins after unauthorized actions|
+|**Detective**|Identify and report ongoing or past attacks|Antivirus software, monitoring tools|
+|**Compensating**|Fill gaps where standard controls can't be applied|Deadbolt added to a locked door handle|
 
 ---
+
 ## Levels of Application
 
-### Service Level
-- Applied to storage, computing, and networking.
+> [!tip] Multi-Layered Protection  
+> Controls should be applied at various operational levels to ensure robust security posture.
 
-### Workload Level
-- Applied to a collection of resources or code that delivers business value, like a customer-facing application.
+```mermaid
+graph TD
+    ServiceLevel["Service Level"] -->|Storage, Compute, Networking| ProtectionA
+    WorkloadLevel["Workload Level"] -->|Apps & Resources| ProtectionB
+    PlatformLevel["Platform Level"] -->|OS, Languages, Runtimes| ProtectionC
+```
 
-### Platform Level
-- Applied to a common environment for running applications, like operating systems, programming languages, and runtime environments.
+- **Service Level:** Infrastructure components like storage and networking.
+- **Workload Level:** Business applications and their supporting resources.
+- **Platform Level:** Operating environments such as OSes and programming runtimes.
+
+---
 
 ## Control Mapping Process
 
-1. **Identify Controls**
-   - Identify the controls that already exist in an organization's cloud infrastructure.
+> [!important] Control Governance Lifecycle  
+> A well-structured mapping process ensures security controls align with organizational and regulatory requirements.
 
-2. **Map Required Controls**
-   - Map required controls to cloud security benchmarks, standards, requirements, regulations, and rules.
+```mermaid
+graph TD
+    A[Identify Controls] --> B[Map Required Controls]
+    B --> C[Identify Unmapped Controls]
+    C --> D[Perform Assessment]
+    D --> E[Implement Guardrails]
+```
 
-3. **Identify Unmapped Controls**
-   - Identify the controls not mapped with cloud security benchmarks and respective policies.
-
-4. **Perform Assessment**
-   - Perform an assessment of platform and service.
-
-5. **Implement Guardrails**
-   - Implement guardrails with policy initiatives using native or third-party tooling.
+1. **Identify Controls** – Inventory existing security controls within the cloud environment.
+2. **Map Required Controls** – Align existing controls to frameworks like NIST, CIS, or ISO.
+3. **Identify Unmapped Controls** – Detect gaps where existing controls do not meet compliance or policy standards.
+4. **Perform Assessment** – Evaluate effectiveness and sufficiency of mapped controls.
+5. **Implement Guardrails** – Apply policy initiatives via native cloud tools or third-party solutions.
 
 ---
 
@@ -205,3 +209,92 @@ graph TD
     C --> F[Project: Example prod]
     C --> G[Project: example-test]
 ```
+
+---
+
+# Google Security Command Center (SCC)
+
+> [!info]  
+> **Google Security Command Center (SCC)** is Google's CSPM (Cloud Security Posture Management) platform for managing security and compliance across multi-cloud environments.
+
+## Key Capabilities
+
+- Alignment with **CIS Benchmarks** and **Google Cloud Computing Foundations Benchmark**
+- **Asset inventory and tracking**
+- **Real-time notifications** for security events
+- **Misconfiguration identification** for cloud resources
+
+## Core Services
+
+### 1. Security Health Analytics
+
+> [!tip]  
+> Automatically identifies misconfigured resources and vulnerabilities across your GCP environment.
+
+- Analyzes virtual machines, containers, networks, storage buckets, and IAM policies
+- Detects vulnerabilities and suggests remediations
+
+### 2. Web Security Scanner
+
+> [!example]  
+> Useful for web app vulnerability detection in environments like App Engine and GKE.
+
+- **Managed Scans**: Basic scans configured by SCC
+- **Custom Scans**: Granular scans with custom configuration
+- **Container Threat Detection**: Monitors GKE containers for signs of compromise
+- **Virtual Machine Threat Detection**: Detects potentially malicious apps in Compute Engine VMs
+
+### 3. Compliance Dashboard
+
+> [!note]  
+> Supports tracking compliance posture and exporting audit-ready reports.
+
+- Framework violation checks
+- Fix recommendations
+- Exportable compliance reports (e.g., for PCI, CIS)
+
+### 4. Integrated Data Sources
+
+- **Cloud Armor**: Protects against DDoS and OWASP threats
+- **Sensitive Data Protection**: Scans buckets and databases for regulated data
+- **SCC Partner Integrations**: Extends capabilities via third-party security tools
+
+## SCC Tiers
+
+```mermaid
+graph TD
+  %% Tiers
+  A[Standard Tier]
+  
+  %% Standard Tier Features
+  A --> B[Security Health Analytics]
+  A --> C[High-Severity Threat Detection]
+
+   %% Styling
+  classDef tier fill:#cce5ff,stroke:#004085,stroke-width:2px;
+  classDef feature fill:#f8f9fa,stroke:#6c757d,stroke-width:1px;
+  class A,D tier;
+  class B,C,E,F,G,H,I feature;
+
+  ```
+  
+```mermaid
+graph TD
+  %% Tiers
+  D[Premium Tier - Standard Tier + ]
+
+  %% Premium Tier Features
+  D --> E[PCI and CIS Benchmark Reporting]
+  D --> F[Web Security Scanner]
+  D --> G[Event Threat Detection]
+  D --> H[Container Threat Detection]
+  D --> I[VM Threat Detection]
+
+  %% Styling
+  classDef tier fill:#cce5ff,stroke:#004085,stroke-width:2px;
+  classDef feature fill:#f8f9fa,stroke:#6c757d,stroke-width:1px;
+  class A,D tier;
+  class B,C,E,F,G,H,I feature;
+
+  ```
+  
