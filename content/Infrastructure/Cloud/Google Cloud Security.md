@@ -12,6 +12,7 @@ tags:
   - risk
   - management
   - NIST-CSF
+  - data-sovereignty
 NeedsReview: false
 ---
 # Google Cloud Security Architecture Overview
@@ -82,6 +83,23 @@ graph TD
 ```
 
 [[Security in the cloud (5 Layers).canvas|Security in the cloud (5 Layers)]]
+
+---
+## Sovereign Clouds
+
+> [!definition]
+> **Sovereign Cloud**  
+> A cloud setup confined to a specific country or region, ensuring data handling complies with local privacy laws.
+
+## Key Points
+
+- Ensures national laws govern data access and processing.
+- Supports national security by keeping sensitive data (e.g., healthcare) local.
+- Enables digital sovereignty for governments.
+- Adds cost and complexity for global organizations.
+
+> [!warning]
+> Non-compliance may result in being barred from operating in that region.
 
 ---
 ## 🧑‍🚒 Defense In Depth ([[NIST CSF 2.0|NIST Cybersecurity Framework]])
