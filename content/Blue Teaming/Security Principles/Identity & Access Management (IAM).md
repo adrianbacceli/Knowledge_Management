@@ -27,18 +27,20 @@ Role-Based Access Control (RBAC) is a method of controlling access to resources 
 ---
 ## SSO
 SSO is a technology that enables users to log into multiple services with one set of credentials, also called logins. With SSO, you can ensure that your existing identity provider (IdP) remains the system of record you use to authenticate users.
+### **Authentication Flow Breakdown**
 
-1. User: request URL 
-2. Cloud Security Authenticator: Identify Account
-3. Cloud Security Authenticator: Redirect User to IdP
-4. User: sends Authentication request to Identity Provider
-5. IdP: Authentication toke from IdP sent to user
-6. User: sends Auth token to CSA
-7. CSA: Identifies user
-8. CSA: Redirects user to URL with auth cookie set.
-9. User: Request URL from CSA
-10. CSA: Delivers URL to User
-11. CSA: Grants user access to network
+1. The user navigates to the console page from their browser.
+2. The Cloud Security Authenticator (CSA) detects that the user is not authenticated.
+3. The CSA redirects the user's browser to the Identity Provider (IdP).
+4. The user's browser sends an authentication request to the IdP.
+5. The IdP prompts the user to enter their credentials (username and password) and submit the login form.
+6. Upon successful authentication, the IdP sends an authentication token back to the user's browser.
+7. The user’s browser forwards the token to the CSA.
+8. The CSA validates the token and identifies the user.
+9. The CSA sets an authentication cookie and redirects the user to the intended destination URL.
+10. The user requests the original URL from the CSA.
+11. The CSA grants access and delivers the requested resource to the user.
+
 
 ```mermaid
 sequenceDiagram
@@ -63,6 +65,11 @@ sequenceDiagram
 ---
 
 ## IAM
+IAM services help keep your systems secure by managing how users log in (authentication), what they’re allowed to do (authorization), and keeping records of those actions (auditing).
+
+In practice, IAM takes care of things like logging in with multi-factor authentication (MFA). The user either passes or fails the MFA challenge, and every attempt—successful or not—is recorded in admin or activity logs. These logs can later be reviewed to make sure people are following the right procedures and that there’s accountability.
+
+IAM also tracks changes in role assignments, which is useful when doing yearly reviews or compliance checks. Updating IAM policies regularly—especially to follow the “least privilege” rule—helps make sure that only the right people have access to what they actually need, and nothing more.
 
 ---
  
