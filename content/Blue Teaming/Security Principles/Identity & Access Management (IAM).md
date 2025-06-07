@@ -25,6 +25,12 @@ NeedsReview: true
 Role-Based Access Control (RBAC) is a method of controlling access to resources based on the roles assigned to users. This method helps ensure users only have permissions and access to the resources necessary for their job. RBAC also lets you grant access to a collection of users via groups. Different cloud providers have their own RBAC systems, and in many cases, different products have their own RBAC features.
 
 ---
+## ABAC
+**ABAC (Attribute-Based Access Control)** is a method for managing access to resources based on attributes. These attributes can describe the **user** (e.g. role, department), the **resource** (e.g. file type, classification), the **action** (e.g. read, write), or the **environment** (e.g. time of day, location).
+
+Instead of assigning permissions to specific users or roles, ABAC uses **policies** that evaluate these attributes to decide whether access should be granted. This allows for more flexible and fine-grained control compared to traditional access models like RBAC.
+
+---
 ## SSO
 SSO is a technology that enables users to log into multiple services with one set of credentials, also called logins. With SSO, you can ensure that your existing identity provider (IdP) remains the system of record you use to authenticate users.
 ### **Authentication Flow Breakdown**
