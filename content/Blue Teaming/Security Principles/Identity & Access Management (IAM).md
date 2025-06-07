@@ -1,6 +1,6 @@
 ---
 title: Identity & Access Management (IAM)
-draft: false
+draft: true
 tags:
   - IAM
   - AAA
@@ -10,6 +10,7 @@ tags:
   - OpenID
   - RBAC
   - ABAC
+  - SSO
 NeedsReview: true
 ---
 
@@ -20,7 +21,52 @@ NeedsReview: true
 > - **RBAC**, **ABAC**, **MFA**
 > 
 
-### 🔐 **Multi-Factor Authentication (MFA)** or **Authentication Factors**
+## RBAC
+Role-Based Access Control (RBAC) is a method of controlling access to resources based on the roles assigned to users. This method helps ensure users only have permissions and access to the resources necessary for their job. RBAC also lets you grant access to a collection of users via groups. Different cloud providers have their own RBAC systems, and in many cases, different products have their own RBAC features.
+
+---
+## SSO
+SSO is a technology that enables users to log into multiple services with one set of credentials, also called logins. With SSO, you can ensure that your existing identity provider (IdP) remains the system of record you use to authenticate users.
+
+1. User: request URL 
+2. Cloud Security Authenticator: Identify Account
+3. Cloud Security Authenticator: Redirect User to IdP
+4. User: sends Authentication request to Identity Provider
+5. IdP: Authentication toke from IdP sent to user
+6. User: sends Auth token to CSA
+7. CSA: Identifies user
+8. CSA: Redirects user to URL with auth cookie set.
+9. User: Request URL from CSA
+10. CSA: Delivers URL to User
+11. CSA: Grants user access to network
+
+```mermaid
+sequenceDiagram
+    participant IdP as Identity Provider
+    participant User
+    participant CSA as Cloud Security Authenticator
+
+
+    User->>CSA: 1. Request URL
+    CSA->>CSA: 2. Identify Account
+    CSA->>User: 3. Redirect to IdP
+    User->>IdP: 4. Send Authentication Request
+    IdP->>User: 5. Return Authentication Token
+    User->>CSA: 6. Send Auth Token
+    CSA->>CSA: 7. Identify User
+    CSA->>User: 8. Redirect with Auth Cookie
+    User->>CSA: 9. Request URL with Auth Cookie
+    CSA->>User: 10. Deliver URL
+    CSA->>CSA: 11. Grant Network Access
+```
+
+---
+
+## IAM
+
+---
+ 
+## 🔐 **Multi-Factor Authentication (MFA)** or **Authentication Factors**
 
 Here’s a breakdown:
 
@@ -44,7 +90,7 @@ Some models expand this to include:
 
 ---
 
-### 🔐 What is AAA?
+## 🔐 What is AAA?
 
 |Component|Description|
 |---|---|

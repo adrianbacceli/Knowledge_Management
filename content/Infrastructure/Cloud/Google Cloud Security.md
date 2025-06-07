@@ -115,7 +115,7 @@ graph TD
 
 ---
 
-## 🪪 IAM and Cloud IAM
+## 🪪 [[Identity & Access Management (IAM)|IAM]] and Cloud IAM
 * Roles: Collection of permissions, policies and constrains to principals
 * Principals: Users or Apps (Service Accounts) // Groups: Combine them depending on Org.
 * Policies: Rules that allow/deny access.
