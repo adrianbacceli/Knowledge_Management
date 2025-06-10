@@ -20,8 +20,7 @@ NeedsReview: false
 > [!summary] Google Cloud Architecture  
 > Google’s cloud infrastructure is built on a multi-layered security model, designed to protect data from physical to application level.
 
-
-## 🔐 Security Architecture Overview
+# 🔐 Security Architecture Overview
 ### 1. 🏗️ Secure Low-Level Infrastructure
 
 - **Physical Security**
@@ -85,7 +84,7 @@ graph TD
 [[Security in the cloud (5 Layers).canvas|Security in the cloud (5 Layers)]]
 
 ---
-## Sovereign Clouds
+# Sovereign Clouds
 
 > [!definition]
 > **Sovereign Cloud**  
@@ -102,13 +101,13 @@ graph TD
 > Non-compliance may result in being barred from operating in that region.
 
 ---
-## 🧑‍🚒 Defense In Depth ([[NIST CSF 2.0|NIST Cybersecurity Framework]])
+# 🧑‍🚒 Defense In Depth ([[NIST CSF 2.0|NIST CSF]])
 
 ### **Layered approach that uses multiple security control**
 
 * Identity Control: Measure that authenticates user before resource access (MFA)
 * Protective Control: Protect access to resources and shields against malicious (AV, WAF, IaaC Policies)
-* Network Controls: Firewalls, IPS %% ------ > Not in NIST CSF Framework %%
+* Network Controls: Firewalls, IPS  %% ------ > Not in NIST CSF Framework %%
 * Detective Controls: IDS, Cloud Security Command Center
 * Responsive Controls: Actions after detection
 * Recovery Controls: Actions after damage, like reverting to backups, 
@@ -156,10 +155,7 @@ But **shifting left** means putting **security at the beginning**:
 
 This helps catch problems **early** and fix them **faster**.
 
----
-## 📦 In short:
-
-> [!summary] Core Concept  
+> [!summary] In short:
 > The **software supply chain** is everything involved in making software.  
 > **Software Delivery Shield** helps keep that process safe from start to finish — like a super clean, secure pizza kitchen in the cloud.
 
@@ -251,27 +247,14 @@ graph LR
 > [!note]  
 > Test recovery processes regularly to ensure backup integrity and response readiness.
 
----
 
-## 🧠 Key Takeaways
-
-> [!summary]
+> [!summary] Key Takeaways
 > 
 > - Use the NIST CSF to guide tool adoption and security maturity.
->     
 > - Map tools like SCC and Chronicle across multiple pillars.
->     
 > - Implement layered defenses, automate responses, and maintain tested recovery plans.
->     
 
 ---
-
-## 📚 Resources
-
-- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
-- [Google Cloud Security](https://cloud.google.com/security)
-
-
 # Cloud Security Controls
 
 ## Types of Cloud Security Controls
@@ -419,13 +402,13 @@ graph TD
 
 ### Risk Manager
 
-|Feature|Description|
-|---|---|
-|**Purpose**|Risk assessment and reporting|
-|**Integration**|Aggregates data from SCC, Cloud Asset Inventory, and more|
-|**Benchmarking**|Aligns with CIS Google Cloud Foundations Benchmark|
-|**Report Use Cases**|Shared with cyber insurers to determine appropriate insurance coverage|
-|**Automation**|Reports can be generated on-demand or scheduled (daily, weekly, monthly)|
+| Feature              | Description                                                              |
+| -------------------- | ------------------------------------------------------------------------ |
+| **Purpose**          | Risk assessment and reporting                                            |
+| **Integration**      | Aggregates data from SCC, Cloud Asset Inventory, and more                |
+| **Benchmarking**     | Aligns with CIS Google Cloud Foundations Benchmark                       |
+| **Report Use Cases** | Shared with cyber insurers to determine appropriate insurance coverage   |
+| **Automation**       | Reports can be generated on-demand or scheduled (daily, weekly, monthly) |
 
 ### Policy Analyzer
 
@@ -492,14 +475,107 @@ graph TD
 > [!info] 
 > The system passphrase plays a critical role in Servers components.
 
-- Acts as a **primary key** for:
-    - File system encryption
-    - Cloud access
-    - Certificate management
-    - Boost tokens
-    - System configuration in scale-out environments
-    - Licensing information
+Acts as a **primary key** for:
+- File system encryption
+- Cloud access
+- Certificate management
+- Boost tokens
+- System configuration in scale-out environments
+- Licensing information
 
+---
+# Network Protection
+
+## 🔒 Firewall Rules Logs & VPC Flow Logs
+
+### 📘 Overview
+Google Cloud's **Cloud Logging** collects logs from resources for analysis via **Logs Explorer**.  
+Two key log types:
+
+---
+### 🚧 Firewall Rules Logs
+
+- **Purpose**: Track actions of firewall rules (allow/deny traffic).
+- **Use Case**: Verify if a rule blocks traffic from a specific IP range.
+- **Details Logged**:
+  - Source & destination IPs
+  - Protocols & ports
+  - Date & time
+- **Access**: Available in Cloud Logging when logging is enabled.
+
+---
+### 🌐 VPC Flow Logs
+
+- **Purpose**: Monitor network traffic in/out of VMs in a VPC.
+- **Use Case**: Analyze traffic patterns, detect threats, troubleshoot connectivity.
+- **Details Logged**:
+  - Source & destination IPs
+  - Ports & protocols
+  - Timestamps
+
+---
+### 🔍 Tools
+- **Logs Explorer**: Use to retrieve, access, and analyze logs.
+
+---
+# Perimeter Protection and Zero Trust
+
+## Perimeter Protection
+- Identity and Context based access
+- Firewalls
+- IDPS (Intrusion Detection and Prevention Systems)
+- VPNs Virtual Private Networks
+- ACLs Access Control Lists
+- DMZs
+
+---
+
+## Zero Trust
+- Verify Explicitly: every access request must be authenticated and authorized before access is granted to any resource.
+- Least Privilege Access: users, devices, and systems should only be granted the minimum access necessary to perform their tasks.
+- Assume Breach: Organizations embracing zero trust should operate under the assumption that a breach has already happened or will happen, and design their security measures accordingly.
+
+
+### Justification
+``` mermaid
+ graph TD
+
+    A[Perimeter Protection] --> B[Limitations in Modern Threat Landscape]
+    B --> C[Need for Adaptive Security]
+    C --> D[Zero Trust Principles]
+    D --> E[Verify Explicitly]
+    D --> F[Least Privilege Access]
+    D --> G[Assume Breach]
+```
+
+
+### Implementing Zero Trust
+- IAM: Identity and Access Management
+- MFA: Multi-Factor Authentication
+- Micro Segmentation: Divides a network into smaller, isolated segments to limit unauthorized access and reduce the potential attack surface.
+- Network Access Control (NAC): Policy Based Access Control enforces policy-based access control to network resources.
+
+---
+## Context Aware Access Location
+- CASBs (Cloud Access Security Brokers): Act as intermediaries between cloud service users and cloud service providers, enabling organizations to enforce security policies and maintain visibility over cloud-based activities.
+- SASE Platforms: combine network and security functions into a single, cloud-based service.
+
+---
+## Comparison of Traditional Perimeter Security Measures and Zero Trust Measures
+
+| Characteristic   | Traditional Perimeter Security Measures                                                                                           | Zero Trust Measures                                                                                                                                                                                                                         |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Focus            | Creates a strong barrier between the internal network and the outside world                                                       | Verifies access to resources on a case-by-case basis, regardless of location                                                                                                                                                                |
+| Key Technologies | Firewalls, IDS, IPS, Physical security controls                                                                                   | Identity and access management (IAM), Multi-Factor Authentication (MFA), Micro-segmentation, Network Access Control (NAC), Continuous monitoring with Cloud Access Security Brokers (CASBs) and Secure Access Service Edge (SASE) platforms |
+| Benefits         | Can be relatively simple to implement and manage                                                                                  | Can provide more comprehensive security and visibility for a large number of users than traditional perimeter security measures                                                                                                             |
+| Drawbacks        | Can be difficult to protect against sophisticated attacks, Provide limited protection once an attacker is in the internal network | Can be more complex to implement and manage than traditional perimeter security measures                                                                                                                                                    |
+
+
+---
+## 📚 Resources
+
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+- [Google Cloud Security](https://cloud.google.com/security)
 
 ---
 Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)
