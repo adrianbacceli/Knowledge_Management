@@ -401,7 +401,7 @@ graph TD
   
 ```mermaid
 graph TD
-   D[Premium Tier - Standard Tier + ]
+   D[Premium Tier: Standard Tier plus:  ]
 
   D --> E[PCI and CIS Benchmark Reporting]
   D --> F[Web Security Scanner]
