@@ -399,13 +399,6 @@ graph TD
   %% Standard Tier Features
   A --> B[Security Health Analytics]
   A --> C[High-Severity Threat Detection]
-
-   %% Styling
-  classDef tier fill:#cce5ff,stroke:#004085,stroke-width:2px;
-  classDef feature fill:#f8f9fa,stroke:#6c757d,stroke-width:1px;
-  class A,D tier;
-  class B,C,E,F,G,H,I feature;
-
   ```
   
 ```mermaid
@@ -419,13 +412,6 @@ graph TD
   D --> G[Event Threat Detection]
   D --> H[Container Threat Detection]
   D --> I[VM Threat Detection]
-
-  %% Styling
-  classDef tier fill:#cce5ff,stroke:#004085,stroke-width:2px;
-  classDef feature fill:#f8f9fa,stroke:#6c757d,stroke-width:1px;
-  class A,D tier;
-  class B,C,E,F,G,H,I feature;
-
   ```
 
 ---
@@ -520,4 +506,4 @@ graph TD
 
 
 ---
-_**Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)
+Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)
