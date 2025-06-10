@@ -393,20 +393,16 @@ graph TD
 
 ```mermaid
 graph TD
-  %% Tiers
   A[Standard Tier]
   
-  %% Standard Tier Features
   A --> B[Security Health Analytics]
   A --> C[High-Severity Threat Detection]
   ```
   
 ```mermaid
 graph TD
-  %% Tiers
-  D[Premium Tier - Standard Tier + ]
+   D[Premium Tier - Standard Tier + ]
 
-  %% Premium Tier Features
   D --> E[PCI and CIS Benchmark Reporting]
   D --> F[Web Security Scanner]
   D --> G[Event Threat Detection]
