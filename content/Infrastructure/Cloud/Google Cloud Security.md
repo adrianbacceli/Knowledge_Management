@@ -388,6 +388,7 @@ graph TD
 - **Sensitive Data Protection**: Scans buckets and databases for regulated data
 - **SCC Partner Integrations**: Extends capabilities via third-party security tools
 
+---
 ## Google Security Command Center (SCC) Tiers
 
 ```mermaid
@@ -464,6 +465,58 @@ graph TD
 | **Encryption**                | Defaults to encryption at rest and in transit; supports customer-managed keys        |
 | **Monitoring**                | Alerts on policy changes that break compliance                                       |
 | **Multi-Framework Support**   | Supports multiple compliance programs for multinational needs                        |
+
+---
+
+# 🔐 HMAC-Based Authentication in Cloud APIs
+
+> HMAC-based (or signature-based) authentication is widely used in cloud services like **AWS S3**, **Google Cloud Storage**, and others.
+
+## 📌 Key Concepts
+
+- The **servers and clients do not store the password (secret key) in plaintext**.
+- Instead, they uses the **secret key to generate a cryptographic signature** (e.g., `HMAC-SHA256`) over the request.
+- This **signature is sent along with authentication request**.
+- The **other end verifies the signature** using the known secret key.
+
+> [!note]  
+> The secret key is never sent over the network, but it must be accessible to the client to generate the signature.
+
+---
+
+## 🔄 Why the Secret Key Must Be Stored on the Client
+
+> [!warning] 
+> You can't just store a hash of the secret key!
+
+- Hashes like `SHA256` are **one-way** — they cannot be reversed.
+- To compute an HMAC, you need the **original secret key**, not its hash.
+- Therefore, the client must **store the secret key securely**, even if not in plaintext.
+
+---
+
+## ✅ Secure Storage Options for Secret Keys
+
+| Method              | Description                                                                         |
+| ------------------- | ----------------------------------------------------------------------------------- |
+| **Secrets Manager** | Centralized service (e.g., Lockboxes) for managing and rotating secrets.            |
+| **TPM / HSM**       | Hardware-based secure storage (Trusted Platform Module / Hardware Security Module). |
+| **Encrypted Files** | Encrypted configuration files (e.g., `ComponentCredentials.xml`).                   |
+
+---
+
+## ❓ When Is the System Passphrase Used?
+
+> [!info] 
+> The system passphrase plays a critical role in Servers components.
+
+- Acts as a **primary key** for:
+    - File system encryption
+    - Cloud access
+    - Certificate management
+    - Boost tokens
+    - System configuration in scale-out environments
+    - Licensing information
 
 
 ---
