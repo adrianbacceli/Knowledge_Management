@@ -96,7 +96,7 @@ Each service operates **independently**, selected based on the best fit for the 
 **Function as a Service** is a form of serverless computing that runs functions. A function is a small piece of code. Functions are ephemeral, meaning they only exist for a short period of time. Developers can use their choice of programming language to create functions, which makes adopting serverless computing more convenient.
 
 > [!info] 🔒 Did You Know?  
-> The short lifespan of functions contributes to their [[Google Cloud Security|Security]]. Since each function is short-lived, malicious actors have a very limited window to impose threats.
+> The short lifespan of functions contributes to their [[Google Cloud Security Architecture|Security]]. Since each function is short-lived, malicious actors have a very limited window to impose threats.
 > 
 > Each function has a single role in a software application. If a malicious actor were to gain access to a function, they could only threaten the part of the application that uses that function.
 

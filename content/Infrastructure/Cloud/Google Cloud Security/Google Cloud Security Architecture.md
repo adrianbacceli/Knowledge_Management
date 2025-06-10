@@ -1,5 +1,5 @@
 ---
-title: Google Cloud Security
+title: Google Cloud Traditional Security and Zero Trust
 draft: false
 tags:
   - GCP
@@ -13,6 +13,16 @@ tags:
   - management
   - NIST-CSF
   - data-sovereignty
+  - Defensive-Security
+  - Defense-in-Depth
+  - IAM
+  - Federation
+  - Firewall
+  - SDS
+  - SBOM
+  - Shift-Left
+  - Zero-Trust
+  - Traditional-Security
 NeedsReview: false
 ---
 # Google Cloud Security Architecture Overview
@@ -20,7 +30,7 @@ NeedsReview: false
 > [!summary] Google Cloud Architecture  
 > Google’s cloud infrastructure is built on a multi-layered security model, designed to protect data from physical to application level.
 
-# 🔐 Security Architecture Overview
+## 🔐 Security Architecture Overview
 ### 1. 🏗️ Secure Low-Level Infrastructure
 
 - **Physical Security**
@@ -84,7 +94,7 @@ graph TD
 [[Security in the cloud (5 Layers).canvas|Security in the cloud (5 Layers)]]
 
 ---
-# Sovereign Clouds
+## Sovereign Clouds
 
 > [!definition]
 > **Sovereign Cloud**  
@@ -101,6 +111,57 @@ graph TD
 > Non-compliance may result in being barred from operating in that region.
 
 ---
+
+# 🔐 HMAC-Based Authentication in Cloud APIs
+
+> HMAC-based (or signature-based) authentication is widely used in cloud services like **AWS S3**, **Google Cloud Storage**, and others.
+
+## 📌 Key Concepts
+
+- The **servers and clients do not store the password (secret key) in plaintext**.
+- Instead, they uses the **secret key to generate a cryptographic signature** (e.g., `HMAC-SHA256`) over the request.
+- This **signature is sent along with authentication request**.
+- The **other end verifies the signature** using the known secret key.
+
+> [!note]  
+> The secret key is never sent over the network, but it must be accessible to the client to generate the signature.
+
+---
+
+## 🔄 Why the Secret Key Must Be Stored on the Client
+
+> [!warning] 
+> You can't just store a hash of the secret key!
+
+- Hashes like `SHA256` are **one-way** — they cannot be reversed.
+- To compute an HMAC, you need the **original secret key**, not its hash.
+- Therefore, the client must **store the secret key securely**, even if not in plaintext.
+
+---
+
+## ✅ Secure Storage Options for Secret Keys
+
+| Method              | Description                                                                         |
+| ------------------- | ----------------------------------------------------------------------------------- |
+| **Secrets Manager** | Centralized service (e.g., Lockboxes) for managing and rotating secrets.            |
+| **TPM / HSM**       | Hardware-based secure storage (Trusted Platform Module / Hardware Security Module). |
+| **Encrypted Files** | Encrypted configuration files (e.g., `ComponentCredentials.xml`).                   |
+
+---
+
+## ❓ When Is the System Passphrase Used?
+
+> [!info] 
+> The system passphrase plays a critical role in Servers components.
+
+Acts as a **primary key** for:
+- File system encryption
+- Cloud access
+- Certificate management
+- Boost tokens
+- System configuration in scale-out environments
+- Licensing information
+
 # 🧑‍🚒 Defense In Depth ([[NIST CSF 2.0|NIST CSF]])
 
 ### **Layered approach that uses multiple security control**
@@ -255,240 +316,18 @@ graph LR
 > - Implement layered defenses, automate responses, and maintain tested recovery plans.
 
 ---
-# Cloud Security Controls
+# Perimeter Protection and Zero Trust
 
-## Types of Cloud Security Controls
-
-> [!info] Classification  
-> Cloud security controls are mechanisms that support risk reduction through layered defense and targeted mitigation across digital assets.
-
-|Control Type|Purpose|Example|
-|---|---|---|
-|**Deterrent**|Deter attackers psychologically or informatively|Passphrases that are harder to crack than traditional passwords|
-|**Preventative**|Strengthen and proactively secure assets|Disabling unused ports to reduce attack surfaces|
-|**Corrective**|Mitigate damage after incidents|Scripts that repair damage and notify admins after unauthorized actions|
-|**Detective**|Identify and report ongoing or past attacks|Antivirus software, monitoring tools|
-|**Compensating**|Fill gaps where standard controls can't be applied|Deadbolt added to a locked door handle|
-
----
-
-## Levels of Application
-
-> [!tip] Multi-Layered Protection  
-> Controls should be applied at various operational levels to ensure robust security posture.
-
-```mermaid
-graph TD
-    ServiceLevel["Service Level"] -->|Storage, Compute, Networking| ProtectionA
-    WorkloadLevel["Workload Level"] -->|Apps & Resources| ProtectionB
-    PlatformLevel["Platform Level"] -->|OS, Languages, Runtimes| ProtectionC
-```
-
-- **Service Level:** Infrastructure components like storage and networking.
-- **Workload Level:** Business applications and their supporting resources.
-- **Platform Level:** Operating environments such as OSes and programming runtimes.
-
----
-
-## Control Mapping Process
-
-> [!important] Control Governance Lifecycle  
-> A well-structured mapping process ensures security controls align with organizational and regulatory requirements.
-
-```mermaid
-graph TD
-    A[Identify Controls] --> B[Map Required Controls]
-    B --> C[Identify Unmapped Controls]
-    C --> D[Perform Assessment]
-    D --> E[Implement Guardrails]
-```
-
-1. **Identify Controls** – Inventory existing security controls within the cloud environment.
-2. **Map Required Controls** – Align existing controls to frameworks like NIST, CIS, or ISO.
-3. **Identify Unmapped Controls** – Detect gaps where existing controls do not meet compliance or policy standards.
-4. **Perform Assessment** – Evaluate effectiveness and sufficiency of mapped controls.
-5. **Implement Guardrails** – Apply policy initiatives via native cloud tools or third-party solutions.
-
----
-
-```mermaid
-graph TD
-    A[Organization: Example.com] --> B[Folder: Sales]
-    A --> C[Folder: Engineering]
-    A --> D[Folder: Human Resources]
-    C --> E[Project: example dev]
-    C --> F[Project: Example prod]
-    C --> G[Project: example-test]
-```
-
----
-
-
-# Google Security Command Center (SCC)
-
-> [!info]  
-> **Google Security Command Center (SCC)** is Google's CSPM (Cloud Security Posture Management) platform for managing security and compliance across multi-cloud environments.
-
-## Key Capabilities
-
-- Alignment with **CIS Google Cloud Computing Foundations Benchmark**
-- **Asset inventory and tracking**
-- **Real-time notifications** for security events
-- **Misconfiguration identification** for cloud resources
-
-## Core Services
-
-### 1. Security Health Analytics
-
-> [!tip]  
-> Automatically identifies misconfigured resources and vulnerabilities across your GCP environment.
-
-- Analyzes virtual machines, containers, networks, storage buckets, and IAM policies
-- Detects vulnerabilities and suggests remediations
-
-### 2. Web Security Scanner
-
-> [!example]  
-> Useful for web app vulnerability detection in environments like App Engine and GKE.
-
-- **Managed Scans**: Basic scans configured by SCC
-- **Custom Scans**: Granular scans with custom configuration
-- **Container Threat Detection**: Monitors GKE containers for signs of compromise
-- **Virtual Machine Threat Detection**: Detects potentially malicious apps in Compute Engine VMs
-
-### 3. Compliance Dashboard
-
-> [!note]  
-> Supports tracking compliance posture and exporting audit-ready reports.
-
-- Framework violation checks
-- Fix recommendations
-- Exportable compliance reports (e.g., for PCI, CIS)
-
-### 4. Integrated Data Sources
-
-- **Cloud Armor**: Protects against DDoS and OWASP threats
-- **Sensitive Data Protection**: Scans buckets and databases for regulated data
-- **SCC Partner Integrations**: Extends capabilities via third-party security tools
-
----
-## Google Security Command Center (SCC) Tiers
-
-```mermaid
-graph TD
-  A[Standard Tier]
-  
-  A --> B[Security Health Analytics]
-  A --> C[High-Severity Threat Detection]
-  ```
-  
-```mermaid
-graph TD
-   D[Premium Tier: Standard Tier plus:  ]
-
-  D --> E[PCI and CIS Benchmark Reporting]
-  D --> F[Web Security Scanner]
-  D --> G[Event Threat Detection]
-  D --> H[Container Threat Detection]
-  D --> I[VM Threat Detection]
-  ```
-
----
-
-# Google Cloud Security Tools 
-
-> [!info] Focus  
-> This summary outlines key cloud-native tools in Google Cloud's Security Command Center (SCC) for managing risk and compliance.
-
-### Risk Manager
-
-| Feature              | Description                                                              |
-| -------------------- | ------------------------------------------------------------------------ |
-| **Purpose**          | Risk assessment and reporting                                            |
-| **Integration**      | Aggregates data from SCC, Cloud Asset Inventory, and more                |
-| **Benchmarking**     | Aligns with CIS Google Cloud Foundations Benchmark                       |
-| **Report Use Cases** | Shared with cyber insurers to determine appropriate insurance coverage   |
-| **Automation**       | Reports can be generated on-demand or scheduled (daily, weekly, monthly) |
-
-### Policy Analyzer
-
-|Feature|Description|
-|---|---|
-|**Purpose**|Reviews IAM policies and enforces least-privilege access|
-|**Output**|Role-binding reports with conditions and access principals|
-|**Query Scope**|Customizable across orgs, projects, or folders|
-|**Export Options**|Results can be written to BigQuery or Cloud Storage|
-
-### Assured Workloads
-
-| Feature                       | Description                                                                          |
-| ----------------------------- | ------------------------------------------------------------------------------------ |
-| **Purpose**                   | Ensures workloads meet industry compliance standards                                 |
-| **Compliance Templates**      | Predefined configurations for healthcare, government, etc.                           |
-| **Data Residency Controls**   | Restricts storage to specified geographic regions                                    |
-| **Personnel Access Controls** | Limits access to authorized Google personnel based on physical and vetting standards |
-| **Encryption**                | Defaults to encryption at rest and in transit; supports customer-managed keys        |
-| **Monitoring**                | Alerts on policy changes that break compliance                                       |
-| **Multi-Framework Support**   | Supports multiple compliance programs for multinational needs                        |
-
----
-
-# 🔐 HMAC-Based Authentication in Cloud APIs
-
-> HMAC-based (or signature-based) authentication is widely used in cloud services like **AWS S3**, **Google Cloud Storage**, and others.
-
-## 📌 Key Concepts
-
-- The **servers and clients do not store the password (secret key) in plaintext**.
-- Instead, they uses the **secret key to generate a cryptographic signature** (e.g., `HMAC-SHA256`) over the request.
-- This **signature is sent along with authentication request**.
-- The **other end verifies the signature** using the known secret key.
-
-> [!note]  
-> The secret key is never sent over the network, but it must be accessible to the client to generate the signature.
-
----
-
-## 🔄 Why the Secret Key Must Be Stored on the Client
-
-> [!warning] 
-> You can't just store a hash of the secret key!
-
-- Hashes like `SHA256` are **one-way** — they cannot be reversed.
-- To compute an HMAC, you need the **original secret key**, not its hash.
-- Therefore, the client must **store the secret key securely**, even if not in plaintext.
-
----
-
-## ✅ Secure Storage Options for Secret Keys
-
-| Method              | Description                                                                         |
-| ------------------- | ----------------------------------------------------------------------------------- |
-| **Secrets Manager** | Centralized service (e.g., Lockboxes) for managing and rotating secrets.            |
-| **TPM / HSM**       | Hardware-based secure storage (Trusted Platform Module / Hardware Security Module). |
-| **Encrypted Files** | Encrypted configuration files (e.g., `ComponentCredentials.xml`).                   |
-
----
-
-## ❓ When Is the System Passphrase Used?
-
-> [!info] 
-> The system passphrase plays a critical role in Servers components.
-
-Acts as a **primary key** for:
-- File system encryption
-- Cloud access
-- Certificate management
-- Boost tokens
-- System configuration in scale-out environments
-- Licensing information
-
----
-# Network Protection
+## Perimeter Protection
+- Identity and Context based access
+- Firewalls
+- IDPS (Intrusion Detection and Prevention Systems)
+- VPNs Virtual Private Networks
+- ACLs Access Control Lists
+- DMZs
 
 ## 🔒 Firewall Rules Logs & VPC Flow Logs
 
-### 📘 Overview
 Google Cloud's **Cloud Logging** collects logs from resources for analysis via **Logs Explorer**.  
 Two key log types:
 
@@ -512,21 +351,6 @@ Two key log types:
   - Source & destination IPs
   - Ports & protocols
   - Timestamps
-
----
-### 🔍 Tools
-- **Logs Explorer**: Use to retrieve, access, and analyze logs.
-
----
-# Perimeter Protection and Zero Trust
-
-## Perimeter Protection
-- Identity and Context based access
-- Firewalls
-- IDPS (Intrusion Detection and Prevention Systems)
-- VPNs Virtual Private Networks
-- ACLs Access Control Lists
-- DMZs
 
 ---
 
