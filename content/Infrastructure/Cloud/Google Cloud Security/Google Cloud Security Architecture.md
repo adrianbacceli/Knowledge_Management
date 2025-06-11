@@ -23,6 +23,8 @@ tags:
   - Shift-Left
   - Zero-Trust
   - Traditional-Security
+  - Architecture
+  - Operation-Security
 NeedsReview: false
 ---
 # Google Cloud Security Architecture Overview
