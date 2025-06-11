@@ -1,5 +1,5 @@
 ---
-title: Google Cloud Traditional Security and Zero Trust
+title: Google Cloud Security Architecture
 draft: false
 tags:
   - GCP
