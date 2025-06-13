@@ -84,15 +84,15 @@ DevSecOps enhances the traditional DevOps approach by integrating **security acr
 
 ## 🧭 Summary
 
-| Phase      | Focus                             | Security Approach                         |
-|------------|-----------------------------------|--------------------------------------------|
-| Plan       | Threat modeling, IAM              | Define risks and controls                  |
-| Code       | Development                       | Secure coding, static analysis             |
-| Build      | Compiling                         | Integrated security checks                 |
-| Test       | Validation                        | Manual & automated testing                 |
-| Release    | Final checks                      | Compliance review and sign-off             |
-| Deploy     | Go live                           | Secured deployment pipelines               |
-| Operate    | Monitoring                        | Real-time feedback & patching              |
+| Phase   | Focus                | Security Approach              |
+| ------- | -------------------- | ------------------------------ |
+| Plan    | Threat modeling, IAM | Define risks and controls      |
+| Code    | Development          | Secure coding, static analysis |
+| Build   | Compiling            | Integrated security checks     |
+| Test    | Validation           | Manual & automated testing     |
+| Release | Final checks         | Compliance review and sign-off |
+| Deploy  | Go live              | Secured deployment pipelines   |
+| Operate | Monitoring           | Real-time feedback & patching  |
 
 ---
 
