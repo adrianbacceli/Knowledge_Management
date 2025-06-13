@@ -1,8 +1,8 @@
 ---
 title: Next Steps
 draft: false
-tags: []
-NeedsReview: false
+tags: 
+NeedsReview: true
 ---
 # This is the list of next steps  
 - Finish Drafts and NeedsReview

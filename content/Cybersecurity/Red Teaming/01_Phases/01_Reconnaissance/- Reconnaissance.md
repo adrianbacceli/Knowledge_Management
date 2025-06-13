@@ -10,7 +10,7 @@ NeedsReview: true
 # Reconnaissance
 
 > [!abstract] Summary  
-> Reconnaissance is the initial phase in the [Unified Kill Chain](00_Unified%20Kill%20Chain%20(UKC).md), where the attacker gathers information about the target without actively engaging with it.  
+> Reconnaissance is the initial phase in the [Unified Kill Chain](Unified%20Kill%20Chain%20(UKC).md), where the attacker gathers information about the target without actively engaging with it.  
 > 
 > **"Reconnaissance is 90% of the job in Ethical Hacking. This is where you find most vulnerabilities. The rest is about scaling the impact."** - Adrian Bacceli
 

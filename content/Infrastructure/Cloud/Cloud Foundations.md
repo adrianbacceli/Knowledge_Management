@@ -8,7 +8,7 @@ tags:
 NeedsReview: true
 ---
 > [!summary] 🌐 Failure Domains in Cloud Architecture  
-> The [[Digital Transformation Journey]] introduces **failure domains**—resources that can fail without affecting data availability. These domains are composed of **zones** (groups of data centers in an area) and **regions** (groups of zones). They enable [[Data Center Implementation#Redundancy|redundancy]], reduce [[Infrastructure/Networking/Foundations#Latency|latency]] for end users, and provide [[Blue Teaming/Data Protection/Foundations#Resiliency|resiliency]] across operations.
+> The [[Digital Transformation Journey]] introduces **failure domains**—resources that can fail without affecting data availability. These domains are composed of **zones** (groups of data centers in an area) and **regions** (groups of zones). They enable [[Data Center Implementation#Redundancy|redundancy]], reduce [[Infrastructure/Networking/Foundations#Latency|latency]] for end users, and provide [[Cybersecurity/Blue Teaming/Data Protection/Foundations#Resiliency|resiliency]] across operations.
 
 ---
 # Benefits of Cloud Computing
