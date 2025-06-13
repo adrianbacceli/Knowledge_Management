@@ -59,34 +59,19 @@ Automation of coding workflows for efficient, secure releases:
 
 ### 📍 CI/CD 4-Step Flow
 
-1. **Source**  
-   Code pushed to a shared repo with version control and branch protections.
-
-2. **Build**  
-   Workflow triggers compile, dependency installation, or static site build.
-
-3. **Test**  
-   Automated validation: unit tests, security scans, linting.
-
-4. **Deploy**  
-   Delivery to platforms like GitHub Pages, Vercel, Docker Hub, etc.
+1. **Source**: Code pushed to a shared repo with version control and branch protections.
+2. **Build**: Workflow triggers compile, dependency installation, or static site build.
+3. **Test**: Automated validation: unit tests, security scans, linting.
+4. **Deploy**: Delivery to platforms like GitHub Pages, Vercel, Docker Hub, etc.
 
 ---
 
-## 🔧 CI/CD with GitHub Actions
+### 🔧 CI/CD with GitHub Actions
 
-### 1. Source (Git)
-- Code is committed and pushed to GitHub  
-- Triggers workflows, reviewed via PRs and protection rules
-
-### 2. Build
-- GitHub Actions compile/build your app/site  
-
-### 3. Test
-- Run checks automatically; stop on failure
-
-### 4. Deploy
-- Auto-release to staging, production, or site hosting platforms  
+1. Source (Git):  Code is committed and pushed to GitHub Triggering workflows, reviewed via PRs and protection rules.
+2. Build: GitHub Actions compile/build your app/site  
+3. Test:  Run checks automatically; stop on failure
+4. Deploy: Auto-release to staging, production, or site hosting platforms  
 
 ---
 
@@ -101,7 +86,7 @@ Automation of coding workflows for efficient, secure releases:
 
 ---
 
-# 🔐 Security in CI/CD
+### 🔐 Security in CI/CD
 
 - Integrated automated security testing  
 - Tests during each stage of CI/CD  
@@ -156,38 +141,15 @@ flowchart TD
 
 ## 🛡️ Defense Strategies
 
-### 1. Security Hardening
-
-Limit the attack surface via config and infra
-
-### 2. Continuous Vulnerability Checks
-
-Run automated scans in CI/CD
-
-### 3. SBOM
-
-Track components in use
-→ [[#🧾 Software Bill of Materials (SBOM)]]
+1. Security Hardening: Limit the attack surface via config and infra
+2. Continuous Vulnerability Checks: Run automated scans in CI/CD
+3. SBOM:  Track components in use → [[#🧾 Software Bill of Materials (SBOM)]]
 
 > [!tip] Helpful Tip
 > 💡 SBOMs increase transparency and ensure compliance.
 
 ---
-
-## ✅ Final Recommendations
-
-* Harden pipelines
-* Use access controls
-* Generate/review SBOMs
-* Audit dependencies regularly
-* Educate personnel
-
-> [!success] Securing Supply Chain
-> ✅ Your software and users stay protected.
-
----
-
-# 🍕 Software Supply Chain Analogy
+## 🍕 Software Supply Chain Analogy
 
 > Software is like making a pizza.
 
@@ -219,7 +181,7 @@ graph TD
 
 ---
 
-# 🧾 Software Bill of Materials (SBOM)
+## 🧾 Software Bill of Materials (SBOM)
 
 Machine-readable inventory of software components:
 
@@ -231,6 +193,16 @@ Machine-readable inventory of software components:
 
 > [!tip] Why It Matters
 > CVEs are easier to trace when SBOMs are available.
+
+---
+## ✅ Final Recommendations
+
+* Harden pipelines
+* Use access controls
+* Generate/review SBOMs
+* Audit dependencies regularly
+* Educate personnel
+
 
 ---
 
