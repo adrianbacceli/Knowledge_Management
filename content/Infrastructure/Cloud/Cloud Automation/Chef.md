@@ -8,7 +8,7 @@ tags:
   - infrastructure-as-code
 NeedsReview: false
 ---
-## 👨‍🍳 **What Is Chef?**
+##  **What Is Chef?**
 
 **Chef** is a **configuration management tool** that automates the process of configuring and maintaining servers. It uses a **declarative approach** with a **Ruby-based DSL** to define system configurations.
 
