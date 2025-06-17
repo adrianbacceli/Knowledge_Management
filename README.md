@@ -6,3 +6,6 @@ This space is dedicated to sharing insights, tools, and learnings in **cybersecu
 It serves as a **knowledge center** — a growing collection of notes, resources, experiments, and guides designed to inform, challenge, and connect.
 
 Whether you're exploring digital security, systems architecture, or ethical hacking, you'll find something valuable here.
+
+---
+# This page uses Quartz, which is an Open-Source Obsidian Github Pages Publisher. Learn more about Quartz following the link: https://github.com/quartz-scheduler/quartz
