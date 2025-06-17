@@ -55,11 +55,9 @@ Data is generally categorized into three sensitivity levels:
 A typical tag for Personally Identifiable Information (PII) might look like this:
 
 ```
-
 label: PII  
 bool: true  
 type: SSN
-
 ```
 
 > [!tip]
@@ -77,5 +75,4 @@ Access to tag templates can be managed using **IAM roles** (Identity and Access 
 > A tag template might include fields like `classification`, `owner`, `retention`, and `data-type`.
 
 ---
-
 Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)
