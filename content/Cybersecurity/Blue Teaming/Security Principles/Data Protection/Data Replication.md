@@ -1,15 +1,13 @@
 ---
 title: Data Replication
-draft: true
+draft: false
 tags:
   - data-replication
   - disaster-recovery
   - snapshots
   - virtualization
-NeedsReview: true
+NeedsReview: false
 ---
----
-
 # Data Replication Overview
 
 

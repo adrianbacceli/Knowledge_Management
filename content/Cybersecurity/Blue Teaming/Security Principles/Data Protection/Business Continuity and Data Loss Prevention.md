@@ -31,13 +31,22 @@ Data loss refers to the **unauthorized disclosure** of proprietary, classified, 
 As a cloud cybersecurity professional, your responsibility is to **protect all forms of data** from exposure or misuse.
 
 ---
-
 ## Preventing Unauthorized Access
 
-Two key strategies for preventing data loss:
+Data loss can be mitigated by enforcing **resiliency**.
 
-1. **Identity and Access Management (IAM)**
-2. **De-identification of sensitive data**
+> [!quote] **Resiliency:** The ability to prepare for, respond to, and recover from disruptions.
+
+To effectively prevent data loss, implement these key strategies:
+
+1. **Identity and Access Management (IAM)**  
+    Ensure that only authorized users and systems can access specific resources by implementing strong IAM controls such as multifactor authentication, least privilege access, and regular audits.
+
+2. **De-identification of Sensitive Data**  
+    Protect personal and sensitive information by removing or masking identifiers, reducing the risk of exposure even if unauthorized access occurs.
+
+
+
 
 ### Identity and Access Management ([[Identity & Access Management (IAM)|IAM]])
 
@@ -71,6 +80,10 @@ De-identification removes personal identifiers from datasets to prevent data fro
 - **Data Masking**: Obscuring data using generic characters (e.g., `****`, `####`).
 - **Tokenization**: Replacing sensitive data with randomly generated tokens.
 - **Generalization**: Replacing specific values with broader categories (e.g., exact age with age range).
+
+> [!tip] 
+> Combine IAM with data de-identification to create a defense-in-depth strategy that addresses both access control and data sensitivity.
+
 
 ---
 # Business Continuity Techniques
@@ -164,3 +177,4 @@ Availability zones are isolated data center locations:
 ---
 _Adapted from: Information Storage and Management v5_
 Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)
+
