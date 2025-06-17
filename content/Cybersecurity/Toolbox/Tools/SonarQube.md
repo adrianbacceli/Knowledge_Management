@@ -17,7 +17,7 @@ NeedsReview: false
 
 # SonarQube: Introduction to Static Code Analysis
 
-SonarQube is a **Static Application Security Testing (SAST)** tool that automatically analyzes source code to detect:
+SonarQube is a **Static Application Security Testing ([[DevOps and DevSecOps#🧪 **SAST (Static Application Security Testing) Tools**|SAST]])** tool that automatically analyzes source code to detect:
 
 - Bugs (that affect correctness or behavior)
 - Security vulnerabilities (that can be exploited)
