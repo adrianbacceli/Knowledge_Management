@@ -30,7 +30,7 @@ NeedsReview: false
 # Google Cloud Security Architecture Overview
 
 > [!summary] Google Cloud Architecture  
-> Google’s cloud infrastructure is built on a multi-layered security model, designed to protect data from physical to application level.
+> Google’s cloud infrastructure is built on a [[Multi-Layered Security]] model, designed to protect data from physical to application level.
 
 ## 🔐 Security Architecture Overview
 ### 1. 🏗️ Secure Low-Level Infrastructure

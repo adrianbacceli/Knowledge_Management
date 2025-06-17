@@ -1,0 +1,166 @@
+---
+title: Business Continuity and Data Loss Prevention
+draft: false
+tags:
+  - data-loss
+  - Prevention
+  - data-protection
+  - de-identification
+  - PII
+  - business-continuity
+  - fault-tolerance
+  - disaster-recovery
+  - high-availability
+  - storage
+NeedsReview: false
+---
+> [!warning]
+> **Data loss** is not just about losing access to data—it includes unauthorized disclosure of sensitive, proprietary, or classified information. Prevention requires proactive strategies involving access control, monitoring, and data handling practices
+
+## What is Data Loss?
+
+Data loss refers to the **unauthorized disclosure** of proprietary, classified, or sensitive information. It can occur through:
+
+- **Data leakage** (accidental exposure)
+- **Data theft** (intentional exfiltration)
+- **Data Inaccessibility or Corruption** (rendered unusable)
+
+> [!example]
+> _Example:_ Personal employment information being publicly exposed due to a misconfigured cloud storage bucket.
+
+As a cloud cybersecurity professional, your responsibility is to **protect all forms of data** from exposure or misuse.
+
+---
+
+## Preventing Unauthorized Access
+
+Two key strategies for preventing data loss:
+
+1. **Identity and Access Management (IAM)**
+2. **De-identification of sensitive data**
+
+### Identity and Access Management ([[Identity & Access Management (IAM)|IAM]])
+
+IAM helps secure data by ensuring that only **authorized users** can access it. This is based on the:
+
+> [!tip]
+> **Principle of Least Privilege**: Assign users only the minimum access rights necessary for their roles.
+
+**Questions to guide access decisions:**
+- _Who is accessing the data?_
+- _Why do they need the data?_
+- _When and from where are they accessing it?_
+
+> [!note] 
+> Implementing continuous monitoring and anomaly detection can help identify suspicious access patterns and potential insider threats.
+
+---
+
+## De-identification
+
+De-identification removes personal identifiers from datasets to prevent data from being linked to specific individuals.
+
+> [!quote]
+> According to the U.S. National Institute of Standards and Technology (NIST),  
+> _“De-identification removes identifying information from a data set so that individual data can’t be linked with specific individuals.”_
+
+### Methods of De-identification
+
+- **Redaction**: Permanently removing sensitive values.
+- **Replacement**: Substituting identifiers with placeholders.
+- **Data Masking**: Obscuring data using generic characters (e.g., `****`, `####`).
+- **Tokenization**: Replacing sensitive data with randomly generated tokens.
+- **Generalization**: Replacing specific values with broader categories (e.g., exact age with age range).
+
+---
+# Business Continuity Techniques
+
+> [!note]  
+> These techniques ensure IT infrastructure and services remain available or can be restored quickly after disruptions.
+
+## Disaster Recovery
+
+Disaster recovery involves a set of policies and procedures for restoring IT infrastructure, including data access, after a natural or human-induced disaster.
+
+**Phases:**
+- **Before Disaster**: Primary site runs operations; data is replicated to DR site.
+- **After Disaster**: DR site takes over if primary site becomes unavailable.
+
+---
+## Fault Isolation
+
+> [!tip]  
+> Fault isolation doesn't prevent component failure but contains the impact to avoid cascading effects.
+
+Fault isolation ensures that the failure of one system component does not impact the overall system. Examples include:
+
+- Isolated virtual operating systems (VOS)
+- Redundant paths
+
+---
+## Single Points of Failure (SPOF)
+
+> [!warning]  
+> SPOFs are critical risks that can take down entire systems.
+
+SPOFs occur at multiple levels:
+
+- **Compute-level**
+- **Storage-level**
+- **Network-level**
+- **Site-level** (e.g., entire data center)
+
+### Compute Clustering
+
+Clusters provide high availability and load balancing:
+- **Service Failover**: Automatically move services to another compute system. 
+- **Heartbeat Signals**: Monitor health of compute nodes.
+- **Types**:
+    - Active/Active
+    - Active/Passive
+
+### Link Aggregation
+Combines multiple network links:
+- Between switches
+- Between switch and node
+
+Benefits:
+- Enables failover in case of link failure
+- Provides higher throughput
+
+### NIC Teaming
+Groups multiple NICs into a single logical NIC:
+- Ensures failover during NIC or link failure
+- Distributes traffic across NICs
+
+### Multipathing
+Provides multiple data paths between compute and storage systems:
+- **Failover**: Redirect I/O to alternate paths if one fails
+- **Load Balancing**: Distribute I/O across all active paths
+
+### Elastic Load Balancing
+Dynamically distributes traffic across VM instances:
+- Automatically scales resources to meet demand
+- Detects unhealthy instances and reroutes traffic
+
+### Storage Fault Tolerance Mechanisms
+Protects data in storage systems:
+**Techniques:**
+1. **RAID**
+2. **Erasure Coding**
+3. **Dynamic Disk Sparing**
+4. **Cache Protection**
+
+> [!example]  
+> Dynamic disk sparing automatically replaces a failing disk with a spare to prevent data loss. Multiple spares improve availability.
+
+---
+## Site-Level Fault Tolerance — Availability Zones
+Availability zones are isolated data center locations:
+- Each has its own resources
+- Connected via low-latency links
+- Services can failover between zones in case of outage
+
+---
+_Adapted from: Information Storage and Management v5_
+Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)

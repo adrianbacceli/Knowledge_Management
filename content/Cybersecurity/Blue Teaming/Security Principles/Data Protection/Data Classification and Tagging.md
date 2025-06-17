@@ -14,6 +14,7 @@ NeedsReview: false
 
 The last thing anyone wants is for their personal data to be leaked or stolen. As a cloud security professional, your role involves protecting sensitive information from unauthorized access.
 
+---
 ## What is Data Classification?
 
 **Data classification** is the process of analyzing data to determine its:
@@ -43,6 +44,7 @@ Data is generally categorized into three sensitivity levels:
 > [!warning]
 > High sensitivity data requires the strongest security controls. Breaches may result in fines, legal consequences, and reputational damage.
 
+---
 ## What Are Tags in Cloud Security?
 
 **Tags** are custom metadata fields that help classify and manage data assets. They provide critical context, like:
@@ -65,6 +67,7 @@ type: SSN
 
 This tag indicates that the asset contains sensitive SSNs and should be treated with high security.
 
+---
 ## Tag Templates and [[Identity & Access Management (IAM)|IAM]] Roles
 
 You can streamline classification by using **tag templates**—reusable structures for consistent tagging.
