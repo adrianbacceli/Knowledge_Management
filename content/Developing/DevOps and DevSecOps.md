@@ -14,7 +14,7 @@ NeedsReview: false
 > [!summary] Core Concept  
 DevSecOps integrates security into each phase of the DevOps lifecycle. Rather than treating security as an afterthought, the DevSecOps model emphasizes a *[[Google Cloud Security Architecture#🕒 What does **Shift Left** mean?|Shift Left]]* approach, embedding security practices early in development workflows to reduce risk and increase resilience.
 
-## 🔐 What is DevSecOps?
+# 🔐 What is DevSecOps?
 
 DevSecOps enhances the traditional DevOps approach by integrating **security across the entire software lifecycle**. While DevOps focuses on **development, deployment, and operations**, DevSecOps embeds **code analysis, compliance checks, threat modeling**, and **secure coding standards** from the very beginning.
 
@@ -114,18 +114,18 @@ Shift Left refers to integrating security practices early in the development pip
 | Operate | Monitoring           | Real-time feedback & patching  |
 
 ---
-### 👨‍💻 Your Role as a Cybersecurity Analyst in DevSecOps
+# 👨‍💻 Your Role as a Cybersecurity Analyst in DevSecOps
 
 Even if you're not writing code, your role is **critical**. Here's what you should focus on:
 
-#### 1. **Security in the CI/CD Pipeline**
+## 1. **Security in the CI/CD Pipeline**
 
 - **Understand the pipeline**: Know what tools are used (e.g., Jenkins, GitLab CI, GitHub Actions).
 - **Identify weak points**: Where could malicious code be injected? Are secrets (like API keys) exposed?
 - **Monitor pipeline logs** for anomalies or unauthorized access.
 
 ---
-#### 2. **Static and Dynamic Analysis Tools**
+## 2. **Static and Dynamic Analysis Tools**
 
 - **SAST (Static Application Security Testing)**: Scans source code for vulnerabilities.
 - **DAST (Dynamic Application Security Testing)**: Tests running applications for security flaws.
@@ -133,12 +133,13 @@ Even if you're not writing code, your role is **critical**. Here's what you sho
 
 ### 🧪 **SAST (Static Application Security Testing) Tools**
 
-| **Tool Name**         | **Description**                                                            | **Typical Use Case**                                      |
-| --------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------- |
-| **[[SonarQube]]**     | Analyzes source code for bugs, vulnerabilities, and code smells.           | Identifying issues during coding or before deployment.    |
-| **Fortify**           | Provides static analysis for identifying security vulnerabilities in code. | Detecting vulnerabilities early in the development cycle. |
-| **Checkmarx**         | Offers static code analysis to detect security vulnerabilities.            | Finding security vulnerabilities in the source code.      |
-| **Veracode (Static)** | Performs static analysis to find security flaws in the source code.        | Identifying security flaws before deployment.             |
+| **Tool Name**                                                             | **Description**                                                                                            | **Typical Use Case**                                                                |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **[[SonarQube]]**                                                         | Analyzes source code for bugs, vulnerabilities, and code smells.                                           | Identifying issues during coding or before deployment.                              |
+| GitHub CodeQL ([Demo](https://www.youtube.com/watch?v=z5dPpx0eHNU&t=18s)) | GitHub offers Static Application Security Testing (SAST) through its **GitHub Advanced Security** features | Analyze your code as data and execute queries to identify potential vulnerabilities |
+| **Fortify**                                                               | Provides static analysis for identifying security vulnerabilities in code.                                 | Detecting vulnerabilities early in the development cycle.                           |
+| **Checkmarx**                                                             | Offers static code analysis to detect security vulnerabilities.                                            | Finding security vulnerabilities in the source code.                                |
+| **Veracode (Static)**                                                     | Performs static analysis to find security flaws in the source code.                                        | Identifying security flaws before deployment.                                       |
 
 ---
 
@@ -154,7 +155,7 @@ Even if you're not writing code, your role is **critical**. Here's what you sho
 
 ---
 
-#### 3. **Container and Cloud Security**
+## 3. **Container and Cloud Security**
 
 - If the team uses **Docker**, **Kubernetes**, or **cloud services**, you might:
     - Scan container images for vulnerabilities.
@@ -162,32 +163,32 @@ Even if you're not writing code, your role is **critical**. Here's what you sho
     - Monitor cloud environments for misconfigurations.
 
 ---
-#### 4. **Secrets Management**
+## 4. **Secrets Management**
 
 - Ensure that **secrets** (passwords, tokens, keys) are stored securely (e.g., in Vault, AWS Secrets Manager).
 - Audit access to secrets and ensure **rotation policies** are in place.
 
 ---
-#### 5. **Security Policies and Compliance**
+## 5. **Security Policies and Compliance**
 
 - Help define **security gates** in the pipeline (e.g., block deployment if critical vulnerabilities are found).
 - Ensure compliance with standards like **OWASP**, **NIST**, or **ISO 27001**.
 
 ---
-#### 6. **Incident Response Readiness**
+## 6. **Incident Response Readiness**
 
 - Ensure logging and monitoring are in place.
 - Be ready to **analyze logs** and **respond to alerts** from the CI/CD environment.
 
 ---
-### 🧠 You Don’t Need to Code, But You Should Know:
+## 🧠 You Don’t Need to Code, But You Should Know:
 
 - **How to read basic scripts** (e.g., YAML for pipelines, JSON for config files).
 - **How to interpret scan results** from tools like SonarQube, Checkmarx, or Snyk.
 - **How to collaborate with developers** to explain risks and recommend mitigations.
 ---
 
-### 🧱 Example of a Simple Pipeline
+## 🧱 Example of a Simple Pipeline
 
 Here’s a simplified version of what a pipeline might look like:
 
@@ -213,3 +214,5 @@ As a **cybersecurity analyst**, you might:
 > [!success] Takeaway  
 > ✅ DevSecOps shifts security from being a bottleneck to becoming a collaborative enabler — making secure software development faster, smarter, and safer.
 
+---
+Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)
