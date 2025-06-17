@@ -166,4 +166,9 @@ To support teams, organizations now use:
 - Encourages collaboration between **DevOps and security teams**.
 
 ---
+# See Terraform in action
+
+Refer to [[Terraform Lab]] in Google Cloud 
+
+---
 Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)
