@@ -124,11 +124,35 @@ Even if you're not writing code, your role is **critical**. Here's what you sho
 - **Identify weak points**: Where could malicious code be injected? Are secrets (like API keys) exposed?
 - **Monitor pipeline logs** for anomalies or unauthorized access.
 
+---
 #### 2. **Static and Dynamic Analysis Tools**
 
 - **SAST (Static Application Security Testing)**: Scans source code for vulnerabilities.
 - **DAST (Dynamic Application Security Testing)**: Tests running applications for security flaws.
 - You may **review reports**, **triage findings**, and **work with developers** to prioritize fixes.
+
+### 🧪 **SAST (Static Application Security Testing) Tools**
+
+| **Tool Name**         | **Description**                                                            | **Typical Use Case**                                      |
+| --------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------- |
+| **[[SonarQube]]**     | Analyzes source code for bugs, vulnerabilities, and code smells.           | Identifying issues during coding or before deployment.    |
+| **Fortify**           | Provides static analysis for identifying security vulnerabilities in code. | Detecting vulnerabilities early in the development cycle. |
+| **Checkmarx**         | Offers static code analysis to detect security vulnerabilities.            | Finding security vulnerabilities in the source code.      |
+| **Veracode (Static)** | Performs static analysis to find security flaws in the source code.        | Identifying security flaws before deployment.             |
+
+---
+
+### 🧪 **DAST (Dynamic Application Security Testing) Tools**
+
+| **Tool Name**  | **Description**                                                           | **Typical Use Case**                                |
+| -------------- | ------------------------------------------------------------------------- | --------------------------------------------------- |
+| **Nikto**      | Web server scanner that performs comprehensive tests against web servers. | Testing web servers for security vulnerabilities.   |
+| **Burp Suite** | Web vulnerability scanner for dynamic analysis of web applications.       | Performing dynamic analysis of web applications.    |
+| **OWASP ZAP**  | Open-source scanner for finding vulnerabilities in web applications.      | Finding vulnerabilities during runtime.             |
+| **Netsparker** | Web application security scanner with dynamic analysis capabilities.      | Scanning live web applications for vulnerabilities. |
+| **Acunetix**   | Automated web application security scanner.                               | Identifying vulnerabilities in web applications.    |
+
+---
 
 #### 3. **Container and Cloud Security**
 
@@ -137,16 +161,19 @@ Even if you're not writing code, your role is **critical**. Here's what you sho
     - Ensure secure configurations (e.g., no root containers, least privilege).
     - Monitor cloud environments for misconfigurations.
 
+---
 #### 4. **Secrets Management**
 
 - Ensure that **secrets** (passwords, tokens, keys) are stored securely (e.g., in Vault, AWS Secrets Manager).
 - Audit access to secrets and ensure **rotation policies** are in place.
 
+---
 #### 5. **Security Policies and Compliance**
 
 - Help define **security gates** in the pipeline (e.g., block deployment if critical vulnerabilities are found).
 - Ensure compliance with standards like **OWASP**, **NIST**, or **ISO 27001**.
 
+---
 #### 6. **Incident Response Readiness**
 
 - Ensure logging and monitoring are in place.
