@@ -11,7 +11,7 @@ User postgres may run the following commands on vaccine:
 
 (ALL) /bin/vi /etc/postgresql/11/main/pg_hba.conf
 
-Using [GTFO Bins](https://gtfobins.github.io/gtfobins/vi/#sudo) we can see how to abuse privileges from vulnerable commands.
+Using [GTFO Bins](https://gtfobins.github.io/gtfobins/vi/#sudo) we can see how to abuse privileges from vulnerable commands (Linux Privilege Escalation).
 
 for this scenario, we set shell to /bin/sh
 
