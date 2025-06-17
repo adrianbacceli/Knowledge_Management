@@ -8,4 +8,4 @@ It serves as a **knowledge center** — a growing collection of notes, resources
 Whether you're exploring digital security, systems architecture, or ethical hacking, you'll find something valuable here.
 
 ---
-# This page uses Quartz, which is an Open-Source Obsidian Github Pages Publisher. Learn more about Quartz following the link: https://github.com/quartz-scheduler/quartz
+#### This page uses Quartz, which is an Open-Source Obsidian Github Pages Publisher. Learn more about Quartz following the link: https://github.com/quartz-scheduler/quartz
