@@ -86,18 +86,30 @@ De-identification removes personal identifiers from datasets to prevent data fro
 
 
 ---
-# Business Continuity Techniques
+# Business Continuity Plan (BCP)
 
 > [!note]  
 > These techniques ensure IT infrastructure and services remain available or can be restored quickly after disruptions.
 
-## Disaster Recovery
+1. Determine the most critical Time
+2. Set the RTO / RPO and uptimes [[RPO, RTO, and calculating Uptime]]
+3. Conduct a Risk Assessment
+4. Document [[#Disaster Recovery Plan (DRP)]]
+5. Communicate BCP and DRP
+6. Test and update BCP and DRP
+
+---
+## Disaster Recovery Plan (DRP)
 
 Disaster recovery involves a set of policies and procedures for restoring IT infrastructure, including data access, after a natural or human-induced disaster.
 
 **Phases:**
 - **Before Disaster**: Primary site runs operations; data is replicated to DR site.
 - **After Disaster**: DR site takes over if primary site becomes unavailable.
+
+1. Document each team member's role
+2. Establish Recovery Solutions
+3. CSP DRP communication
 
 ---
 ## Fault Isolation

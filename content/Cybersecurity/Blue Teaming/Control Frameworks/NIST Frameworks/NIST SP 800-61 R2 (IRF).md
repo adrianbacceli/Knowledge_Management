@@ -9,7 +9,7 @@ tags:
   - 800-61
   - R2
   - Framework
-NeedsReview: false
+NeedsReview: true
 ---
 > [!summary] Core Concept  
 > The NIST Incident Response Framework provides a complete lifecycle for managing cybersecurity incidents, from preparation through recovery. This note captures detailed prerequisites, tools, techniques, and phases tailored to practical implementation.
@@ -91,7 +91,7 @@ flowchart LR
 - Rekall
 - Belkasoft RAM Capturer
 
-**🧾 IOC Tools**
+**🧾 [[#📊 Indicators of Compromise (IOC)|IOC]] Tools**
 
 - YARA
 - Mandiant IOC Editor
@@ -309,3 +309,11 @@ flowchart LR
 - Use in-house or contracted red teams to challenge IR
 - Map findings against detection, logs, and playbooks
 - Continuously scan and patch critical vulnerabilities
+
+---
+
+# Incident Management Roles
+1. Incident Reporters
+2. Incident responders
+3. Stakeholder communication Executives
+4. Incident review and improvement analysts

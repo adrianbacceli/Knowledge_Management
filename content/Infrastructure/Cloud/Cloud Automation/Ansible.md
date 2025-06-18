@@ -13,6 +13,7 @@ NeedsReview: false
 Ansible is another powerful tool in the DevOps toolbox! While Terraform is great for **provisioning infrastructure**, Ansible shines when it comes to **configuration management**, **application deployment**, and **orchestration**.
 
 Ansible is an **agentless automation tool** that uses **SSH** (or WinRM for Windows) to connect to remote machines and execute tasks. It uses **YAML-based playbooks** to define what to do.
+Ansible is an Imperative language, which means it defines **how** to configure infrastructure step-by-step.
 
 ---
 ### 🔧 Real-Life Example: Setting Up a Web Server

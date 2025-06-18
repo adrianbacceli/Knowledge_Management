@@ -90,7 +90,49 @@ graph TD
   ```
 
 ---
-# Google Cloud Security Tools 
+## 🔧 Misconfiguration Detection
+
+Google Security Command Center (SCC) proactively scans your cloud environment for common misconfigurations that could expose resources to risk.
+
+> [!warning] Example Open firewall rules exposing ports like SSH (22) or RDP (3389) to the internet can be detected and flagged as misconfigurations.
+
+These detections help teams enforce security best practices and avoid accidental exposures.
+
+---
+
+## 📦 Asset Inventory and Visibility
+
+SCC automatically discovers and tracks all assets across your Google Cloud environment. This includes:
+
+- Virtual machines
+- Storage buckets
+- Databases
+- Network configurations
+
+> [!note] 
+> Benefit This comprehensive inventory enables visibility and control, forming the foundation for threat detection and policy enforcement.
+
+---
+
+## 🛡️ Event Threat Detection (ETD)
+
+**Event Threat Detection** is a built-in Intrusion Detection and Prevention System (IDPS) that provides real-time monitoring and alerting for threats in your Google Cloud environment.
+
+It works by:
+
+1. Continuously analyzing logs from **Cloud Logging**.
+2. Applying built-in **detection rules** to identify malicious or anomalous activity.
+3. Generating alerts to notify teams of potential security incidents.
+
+> [!tip] 
+> Log Sources ETD supports multiple log types including Admin Activity logs, VPC Flow logs, DNS logs, and more.
+
+> [!example] 
+> Detection Use Case Detects brute-force attacks on Compute Engine instances by analyzing authentication logs for repeated failed login attempts.
+
+
+---
+# Google Cloud SCC Security Tools 
 
 > [!info] Focus  
 > This summary outlines key cloud-native tools in Google Cloud's Security Command Center (SCC) for managing risk and compliance.

@@ -106,7 +106,7 @@ graph TD
 
 - Ensures national laws govern data access and processing.
 - Supports national security by keeping sensitive data (e.g., healthcare) local.
-- Enables digital sovereignty for governments.
+- Enables digital [[Data Governance and Sovereignty|Sovereignty]] for governments.
 - Adds cost and complexity for global organizations.
 
 > [!warning]

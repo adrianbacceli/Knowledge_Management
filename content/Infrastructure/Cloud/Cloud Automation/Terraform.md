@@ -6,7 +6,7 @@ tags:
   - devsecops
   - infrastructure-as-code
   - IaC
-NeedsReview: true
+NeedsReview: false
 ---
 > [!summary] Core Concept  
 Terraform is a cloud-agnostic Infrastructure as Code (IaC) tool that automates the provisioning and management of cloud infrastructure using declarative configuration files.

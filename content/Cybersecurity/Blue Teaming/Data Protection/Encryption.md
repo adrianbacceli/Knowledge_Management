@@ -165,13 +165,14 @@ Symmetric and asymmetric encryption are often used together to balance **efficie
 
 ## ✅ Summary
 
-| Feature                  | Symmetric Encryption           | Asymmetric Encryption           |
-|--------------------------|-------------------------------|----------------------------------|
-| Key Usage               | Same key for encrypt/decrypt   | Public key to encrypt, private to decrypt |
-| Speed & Efficiency      | Fast, low computational cost   | Slower, higher resource use      |
-| Key Management          | Challenging (secure exchange)  | Easier for sharing public key    |
-| Common Algorithms       | AES                            | RSA                              |
-| Typical Use Case        | Bulk data encryption            | Secure key exchange, signatures  |
+| Feature            | Symmetric Encryption          | Asymmetric Encryption                     |
+| ------------------ | ----------------------------- | ----------------------------------------- |
+| Key Usage          | Same key for encrypt/decrypt  | Public key to encrypt, private to decrypt |
+| Speed & Efficiency | Fast, low computational cost  | Slower, higher resource use               |
+| [[Key Management]] | Challenging (secure exchange) | Easier for sharing public key             |
+| Common Algorithms  | AES                           | RSA                                       |
+| Typical Use Case   | Bulk data encryption          | Secure key exchange, signatures           |
+|                    |                               |                                           |
 
 > [!important]
 > Choosing the right encryption depends on **data volume**, **performance needs**, and **security requirements**.
