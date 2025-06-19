@@ -127,6 +127,33 @@ Logging is the bedrock for detection, investigation, and continuous improvement.
 
 ---
 
+Google Cloud tools to streamline and improve BCDR operations
+Google Cloud offers a variety of automation features and recovery tools that your cloud
+security team can use to streamline and improve BCDR operations. Some of these features
+include:
+## 7. Google Cloud Policy Center: This tool provides a central location to manage policies
+for Google Cloud resources. It can help you create and enforce policies that support
+BCDR best practices.
+
+## 8. Google Cloud Terraform Modules:
+This tool can be used to automate the provisioning and management of Google Cloud resources. It can help you quickly and easily deploy BCDR infrastructure.
+
+## 9. Google Cloud Build
+This tool can help you automate the building, testing, and deployment of BCDR software solutions.
+
+## 10. OnVault 
+can be used to safely store backup data from virtual machines.
+
+## 11. StreamSnap
+ is used for data mirroring. Data mirroring creates exact copies of data in remote locations. This provides opportunities for replication across multiple regions to improve data availability during a disaster.
+
+# 12. Google Cloud Cloud armor
+This tool protects against distributed denial of service (DDoS) attacks.
+
+## 13. Google Cloud Load Balancing
+This tool enables easy failover to different regions.
+
+---
 ## 📝 Summary & Best Practices
 
 - **Build a unified SecOps pipeline**: log → detect → act → review → repeat  

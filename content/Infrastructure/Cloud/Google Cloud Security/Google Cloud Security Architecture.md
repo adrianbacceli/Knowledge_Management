@@ -396,6 +396,51 @@ Two key log types:
 | Benefits         | Can be relatively simple to implement and manage                                                                                  | Can provide more comprehensive security and visibility for a large number of users than traditional perimeter security measures                                                                                                             |
 | Drawbacks        | Can be difficult to protect against sophisticated attacks, Provide limited protection once an attacker is in the internal network | Can be more complex to implement and manage than traditional perimeter security measures                                                                                                                                                    |
 
+---
+
+# Evidence preservation and Incident Response
+
+## Digital Evidence (IoC): 
+- Logs
+- hashes
+- malware
+- bad behavior
+- Ip Addresses
+
+---
+
+## Evidence Preservation
+- Cloud storage
+- Google Backup
+- Google Docs
+
+---
+## Techniques for preservation
+Digital evidence preservation techniques
+Here are some best practices you can use when preserving digital evidence:
+● Use disk imaging to maintain an original file. Create a bit-by-bit duplication of an
+evidence file. This lets you keep the original evidence file.
+● Avoid doing any analysis on the original artifact, and the system as a whole by
+implementing write-blocking techniques. This will prevent data modifications on the
+original device and ensure data integrity during analysis. Anything done to the original
+artifact may prevent it from being accepted as legal evidence.
+● During imaging, cryptographic hash values are created. A hash is a digital checksum.
+Your files can be identified by their hashes. If you change the file, the hash will also
+change. A changed hash can tell you if there’s been a change to the file. So, you can use
+the hash to ensure the integrity of the file as evidence.
+● When comparing cloud storage and local storage, cloud storage has additional layers of
+security, so it’s more secure, and also safeguards your digital evidence files.
+● Document the chain of custody by maintaining a detailed record of the device's
+possession and handling to ensure its traceability.
+● Document all preservation procedures, including the tools used, timestamps, and any
+relevant observations to provide transparency and support admissibility in court.
+
+---
+## Incident Response members and coordination
+- Incident Manager
+- Lead Investigator
+- Communication Lead
+- Technical Specialist
 
 ---
 ## 📚 Resources

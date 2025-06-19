@@ -68,8 +68,16 @@ NeedsReview: false
 - **Total: ~€30,090.00 / ~€2,507.50 Monthly**
 - Benefits: Flexible PTO, holidays, home office, certifications
 
----
+### Vulnerability Assessment
 
+- **Annual:** **~€35,141.64**
+- **13th Month:** **~€2,928.55**
+- **Bonus (5%):** **~€1,903.56**
+- **Pluxee:** €960.00 
+- **Total:** **~€40,933.75** / **Monthly:** **~€3,411.15**
+- **Benefits:** Insurance, study & certification reimbursement
+
+---
 ## 🧭 Penetration Testing Job Details
 
 - Internal/External Network Testing
@@ -94,6 +102,32 @@ graph TD
 - Social Engineering
 - Wireless Security
 - Application Security
+
+---
+## Vulnerability Assessment Job Details
+### 🧾 Role Summary
+
+| **Area**             | **Details**                                                          |
+| -------------------- | -------------------------------------------------------------------- |
+| **Department**       | Operations (Security Tooling & Vulnerability Assessment)             |
+| **Focus Areas**      | Infrastructure, DaaS, SaaS, Web Application Security (WAS)           |
+| **Responsibilities** | Tool management, onboarding, scanning, detection, reporting          |
+| **Tools Used**       | Rapid7 (current) → Tenable, Qualys, CannonVougel, ScanPortal, Prisma |
+| **Scanning Scope**   | Cloud agents, container scanning, global deployments                 |
+### 🌍 Team & Location
+
+|**Team Members**|Ravi & Mik (Regional Managers)|
+|---|---|
+|**Regions Covered**|Romania, Ireland, Brazil, U.S.|
+|**Role Geography**|Positions available in **India** and **Mexico**|
+|**Collaboration**|Expected to work with globally distributed team|
+### 🗓️ Onboarding Timeline
+
+|**Phase**|**Expectation**|
+|---|---|
+|0–3 months|Learn tooling, processes, team dynamics|
+|3–6 months|Begin taking ownership of workflows with guidance|
+|6–12 months|Work independently on core tasks|
 
 ---
 
