@@ -4,22 +4,9 @@ draft: false
 tags:
   - sqlmap
   - sql
+  - exploitation
+  - reverse-shell
 NeedsReview: true
----
-Here's your note converted into proper Markdown format for your Obsidian vault under the appropriate UKC category:  
-**Exploitation**, since it involves SQL Injection via `sqlmap` and remote command execution.
-
----
-
-```markdown
----
-title: SQL Injection with Session Cookie - Exploitation  
-draft: false  
-tags:  
-  - sqlmap  
-  - exploitation  
-  - reverse-shell  
-NeedsReview: false  
 ---
 > [!summary] Core Concept  
 Use an active PHPSESSID cookie to perform SQL injection and gain OS shell access using sqlmap, leading to remote code execution.
