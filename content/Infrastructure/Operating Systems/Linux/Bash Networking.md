@@ -223,7 +223,7 @@ curl | ..
 22 | port
 
 ---
-# 8. Netcat ([[netcat|nc]])
+# 8. Netcat ([[Netcat|nc]])
 
 Test TCP/UDP connections, listen on ports:
 ```bash
