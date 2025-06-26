@@ -1,48 +1,87 @@
 ---
-title: Stored Cross-Site Scripting (XSS)
-draft: false
+title: 
+draft: true
 tags:
-  - Stored
-  - Cross-Site
-  - Scripting
-  - XSS
-  - Vulnerability
-  - web
-  - offensive-security
+  - tag1
+  - tag2
 NeedsReview: true
 ---
-# 🛡️ Stored Cross-Site Scripting (XSS)
 
-> [!info] What is Stored XSS?
-> Stored cross-site scripting occurs when an application stores malicious input from a user and later includes it in web pages served to other users, without proper sanitization or encoding.
+### 🔹 `> [!note]` — **Note**
 
-## 🧠 How It Works
+> [!note] Quick Reminder  
+> This is general-purpose information you want to keep in mind.
 
-Unlike reflected XSS, where the payload is part of the request and response cycle, **stored XSS** involves the payload being **persisted** on the server (e.g., in a database, comment field, or message board) and then served to users later.
+---
 
-### 💬 Example Scenario
+### 🔹 `> [!tip]` — **Tip**
 
-1. An attacker submits a comment on a blog post:
-```
-html
-```
-2. The application stores this comment in its database.
-3. When another user views the blog post, the stored script is rendered in their browser:
-```
-html
-```
+> [!tip] Helpful Tip  
+> 💡 Try running small variations in your prompts to test model sensitivity.
 
-> [!danger] Impact
-> The malicious script executes in the victim's browser, potentially stealing cookies, session tokens, or performing actions on behalf of the user.
 
-## 🛡️ Prevention Tips
+---
 
-> [!tip] Best Practices
-> - Sanitize and encode all user input before storing or rendering.
-> - Use Content Security Policy (CSP) headers.
-> - Implement proper input validation and output encoding.
-> - Avoid inserting raw HTML from user input into the DOM.
+### 🔹 `> [!info]` — **Info**
 
-## 🔗 Resources
+> [!info] Did You Know?  
+> You can chain prompts to simulate multi-turn conversations.
 
-- 🌐 PortSwigger: [Reflected Cross-Site Scripting (XSS)](https://portswigger.net/web-security/cross-site-scripting)
+
+---
+
+### 🔹 `> [!warning]` — **Warning**
+
+> [!warning] Caution Ahead  
+> ⚠️ Incorrect prompt phrasing may lead to hallucinated outputs.
+
+
+---
+
+### 🔹 `> [!danger]` — **Danger**
+
+> [!danger] Risk Zone  
+> 🚨 Avoid copying prompts blindly without verifying context.
+
+
+---
+
+### 🔹 `> [!quote]` — **Quote**
+
+> [!quote] Prompt Wisdom  
+> “A good prompt is like a good question—it gets the right conversation started.”
+
+
+---
+
+### 🔹 `> [!example]` — **Example**
+
+> [!example] Prompt Example  
+> "Summarize this article in 3 bullet points, using plain language."
+
+
+---
+
+### 🔹 `> [!abstract]` — **Abstract**
+
+> [!abstract] Key Concept  
+> Prompt engineering involves crafting input that guides the model’s response effectively.
+
+
+---
+
+### 🔹 `> [!question]` — **Question**
+
+> [!question] Ask Yourself  
+> ❓What is the *true* goal of this prompt?
+
+
+---
+
+### 🔹 `> [!success]` — **Success**
+
+> [!success] Well Done!  
+> ✅ Your prompt returned the expected output with clarity and precision.
+
+---
+Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)
