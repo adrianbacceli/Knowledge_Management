@@ -29,7 +29,7 @@ Use the categories below to navigate to specific domains of interest.
   - Compute, Storage, Network, Security
 - [[Systems Administration]]
   - Linux, Windows, VMware
-- [[Virtualization & Backup Technologies]]
+- [[Virtualization Concepts]]
 - [[Identity & Access Management (IAM)]]
 - [[What is SQL|Databases]]
 
