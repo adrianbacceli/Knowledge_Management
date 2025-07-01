@@ -1,5 +1,5 @@
 ---
-title: Google Cloud Automation
+title: Infrastructure Automation
 draft: false
 tags:
   - IaC
@@ -7,7 +7,6 @@ tags:
   - Policy-as-Code
   - infrastructure-as-code
   - Automation
-  - cloud-security
   - terraform
   - Ansible
   - chef

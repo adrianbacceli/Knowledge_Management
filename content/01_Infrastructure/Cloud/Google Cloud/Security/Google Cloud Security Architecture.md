@@ -30,7 +30,7 @@ NeedsReview: false
 # Google Cloud Security Architecture Overview
 
 > [!summary] Google Cloud Architecture  
-> Google’s cloud infrastructure is built on a [[Multi-Layered Security]] model, designed to protect data from physical to application level.
+> Google’s cloud infrastructure is built on a [[#🔐 Multi-Layered Security|Multi-Layered Security]] model, designed to protect data from physical to application level.
 
 ## 🔐 Security Architecture Overview
 ### 1. 🏗️ Secure Low-Level Infrastructure
@@ -174,6 +174,19 @@ Acts as a **primary key** for:
 * Detective Controls: IDS, Cloud Security Command Center
 * Responsive Controls: Actions after detection
 * Recovery Controls: Actions after damage, like reverting to backups, 
+
+#### 🔐 Multi-Layered Security
+
+> [!tip] Defense-in-depth model secures infrastructure holistically.
+
+- **Application Security:** WAF, IPS
+- **Logical Security:** Authorization, Authentication, Access Control
+- **Database Security:** DBF, DAM, Encryption
+- **Monitoring:** SIEM, logs, alerts
+- **Network Security:** IPS, firewalls, segmentation, monitoring
+- **Endpoint Security:** Anti-malware, containerization
+- **Encryption:** Data at rest/in transit
+- **Training & Awareness:** User education
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Real Case - Client-Side Authorization Bypass via HTML Manipulation - Discovery
+title: Client-Side Authorization Bypass via HTML Manipulation - Discovery
 draft: false
 tags:
   - discovery

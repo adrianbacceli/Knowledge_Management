@@ -1,11 +1,10 @@
 ---
-title: Bash Networking
+title: Linux Networking
 draft: false
 tags:
-  - Bash
-  - shell
   - Commands
   - Networking
+  - Linux
 NeedsReview: false
 ---
 # 1. Open SSH Tunnels in Linux shell

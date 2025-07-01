@@ -13,7 +13,6 @@ tags:
   - SSO
 NeedsReview: true
 ---
-
 # Identity & Access Management (IAM)
 
 > [!abstract] Summary  
@@ -30,7 +29,15 @@ In practice, IAM takes care of things like logging in with multi-factor authenti
 IAM also tracks changes in role assignments, which is useful when doing yearly reviews or compliance checks. Updating IAM policies regularly—especially to follow the “least privilege” rule—helps make sure that only the right people have access to what they actually need, and nothing more.
 
 ---
- 
+## 🧾 **Principle of Least Privilege (PoLP)**
+
+**Core Principle**: _“Only give users the minimum access they need to do their job.”_
+
+- Limits access rights for users, applications, and systems.
+- Reduces the attack surface and potential damage from breaches.
+- Applies to **files, systems, networks, APIs**, and more.
+
+---
 ## 🔐 **Multi-Factor Authentication (MFA)** or **Authentication Factors**
 
 Here’s a breakdown:
@@ -193,7 +200,7 @@ Instead of assigning permissions to specific users or roles, ABAC uses **policie
 
 ## ✅ Best Practices
 
-- 🔒 Apply the **Principle of Least Privilege**
+- 🔒 Apply the [[#🧾 **Principle of Least Privilege (PoLP)**|Principle of Least Privilege (PoLP)]]
 - 🔄 **Separate duties** to reduce risk
 - 📋 Perform **regular audits** to ensure compliance and detect anomalies
 

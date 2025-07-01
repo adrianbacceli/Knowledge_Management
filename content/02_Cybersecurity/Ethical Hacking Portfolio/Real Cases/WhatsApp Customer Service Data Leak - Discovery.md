@@ -1,5 +1,5 @@
 ---
-title: Real Case - WhatsApp Customer Service Data Leak - Discovery
+title: WhatsApp Customer Service Data Leak - Discovery
 draft: false
 tags:
   - discovery

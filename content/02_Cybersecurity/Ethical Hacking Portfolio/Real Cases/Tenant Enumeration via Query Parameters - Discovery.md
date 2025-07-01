@@ -1,5 +1,5 @@
 ---
-title: Real Case - Tenant Enumeration via Query Parameters - Discovery
+title: Tenant Enumeration via Query Parameters - Discovery
 draft: false
 tags:
   - discovery

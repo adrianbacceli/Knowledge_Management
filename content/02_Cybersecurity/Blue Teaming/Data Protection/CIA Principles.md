@@ -1,5 +1,5 @@
 ---
-title: 00_Cybersecurity Principles - CIA Triad
+title: CIA Triad
 draft: true
 tags:
   - tag1

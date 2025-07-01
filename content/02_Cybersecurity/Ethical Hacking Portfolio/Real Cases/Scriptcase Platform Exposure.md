@@ -1,5 +1,5 @@
 ---
-title: Real Case - Scriptcase Platform Exposure - Discovery
+title: Scriptcase Platform Exposure - Discovery
 draft: false
 tags:
   - discovery

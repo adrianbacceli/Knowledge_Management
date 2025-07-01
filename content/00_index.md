@@ -19,7 +19,7 @@ Use the categories below to navigate to specific domains of interest.
 - [[Unified Kill Chain (UKC)]]
 - [[Threat Hunting & Incident Response]]
 - [[Vulnerability Assessment & Hardening]]
-- [[CVE Analysis and Remediation]]
+- [[Vulnerability Assessment & Hardening]]
 
 ---
 
