@@ -1,9 +1,11 @@
 ---
 title: Server-Side Request Forgery (SSRF)
-draft: true
+draft: false
 tags:
-  - tag1
-  - tag2
+  - SSRF
+  - Cross-Site
+  - web
+  - Vulnerability
 NeedsReview: true
 ---
 # 🛡️ Server-Side Request Forgery (SSRF)

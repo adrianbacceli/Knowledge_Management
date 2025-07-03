@@ -1,6 +1,6 @@
 ---
 title: Data Governance and Sovereignty
-draft: true
+draft: false
 tags:
   - data-sovereignty
   - Data-Governance

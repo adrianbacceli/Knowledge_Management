@@ -1,13 +1,13 @@
 ---
 title: California Consumer Privacy Act (CCPA)
-draft: true
+draft: false
 tags:
   - CCPA
   - DataPrivacy
   - compliance
   - CaliforniaLaw
   - Frameworks
-NeedsReview: true
+NeedsReview: false
 ---
 ## Overview
 
