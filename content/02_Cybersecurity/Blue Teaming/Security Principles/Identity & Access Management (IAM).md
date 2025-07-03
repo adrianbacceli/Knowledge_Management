@@ -1,6 +1,6 @@
 ---
 title: Identity & Access Management (IAM)
-draft: true
+draft: false
 tags:
   - IAM
   - AAA
@@ -11,7 +11,7 @@ tags:
   - RBAC
   - ABAC
   - SSO
-NeedsReview: true
+NeedsReview: false
 ---
 # Identity & Access Management (IAM)
 
