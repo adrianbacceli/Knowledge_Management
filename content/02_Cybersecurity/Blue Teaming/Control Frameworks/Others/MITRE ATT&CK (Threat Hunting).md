@@ -1,5 +1,5 @@
 ---
-title: Threat Hunting & Incident Response
+title: MITRE ATT&CK (Threat Hunting)
 draft: false
 tags:
   - cybersecurity
@@ -85,7 +85,7 @@ The MITRE ATT&CK framework is central to modern threat hunting and categorizes a
 ---
 # Incident Response
 
-View the [[NIST SP 800-61 R2 (IRF)|NIST Incident Response Framework]] for more details.
+View the [[NIST SP 800-61 R2 (Incident Response)|NIST Incident Response Framework]] for more details.
 
 ---
 Stay sharp and hunt on, Penguin! 🐧

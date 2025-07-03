@@ -11,7 +11,7 @@ NeedsReview: false
 ---
 
 > [!summary] Core Concept  
-> The **Unified Kill Chain (UKC)** is a comprehensive framework combining the **Cyber Kill Chain (CKC)** and **[[Threat Hunting & Incident Response#MITRE ATT&CK TTPs for Threat Hunting|MITRE ATT&CK]]**. It models modern attacks—malware and non-malware, targeted or opportunistic—across 18 tactical stages that describe how adversaries get **in**, move **through**, and act **out** of networks to achieve strategic objectives.
+> The **Unified Kill Chain (UKC)** is a comprehensive framework combining the **Cyber Kill Chain (CKC)** and **[[MITRE ATT&CK (Threat Hunting)#MITRE ATT&CK TTPs for Threat Hunting|MITRE ATT&CK]]**. It models modern attacks—malware and non-malware, targeted or opportunistic—across 18 tactical stages that describe how adversaries get **in**, move **through**, and act **out** of networks to achieve strategic objectives.
 
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: Google Cloud Backup and DR
-draft: true
+draft: false
 tags:
   - Google-Cloud
   - backup
   - disaster-recovery
   - bcdp
   - rpo-rto
-NeedsReview: true
+NeedsReview: false
 ---
 > [!note]
 > This page documents features, usage patterns, and DR planning considerations for Google Cloud Backup and Disaster Recovery (DR).

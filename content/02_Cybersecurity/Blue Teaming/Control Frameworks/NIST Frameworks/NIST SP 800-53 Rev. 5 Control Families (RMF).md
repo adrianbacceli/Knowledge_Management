@@ -2,8 +2,6 @@
 title: NIST SP 800-53 Rev. 5 Control Families (RMF)
 draft: false
 tags:
-  - tag1
-  - tag2
   - NIST
   - security-controls
   - SP800-53

@@ -1,5 +1,5 @@
 ---
-title: NIST 800-61 R2 (IRF)
+title: NIST SP 800-61 R2 (Incident Response)
 draft: false
 tags:
   - incident-response

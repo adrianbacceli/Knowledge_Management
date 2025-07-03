@@ -2,85 +2,72 @@
 title: California Consumer Privacy Act (CCPA)
 draft: true
 tags:
-  - tag1
-  - tag2
+  - CCPA
+  - DataPrivacy
+  - compliance
+  - CaliforniaLaw
+  - Frameworks
 NeedsReview: true
 ---
+## Overview
 
-### 🔹 `> [!note]` — **Note**
+> [!info]  
+> The **California Consumer Privacy Act (CCPA)** is a state-level data privacy law enacted in **California**, effective **January 1, 2020**. It grants California residents greater control over their **personal information** and imposes data protection requirements on businesses that collect it.
 
-> [!note] Quick Reminder  
-> This is general-purpose information you want to keep in mind.
+CCPA is often compared to the **GDPR**, but it focuses more on consumer rights and transparency rather than detailed security requirements.
 
----
+## Key Objectives
 
-### 🔹 `> [!tip]` — **Tip**
+- Increase transparency around **data collection and sharing**  
+- Empower California residents with rights over their personal data  
+- Require businesses to disclose how personal information is used and shared  
+- Provide a framework for enforcement and private legal action in case of certain data breaches  
 
-> [!tip] Helpful Tip  
-> 💡 Try running small variations in your prompts to test model sensitivity.
+## Consumer Rights
 
+> [!note]  
+> Under CCPA, California residents have the right to:
 
----
+- **Know** what personal data is being collected and why  
+- **Access** their personal data  
+- **Delete** their personal data  
+- **Opt out** of the sale of personal data  
+- **Non-discrimination** for exercising their CCPA rights  
 
-### 🔹 `> [!info]` — **Info**
+## Applicability
 
-> [!info] Did You Know?  
-> You can chain prompts to simulate multi-turn conversations.
+Applies to for-profit businesses that **collect personal information** from California residents and meet any of the following thresholds:
 
+- Gross revenue over **$25 million**  
+- Buy/sell/share personal data of **100,000+ consumers or households**  
+- Earn **50% or more of annual revenue** from selling personal information  
 
----
+## Business Obligations
 
-### 🔹 `> [!warning]` — **Warning**
+- Provide clear and accessible **privacy notices** at or before data collection  
+- Implement processes for consumers to submit **data access and deletion requests**  
+- Include a **“Do Not Sell My Personal Information”** link on websites, if applicable  
+- Respond to requests within **45 days**  
+- Train employees handling CCPA requests on compliance procedures  
 
-> [!warning] Caution Ahead  
-> ⚠️ Incorrect prompt phrasing may lead to hallucinated outputs.
+## Enforcement and Penalties
 
+- Enforced by the **California Attorney General** and **California Privacy Protection Agency (CPPA)**  
+- Fines up to **$2,500 per violation**, and **$7,500 for intentional violations**  
+- Individuals can sue for certain data breaches involving unencrypted personal data  
 
----
+## CPRA Update
 
-### 🔹 `> [!danger]` — **Danger**
+> [!tip]  
+> The **California Privacy Rights Act (CPRA)**, effective **January 1, 2023**, amends and expands CCPA. It adds new rights, defines sensitive personal information, and establishes a dedicated enforcement agency (CPPA).
 
-> [!danger] Risk Zone  
-> 🚨 Avoid copying prompts blindly without verifying context.
+## Summary
 
+> [!cite]  
+> CCPA is a cornerstone U.S. data privacy law. Even companies outside California should consider compliance if they collect California resident data.
 
----
-
-### 🔹 `> [!quote]` — **Quote**
-
-> [!quote] Prompt Wisdom  
-> “A good prompt is like a good question—it gets the right conversation started.”
-
-
----
-
-### 🔹 `> [!example]` — **Example**
-
-> [!example] Prompt Example  
-> "Summarize this article in 3 bullet points, using plain language."
-
-
----
-
-### 🔹 `> [!abstract]` — **Abstract**
-
-> [!abstract] Key Concept  
-> Prompt engineering involves crafting input that guides the model’s response effectively.
-
-
----
-
-### 🔹 `> [!question]` — **Question**
-
-> [!question] Ask Yourself  
-> ❓What is the *true* goal of this prompt?
-
+- Enhances consumer control over personal data  
+- Emphasizes transparency and accountability  
+- Serves as a model for other state privacy laws in the U.S.  
 
 ---
-
-### 🔹 `> [!success]` — **Success**
-
-> [!success] Well Done!  
-> ✅ Your prompt returned the expected output with clarity and precision.
-
-Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)

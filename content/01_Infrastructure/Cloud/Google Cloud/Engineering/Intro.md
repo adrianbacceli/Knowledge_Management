@@ -1,9 +1,12 @@
 ---
-title: Intro
-draft: true
+title: Intro to Google Cloud Engineering
+draft: false
 tags:
-  - tag1
-  - tag2
+  - gcp
+  - Cloud
+  - Google
+  - Prompt-Engineering
+  - Cloud-Computing
 NeedsReview: true
 ---
 # Roadmap of objectives

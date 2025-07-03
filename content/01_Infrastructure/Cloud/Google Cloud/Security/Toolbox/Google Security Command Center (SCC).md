@@ -18,7 +18,7 @@ tags:
   - Policy-Analyzer
   - Risk-Manager
   - Assured-Workloads
-NeedsReview: true
+NeedsReview: false
 ---
 # Google Security Command Center (SCC)
 

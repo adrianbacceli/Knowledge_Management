@@ -17,7 +17,7 @@ Use the categories below to navigate to specific domains of interest.
 ## 🔒 Cybersecurity
 
 - [[Unified Kill Chain (UKC)]]
-- [[Threat Hunting & Incident Response]]
+- [[MITRE ATT&CK (Threat Hunting)]]
 - [[Vulnerability Assessment & Hardening]]
 - [[Vulnerability Assessment & Hardening]]
 

@@ -5,7 +5,11 @@ tags:
   - SOC
   - Roles
   - tools
-NeedsReview: true
+  - SIEM
+  - Monitoring
+  - Security
+  - compliance
+NeedsReview: false
 ---
 # 🛡️ Roles Within a Security Operations Center (SOC)
 
@@ -164,31 +168,35 @@ NeedsReview: true
 - Continuously learns from past incidents to improve future responses.
 
 ---
+# SIEM Business Requirements & Use Cases
 
-# Monitoring & SIEM
-**SIEM Business Requirements & Use Cases**
+1. Log aggregation and normalization  
+2. Threat alerting  
+3. Contextualization and response  
+4. Compliance with PCI DSS, HIPAA, and GDPR  
 
-1. Log Aggregation & Normalization
-2. Threat Alerting
-3. Contextualization & Response
-4. Compliance with PCI DSS, HIPAA, and GDPR
+## Data Flows Within a SIEM
 
-### **Data Flows Within A SIEM**
+> [!info]  
+> A Security Information and Event Management (SIEM) system processes data through several stages to enable effective monitoring and response.
 
-Collect/ingest logs from various data sources.
+- **Log Collection**: Ingest logs from various data sources (endpoints, servers, firewalls, etc.)  
+- **Normalization & Aggregation**: Standardize log formats and centralize for analysis  
+- **Detection & Response**: Use detection rules, dashboards, visualizations, alerts, and incident tracking  
 
-data normalization and data aggregation.
+## Benefits of Using a SIEM
 
-Detection rules, dashboards, visualizations, alerts, and incidents.
+> [!tip]  
+> SIEM systems provide not just security visibility but also strategic advantages in compliance and cost control.
 
-### **Benefits**
+- Centralized perspective on all logs and events  
+- Streamlined investigation and incident response process  
+- Unified dashboard for alerts and notifications  
+- Built-in intelligence for setting baselines and detecting anomalies  
+- Customizable summaries and reports  
+- Integration of AI for behavioral and pattern-based threat analysis  
+- Proactive detection and mitigation of potential incidents  
+- Reduced costs associated with large-scale security breaches  
+- Compliance alignment with standards like ISO and HIPAA  
 
-- Centralized perspective on all logs and events
-- Easier investigation / incident response process
-- Centralized dashboard for notifications
-- built-in capable intelligence for settings
-- built-in capable intelligence for summaries and customizable reports.
-- integrating AI based on behavioral and pattern analysis.
-- Proactive reaction and respond to potential incidents,
-- lower the expenses associated with a full-scale security breach
-- fulfilling compliance standards like ISO and HIPAA.
+---
