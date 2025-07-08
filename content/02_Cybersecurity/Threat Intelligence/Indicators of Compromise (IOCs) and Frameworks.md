@@ -12,14 +12,6 @@ tags:
   - YARA
 NeedsReview: false
 ---
----
-title: ""
-date: 2025-07-07
-tags: []
-draft: true
-NeedsReview: true
----
-
 ## 🧊 What Are IOCs?
 
 IOCs, or **Indicators of Compromise**, are **artifacts or data points** that indicate a system may have been **breached or compromised**. Think of them as digital footprints left behind by attackers.
@@ -121,17 +113,13 @@ There isn't a single **global IOC detector**, but there are **collaborative syst
 
 ## 🧰 Summary Table
 
-| Framework | Format | Use Case | Integration |
-|----------|--------|----------|-------------|
-| STIX     | JSON   | Structured threat intel | High (TAXII, MISP, etc.) |
-| OpenIOC | XML    | IOC sharing (legacy) | Moderate |
-| MISP     | JSON   | Collaborative intel sharing | High (MISP, APIs) |
-| YARA     | Text   | Malware file detection | High (AV tools, IR) |
-| Sigma    | [[YAML]]   | Log-based detection | Medium (SIEMs) |
-
----
-
-This knowledge nugget has been fully Penguinified 🐧. Happy hunting, fellow Penguin!
+| Framework | Format   | Use Case                    | Integration              |
+| --------- | -------- | --------------------------- | ------------------------ |
+| STIX      | JSON     | Structured threat intel     | High (TAXII, MISP, etc.) |
+| OpenIOC   | XML      | IOC sharing (legacy)        | Moderate                 |
+| MISP      | JSON     | Collaborative intel sharing | High (MISP, APIs)        |
+| YARA      | Text     | Malware file detection      | High (AV tools, IR)      |
+| Sigma     | [[YAML]] | Log-based detection         | Medium (SIEMs)           |
 
 ---
 Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)

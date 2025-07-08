@@ -40,7 +40,7 @@ Originally independent, Mandiant became part of FireEye and later was acquired b
 
 ### Mandiant Breach Analytics for Chronicle
 
-Identifies and responds to active breaches using Mandiant’s [[Indicators of Compromise (IOCs) and Frameworks|IOC]] intelligence embedded in Chronicle data.
+Identifies and responds to active breaches using Mandiant’s [[Indicators of Compromise (IOCs) and Frameworks|Indicators of Compromise (IOCs) and Frameworks]] intelligence embedded in Chronicle data.
 
 > [!tip]
 > Useful for real-time breach detection and forensic investigations.

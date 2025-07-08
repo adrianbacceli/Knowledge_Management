@@ -94,7 +94,7 @@ flowchart LR
 **🧾 [[#📊 Indicators of Compromise (IOC)|IOC]] Tools**
 
 - YARA
-- Mandiant [[Indicators of Compromise (IOCs) and Frameworks|IOC]] Editor
+- Mandiant [[Indicators of Compromise (IOCs) and Frameworks|Indicators of Compromise (IOCs) and Frameworks]] Editor
 
 **🗃️ File Recovery & Image Tools**
 
@@ -184,7 +184,7 @@ flowchart LR
 
 ---
 
-### 📊 Indicators of Compromise ([[Indicators of Compromise (IOCs) and Frameworks|IOC]])
+### 📊 Indicators of Compromise ([[Indicators of Compromise (IOCs) and Frameworks|Indicators of Compromise (IOCs) and Frameworks]])
 
 - Examples: hashes, filenames, IPs
 - Tools: YARA, IOC Editor, WMI/PowerShell
@@ -195,7 +195,7 @@ flowchart LR
 
 ---
 
-### 🔦 [[Indicators of Compromise (IOCs) and Frameworks|IOC]] Hits & New Leads
+### 🔦 [[Indicators of Compromise (IOCs) and Frameworks|Indicators of Compromise (IOCs) and Frameworks]] Hits & New Leads
 
 - Validate and analyze hits
 - Prioritize leads for forensic focus
