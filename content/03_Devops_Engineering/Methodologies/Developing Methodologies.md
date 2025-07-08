@@ -210,12 +210,12 @@ Machine-readable inventory of software components:
 
 ## Vulnerability Scanners
 
-| Tool           | Scans          | Integrations       |
-| -------------- | -------------- | ------------------ |
-| **Snyk**       | Code, IaC      | GitHub, GitLab     |
-| **Trivy**      | Containers, FS | Docker, K8s        |
-| **Dependabot** | GitHub PRs     | Native integration |
-| **OWASP DC**   | Java, .NET     | CI/CD pipelines    |
+| Tool           | Scans                                                                     | Integrations       |
+| -------------- | ------------------------------------------------------------------------- | ------------------ |
+| **Snyk**       | Code, [[Infrastructure Automation#🛠️ Infrastructure as Code (IaC)\|IaC]] | GitHub, GitLab     |
+| **Trivy**      | Containers, FS                                                            | Docker, K8s        |
+| **Dependabot** | GitHub PRs                                                                | Native integration |
+| **OWASP DC**   | Java, .NET                                                                | CI/CD pipelines    |
 
 ---
 

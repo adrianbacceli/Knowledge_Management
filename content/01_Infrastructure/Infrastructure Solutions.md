@@ -146,13 +146,13 @@ NeedsReview: false
 
 ### **DevOps & CI/CD**
 
-| Name           | Description                           |
-| -------------- | ------------------------------------- |
-| Jenkins        | Automation server for CI/CD pipelines |
-| GitLab CI/CD   | Integrated DevOps platform            |
-| GitHub Actions | CI/CD workflows in GitHub             |
-| Terraform      | Infrastructure as Code (IaC) tool     |
-| ArgoCD         | GitOps continuous delivery tool       |
+| Name           | Description                                                                                       |
+| -------------- | ------------------------------------------------------------------------------------------------- |
+| Jenkins        | Automation server for CI/CD pipelines                                                             |
+| GitLab CI/CD   | Integrated DevOps platform                                                                        |
+| GitHub Actions | CI/CD workflows in GitHub                                                                         |
+| Terraform      | Infrastructure as Code ([[Infrastructure Automation#🛠️ Infrastructure as Code (IaC)\|IaC]]) tool |
+| ArgoCD         | GitOps continuous delivery tool                                                                   |
 
 ---
 

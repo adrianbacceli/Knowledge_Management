@@ -156,7 +156,7 @@ Customer:
 ---
 # Shared Fate Model
 Increases level of trust by ensuring the CSP onboards with the customer to meet the security expectations. 
-1. Security foundations - IaC
+1. Security foundations - [[Infrastructure Automation#🛠️ Infrastructure as Code (IaC)|IaC]]
 2. Landing Zones - Modular and Scalable / Starting point
 3. Mitigating Risk - Google Risk Manager generates reports to evaluate organizational risk
 

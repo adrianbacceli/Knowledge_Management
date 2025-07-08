@@ -9,7 +9,7 @@ tags:
 NeedsReview: false
 ---
 > [!summary] Core Concept  
-Terraform is a cloud-agnostic Infrastructure as Code (IaC) tool that automates the provisioning and management of cloud infrastructure using declarative configuration files.
+Terraform is a cloud-agnostic Infrastructure as Code ([[Infrastructure Automation#🛠️ Infrastructure as Code (IaC)|IaC]]) tool that automates the provisioning and management of cloud infrastructure using declarative configuration files.
 
 # 🔧 What is Terraform?
 Terraform allows developers and cloud security professionals to define infrastructure (VMs, VPCs, networks, etc.) using code. It's:
@@ -101,7 +101,7 @@ To support teams, organizations now use:
 ---
 # 🔁 **Core Terraform Workflow: 3 Key Steps**
 
-## **1. Write Infrastructure as Code (IaC)**
+## **1. Write Infrastructure as Code ([[Infrastructure Automation#🛠️ Infrastructure as Code (IaC)|IaC]])**
 
 - Define your infrastructure using **Terraform configuration files** (`.tf`).
 - Example: Creating a **Google Compute Engine F1-micro VM**:

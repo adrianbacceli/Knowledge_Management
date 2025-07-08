@@ -298,7 +298,7 @@ You successfully:
 	•	Verified infrastructure deployment
 
 > [!success]
-> This hands-on lab taught the basics of infrastructure-as-code (IaC) using Terraform in GCP.
+> This hands-on lab taught the basics of infrastructure-as-code ([[Infrastructure Automation#🛠️ Infrastructure as Code (IaC)|IaC]]) using Terraform in GCP.
 
 ---
 Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)

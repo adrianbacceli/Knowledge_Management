@@ -1,11 +1,14 @@
 ---
-title: 
-draft: true
+title: Windows Networking
+draft: false
 tags:
-  - tag1
-  - tag2
+  - Windows
+  - Networking
+  - ports
+  - Test
 NeedsReview: true
 ---
+# Powershell Port Test
 ``` powershell
 ## Run this script on each node using PowerShell ISE 64 bits.
 

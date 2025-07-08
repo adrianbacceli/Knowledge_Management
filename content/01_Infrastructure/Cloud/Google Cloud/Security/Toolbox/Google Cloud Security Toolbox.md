@@ -131,15 +131,15 @@ Logging is the bedrock for detection, investigation, and continuous improvement.
 
 Google Cloud provides a robust suite of tools to automate and enhance Business Continuity and Disaster Recovery (BCDR) strategies.
 
-| Tool | Role | Highlights |
-|------|------|------------|
-| **Policy Center** | 🏛️ Policy enforcement | Centralized governance; aligns with BCDR policies |
-| **Terraform Modules** | 🧱 IaC automation | Quickly deploy and replicate DR infrastructure |
-| **Cloud Build** | 🛠️ CI/CD automation | Build, test, and deploy BCDR-ready apps |
-| **OnVault** | 💾 Backup storage | Secure, long-term VM backup retention |
-| **StreamSnap** | 🌉 Data mirroring | Region-to-region replication for availability |
-| **Cloud Armor** | 🛡️ DDoS protection | Defends against large-scale service disruptions |
-| **Load Balancing** | ⚖️ Traffic routing | Enables regional failover and high availability |
+| Tool | Role                                                                              | Highlights |
+| --------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------- |
+| **Policy Center** | 🏛️ Policy enforcement                                                            | Centralized governance; aligns with BCDR policies |
+| **Terraform Modules** | 🧱 [[Infrastructure Automation#🛠️ Infrastructure as Code (IaC)\|IaC]] automation | Quickly deploy and replicate DR infrastructure |
+| **Cloud Build** | 🛠️ CI/CD automation                                                              | Build, test, and deploy BCDR-ready apps |
+| **OnVault** | 💾 Backup storage                                                                 | Secure, long-term VM backup retention |
+| **StreamSnap** | 🌉 Data mirroring                                                                 | Region-to-region replication for availability |
+| **Cloud Armor** | 🛡️ DDoS protection                                                               | Defends against large-scale service disruptions |
+| **Load Balancing** | ⚖️ Traffic routing                                                                | Enables regional failover and high availability |
 ## 📝 Summary & Best Practices
 
 - **Build a unified SecOps pipeline**: log → detect → act → review → repeat  
