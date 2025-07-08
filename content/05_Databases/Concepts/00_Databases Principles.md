@@ -6,7 +6,7 @@ tags:
   - tag2
 NeedsReview: true
 ---
-### **1. Relational Databases (RDBMS)**
+### **1. Relational Databases and [[What is an RDBMS|RDBMS]]**
 
 These are widely used for structured data and support [[What is SQL|SQL]].
 
