@@ -116,7 +116,7 @@ IaC helps automate and manage:
 > [!summary] Core Concept  
 > Policy as Code (PaC) uses code to define and enforce governance and security rules—automating policy enforcement across the dev lifecycle.
 
-PaC codifies policies using languages like **Rego**, **YAML**, or **JSON**, allowing:
+PaC codifies policies using languages like **Rego**, **[[YAML]]**, or **JSON**, allowing:
 
 - Version control
 - Automated testing
@@ -146,7 +146,7 @@ Automate security, compliance, and operations policies through programmable logi
 
 ## 🔧 Tools & Languages
 
-- **Languages**: Rego (OPA), YAML, JSON, Python  
+- **Languages**: Rego (OPA), [[YAML]], JSON, Python  
 - **Tools**: Terraform, Ansible, Chef, Puppet
 
 ```mermaid

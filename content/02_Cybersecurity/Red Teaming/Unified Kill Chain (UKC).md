@@ -65,7 +65,7 @@ The attack flow is organized into three macro stages:
 
 ### 5. **Exploitation**
 > Exploiting a vulnerability to gain access or execute code.
-- Buffer overflows, XSS, deserialization bugs, privilege flaws.
+- Buffer overflows, XSS, [[Serialization & Deserialization]] bugs, privilege flaws.
 
 ### 6. **Persistence**
 > Establishing a long-term foothold.

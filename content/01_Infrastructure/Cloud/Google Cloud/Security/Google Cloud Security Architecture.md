@@ -413,7 +413,7 @@ Two key log types:
 
 # Evidence preservation and Incident Response
 
-## Digital Evidence (IoC): 
+## Digital Evidence ([[Indicators of Compromise (IOCs) and Frameworks|IOC]]): 
 - Logs
 - hashes
 - malware

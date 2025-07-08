@@ -46,7 +46,7 @@ This tells Puppet:
 
 |Feature|Puppet|Ansible|Terraform|
 |---|---|---|---|
-|Language|Puppet DSL|YAML|HCL|
+|Language|Puppet DSL|[[YAML]]|HCL|
 |Approach|Declarative|Imperative (mostly)|Declarative|
 |State Tracking|Yes (resource catalog)|No|Yes (state file)|
 |Agent Required|Yes (default)|No|No|

@@ -183,7 +183,7 @@ Even if you're not writing code, your role is **critical**. Here's what you sho
 ---
 ## 🧠 You Don’t Need to Code, But You Should Know:
 
-- **How to read basic scripts** (e.g., YAML for pipelines, JSON for config files).
+- **How to read basic scripts** (e.g., [[YAML]] for pipelines, JSON for config files).
 - **How to interpret scan results** from tools like SonarQube, Checkmarx, or Snyk.
 - **How to collaborate with developers** to explain risks and recommend mitigations.
 ---

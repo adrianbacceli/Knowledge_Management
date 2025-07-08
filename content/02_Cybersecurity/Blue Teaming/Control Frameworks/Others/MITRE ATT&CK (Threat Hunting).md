@@ -19,9 +19,9 @@ NeedsReview: false
 ---
 
 > [!info]
-> Threat hunting is a **proactive** cybersecurity process aimed at identifying Indicators of Compromise (IOCs) and uncovering gaps in Tactics, Techniques, and Procedures (TTPs) before they are exploited.
+> Threat hunting is a **proactive** cybersecurity process aimed at identifying Indicators of Compromise (IOCs) and uncovering gaps in Tactics, Techniques, and Procedures ([[TTPs]]) before they are exploited.
 
-## MITRE ATT&CK TTPs for Threat Hunting
+## MITRE ATT&CK [[TTPs]] for Threat Hunting
 
 The MITRE ATT&CK framework is central to modern threat hunting and categorizes adversary behavior into:
 
@@ -75,7 +75,7 @@ The MITRE ATT&CK framework is central to modern threat hunting and categorizes a
 ## Summary
 
 - Use ATT&CK to guide threat hunting investigations.
-- Focus on detecting IOCs tied to known and emerging TTPs.
+- Focus on detecting IOCs tied to known and emerging [[TTPs]].
 - Continuously validate your detection capabilities against mapped techniques.
 - Integrate ATT&CK resources to enhance detection engineering and red team operations.
 

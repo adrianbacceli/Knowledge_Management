@@ -39,7 +39,7 @@ Google Cloud equips you with tools mapped neatly to each SecOps stage:
 | **Chronicle SIEM** | 🧠 Data fusion & analytics | Scalable ingestion, correlation, threat hunting |
 | **Chronicle SOAR** | 🤖 Response automation | Playbooks, case management, 24/7 operational readiness |
 | **VirusTotal** | 🦠 Malware analysis | File & URL scanning with Chronicle integration |
-| **Mandiant Threat Intel** | 🌐 Threat foresight | TAP into emerging TTPs (tactics, techniques, procedures) |
+| **Mandiant Threat Intel** | 🌐 Threat foresight | TAP into emerging [[TTPs]] (tactics, techniques, procedures) |
 
 > [!example]  
 > **SecOps Cycle** in action: SCC raises a risk → Chronicle SIEM flags an anomaly → SOAR triggers automated containment → Mandiant intel refines future detections.

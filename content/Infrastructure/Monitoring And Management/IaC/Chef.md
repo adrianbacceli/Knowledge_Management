@@ -54,7 +54,7 @@ This installs Nginx and ensures the service is enabled and running.
 
 |Feature|Chef|Puppet|Ansible|Terraform|
 |---|---|---|---|---|
-|Language|Ruby DSL|Puppet DSL|YAML|HCL|
+|Language|Ruby DSL|Puppet DSL|[[YAML]]|HCL|
 |Approach|Declarative|Declarative|Imperative (mostly)|Declarative|
 |Agent Required|Yes|Yes|No|No|
 |State Tracking|No (uses convergence model)|Yes|No|Yes|

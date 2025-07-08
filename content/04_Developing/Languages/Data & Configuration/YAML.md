@@ -1,86 +1,87 @@
 ---
 title: YAML
-draft: true
+draft: false
 tags:
-  - tag1
-  - tag2
-NeedsReview: true
+  - YAML
+  - configuration
+  - serialization
+  - DevOps
+NeedsReview: false
 ---
+> [!info] What is YAML?
+> YAML stands for "YAML Ain't Markup Language". It's a data [[Serialization & Deserialization]] format often used for configuration files, data exchange, and pipeline scripting.
 
-### 🔹 `> [!note]` — **Note**
+## Basics
 
-> [!note] Quick Reminder  
-> This is general-purpose information you want to keep in mind.
+YAML uses indentation (spaces, **not tabs**) to define structure. It’s intuitive and often preferred over [[JSON]] or XML for its readability.
+
+```yaml
+name: Penguin
+likes:
+  - Fish
+  - Ice
+  - Tux
+is_cool: true
+````
+
+## Key Features
+
+> [!tip] Why use YAML?  
+> YAML is clean, expressive, and supports complex data structures like lists, maps, and scalars.
+
+- **Scalars**: Strings, numbers, booleans
+- **Sequences (lists)**:
+    ```yaml
+    colors:
+      - red
+      - green
+      - blue
+    ```
+
+- **Mappings (dictionaries)**:
+    ```yaml
+    environment:
+      os: Linux
+      shell: bash
+    ```
+
+## Comments
+
+```yaml
+# This is a comment
+key: value  # Inline comment
+```
+
+## Common Use Cases
+
+- [[Developing Methodologies#What is CI/CD?|CI/CD]] configuration (e.g., GitHub Actions, GitLab CI)
+- Docker Compose files
+- Kubernetes manifests
+- Static site generator settings (e.g., Hugo)
+
+> [!example] Example: GitHub Actions Workflow
+
+```yaml
+name: Build
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run build
+        run: make build
+```
+
+## Warnings
+
+> [!warning] Be careful!  
+> YAML is sensitive to indentation and whitespace. Always use **spaces**, not tabs. Incorrect indentation leads to parsing errors.
+
+## Tools
+
+- YAML linters: [`yamllint`](https://yamllint.readthedocs.io/)
+- Online validators: [yamlchecker.com](https://yamlchecker.com/)
 
 ---
-
-### 🔹 `> [!tip]` — **Tip**
-
-> [!tip] Helpful Tip  
-> 💡 Try running small variations in your prompts to test model sensitivity.
-
-
----
-
-### 🔹 `> [!info]` — **Info**
-
-> [!info] Did You Know?  
-> You can chain prompts to simulate multi-turn conversations.
-
-
----
-
-### 🔹 `> [!warning]` — **Warning**
-
-> [!warning] Caution Ahead  
-> ⚠️ Incorrect prompt phrasing may lead to hallucinated outputs.
-
-
----
-
-### 🔹 `> [!danger]` — **Danger**
-
-> [!danger] Risk Zone  
-> 🚨 Avoid copying prompts blindly without verifying context.
-
-
----
-
-### 🔹 `> [!quote]` — **Quote**
-
-> [!quote] Prompt Wisdom  
-> “A good prompt is like a good question—it gets the right conversation started.”
-
-
----
-
-### 🔹 `> [!example]` — **Example**
-
-> [!example] Prompt Example  
-> "Summarize this article in 3 bullet points, using plain language."
-
-
----
-
-### 🔹 `> [!abstract]` — **Abstract**
-
-> [!abstract] Key Concept  
-> Prompt engineering involves crafting input that guides the model’s response effectively.
-
-
----
-
-### 🔹 `> [!question]` — **Question**
-
-> [!question] Ask Yourself  
-> ❓What is the *true* goal of this prompt?
-
-
----
-
-### 🔹 `> [!success]` — **Success**
-
-> [!success] Well Done!  
-> ✅ Your prompt returned the expected output with clarity and precision.
-
 Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)

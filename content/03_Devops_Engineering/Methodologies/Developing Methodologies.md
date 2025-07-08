@@ -189,7 +189,7 @@ Machine-readable inventory of software components:
 | ------------- | ---------------------------- | --------------- |
 | **Syft**      | SBOM from code/containers    | CycloneDX, SPDX |
 | **CycloneDX** | OWASP SBOM format            | JSON, XML       |
-| **SPDX**      | Linux Foundation open format | RDF, JSON, YAML |
+| **SPDX**      | Linux Foundation open format | RDF, JSON, [[YAML]] |
 
 > [!tip] Why It Matters
 > CVEs are easier to trace when SBOMs are available.

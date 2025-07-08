@@ -20,7 +20,7 @@ It’s a **critical phase** in the attack lifecycle, especially in **post-exploi
 
 ---
 
-## 🔗 Where It Fits in the Unified Kill Chain (UKC)
+## 🔗 Where It Fits in the [[Unified Kill Chain (UKC)]]
 
 |**Stage**|**Step**|
 |---|---|
@@ -163,7 +163,7 @@ export TERM=xterm
 
 ---
 
-### 🔗 Where It Fits in the Unified Kill Chain (UKC)
+### 🔗 Where It Fits in the [[Unified Kill Chain (UKC)]]
 
 |UKC Step|Role of Reverse Shell|
 |---|---|
