@@ -120,7 +120,7 @@ Even if you're not writing code, your role is **critical**. Here's what you sho
 
 ## 1. **Security in the CI/CD Pipeline**
 
-- **Understand the pipeline**: Know what tools are used (e.g., Jenkins, GitLab CI, GitHub Actions).
+- **Understand the pipeline**: Know what tools are used (e.g., [[Jenkins]], GitLab CI, GitHub Actions).
 - **Identify weak points**: Where could malicious code be injected? Are secrets (like API keys) exposed?
 - **Monitor pipeline logs** for anomalies or unauthorized access.
 

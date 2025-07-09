@@ -148,7 +148,7 @@ NeedsReview: false
 
 | Name           | Description                                                                                       |
 | -------------- | ------------------------------------------------------------------------------------------------- |
-| Jenkins        | Automation server for CI/CD pipelines                                                             |
+| [[Jenkins]]        | Automation server for CI/CD pipelines                                                             |
 | GitLab CI/CD   | Integrated DevOps platform                                                                        |
 | GitHub Actions | CI/CD workflows in GitHub                                                                         |
 | Terraform      | Infrastructure as Code ([[Infrastructure Automation#🛠️ Infrastructure as Code (IaC)\|IaC]]) tool |

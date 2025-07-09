@@ -144,6 +144,68 @@ SonarQube supports multi-language codebases including:
 
 ---
 
+# 🛠️ Reconfiguring SonarCloud to Use [[Jenkins]] Instead of GitHub Actions
+
+If you want to stop using GitHub Actions and instead run **SonarCloud analysis through Jenkins**, follow these steps:
+
+### 1. 🔌 Install Jenkins Plugins
+
+- Go to `Manage Jenkins > Manage Plugins`
+- Install:
+    - **SonarQube Scanner**
+    - (Optional) **Pipeline Utility Steps**
+
+### 2. 🔐 Generate and Store SonarCloud Token
+
+- In SonarCloud: `My Account > Security > Generate Token`
+- In Jenkins: `Manage Jenkins > Credentials > Global > Add Credentials`
+    - Type: `Secret Text`
+    - ID: `sonarcloud-token`
+
+### 3. ⚙️ Configure SonarCloud in Jenkins
+
+- Go to `Manage Jenkins > Configure System`
+- Under **SonarQube Servers**:
+    - Name: `SonarCloud`
+    - Server URL: `https://sonarcloud.io`
+    - Credentials: Select the token you added
+    - ✅ Enable injection of SonarQube config as environment variables
+
+### 4. 🧪 Add SonarCloud Stage to Jenkinsfile
+
+```groovy
+pipeline {
+    agent any
+
+    tools {
+        maven 'Maven 3.8.1'
+    }
+
+    environment {
+        SONAR_TOKEN = credentials('sonarcloud-token')
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'mvn clean install'
+            }
+        }
+        stage('SonarCloud Analysis') {
+            steps {
+                withSonarQubeEnv('SonarCloud') {
+                    sh 'mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN'
+                }
+            }
+        }
+    }
+}
+```
+
+> Replace Maven commands with your build tool (e.g., `npm`, `gradle`, `sonar-scanner`) as needed.
+
+---
+
 > [!tip]
 > Start with small codebases to get comfortable with interpreting metrics before scaling SonarQube to larger projects.
 
