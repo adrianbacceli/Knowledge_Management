@@ -291,15 +291,15 @@ graph LR
 
 #### 🧰 Jenkins Plugin Automation Breakdown 
 
-| **Task**                          | **Tool**                    | **Jenkins Plugin(s)**                                                                 |
-| --------------------------------- | --------------------------- | ------------------------------------------------------------------------------------- |
-| **Code Hosting**                  | GitHub, GitLab, Bitbucket   | ✅ GitHub Plugin, GitLab Plugin, Bitbucket Plugin                                      |
-| **Containerization**              | Docker                      | ✅ Docker Pipeline Plugin, Docker Commons Plugin                                       |
-| **Infrastructure as Code**        | Terraform, Ansible          | ✅ Terraform Plugin, Ansible Plugin                                                    |
-| **Build & Dependency Management** | Maven, npm                  | ✅ Maven Integration Plugin, NodeJS Plugin (for npm)                                   |
-| **Testing**                       | JUnit, Selenium, Cypress    | ✅ JUnit Plugin, Selenium Plugin, HTML Publisher Plugin                                |
-| **Security Scanning**             | OWASP ZAP, Snyk, Trivy      | ✅ OWASP ZAP Plugin, Snyk Security Plugin, custom shell steps for Trivy                |
-| **Deployment**                    | Kubernetes, AWS, Azure, GCP | ✅ Kubernetes Plugin, AWS CodeDeploy Plugin, Azure CLI Plugin, Google Cloud SDK Plugin |
+| **Task**                          | **Tool**                    | **Jenkins Plugin(s)**                                                                     |
+| --------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------- |
+| **Code Hosting**                  | GitHub, GitLab, Bitbucket   | GitHub Plugin<br>GitLab Plugin<br>Bitbucket Plugin                                        |
+| **Containerization**              | Docker                      | Docker Pipeline Plugin<br>Docker Commons Plugin                                           |
+| **Infrastructure as Code**        | Terraform, Ansible          | Terraform Plugin<br>Ansible Plugin                                                        |
+| **Build & Dependency Management** | Maven, npm                  | Maven Integration Plugin (Java)<br>NodeJS Plugin (for npm javascript)                     |
+| **Testing**                       | JUnit, Selenium, Cypress    | JUnit Plugin<br>Selenium Plugin<br>HTML Publisher Plugin                                  |
+| **Security Scanning**             | OWASP ZAP, Snyk, Trivy      | OWASP ZAP Plugin<br>Snyk Security Plugin<br>custom shell steps for Trivy                  |
+| **Deployment**                    | Kubernetes, AWS, Azure, GCP | Kubernetes Plugin<br>AWS CodeDeploy Plugin<br>Azure CLI Plugin<br>Google Cloud SDK Plugin |
 
 #### Plugin Categories:
 - UI Plugins: Deal with how things look like.
