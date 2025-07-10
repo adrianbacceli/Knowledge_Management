@@ -6,6 +6,8 @@ NeedsReview: true
 ---
 ## ✅ **Priority Areas to Learn Now** (Gap-Filling & Job-Relevant)
 
+## HTB CBBH Overview
+
 These are **high-impact skills** your teammates already have that would **complement or elevate your current work**:
 
 ### 🛠️ **CI/CD Pipeline Security & Automation**
