@@ -12,7 +12,7 @@ NeedsReview: false
 ---
 
 > [!summary] Core Concept  
-This note outlines various software development methodologies and security strategies—from traditional waterfall approaches to modern CI/CD pipelines, including insights into supply chain security and SBOM implementation.
+This note outlines various software development methodologies and security strategies—from traditional waterfall approaches to modern [CI/CD pipelines](Jenkins), including insights into supply chain security and SBOM implementation.
 
 # 🧱 Traditional Development
 
@@ -75,14 +75,19 @@ Automation of coding workflows for efficient, secure releases:
 
 ---
 
+> [!danger] CI/CD Automation with Jenkins
+> [[Jenkins]] Is a cornerstone tool that automates CI/CD,  for modern DevOps pipelines,  orchestrating tasks from code integration to deployment.
+
+---
+
 ### 📊 CI/CD Summary Table
 
-|**Phase**|**What You Do**|**GitHub Tools**|
-|---|---|---|
-|Source|Push code|Git, GitHub|
-|Build|Compile app/site|GitHub Actions|
-|Test|Automated checks|GitHub Actions|
-|Deploy|Release to users|GitHub Pages, Vercel|
+| **Phase** | **What You Do**  | **GitHub Tools**     |
+| --------- | ---------------- | -------------------- |
+| Source    | Push code        | Git, GitHub          |
+| Build     | Compile app/site | GitHub Actions       |
+| Test      | Automated checks | GitHub Actions       |
+| Deploy    | Release to users | GitHub Pages, Vercel |
 
 ---
 
