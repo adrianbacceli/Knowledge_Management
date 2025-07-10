@@ -80,7 +80,7 @@ Some common tools and practices include:
 - **Version Control Systems**: Track changes and enable rollbacks
 - **Continuous Testing**: Run automated tests for security and functionality
 - **Monitoring & Logging**: Detect and respond to incidents
-- **Containerization & Orchestration**: Use Docker, Kubernetes, etc.
+- **Containerization & Orchestration**: Use [[Docker]], [[Kubernetes]], etc.
 - **Configuration Management**: Tools like [[Ansible]], [[Terraform]], or [[Puppet]]
 ## 🔐 DevSecOps Key Components
 
@@ -157,7 +157,7 @@ Even if you're not writing code, your role is **critical**. Here's what you sho
 
 ## 3. **Container and Cloud Security**
 
-- If the team uses **Docker**, **Kubernetes**, or **cloud services**, you might:
+- If the team uses **[[Docker]]**, **[[Kubernetes]]**, or **cloud services**, you might:
     - Scan container images for vulnerabilities.
     - Ensure secure configurations (e.g., no root containers, least privilege).
     - Monitor cloud environments for misconfigurations.
@@ -184,7 +184,7 @@ Even if you're not writing code, your role is **critical**. Here's what you sho
 ## 🧠 You Don’t Need to Code, But You Should Know:
 
 - **How to read basic scripts** (e.g., [[YAML]] for pipelines, JSON for config files).
-- **How to interpret scan results** from tools like SonarQube, Checkmarx, or Snyk.
+- **How to interpret scan results** from tools like [[SonarQube]], Checkmarx, or Snyk.
 - **How to collaborate with developers** to explain risks and recommend mitigations.
 ---
 

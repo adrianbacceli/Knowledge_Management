@@ -146,9 +146,9 @@ SonarQube supports multi-language codebases including:
 
 # 🛠️ Reconfiguring SonarCloud to Use [[Jenkins]] Instead of GitHub Actions
 
-If you want to stop using GitHub Actions and instead run **SonarCloud analysis through Jenkins**, follow these steps:
+If you want to stop using GitHub Actions and instead run **SonarCloud analysis through [[Jenkins]]**, follow these steps:
 
-### 1. 🔌 Install Jenkins Plugins
+### 1. 🔌 Install [[Jenkins]] Plugins
 
 - Go to `Manage Jenkins > Manage Plugins`
 - Install:
@@ -158,11 +158,11 @@ If you want to stop using GitHub Actions and instead run **SonarCloud analysis t
 ### 2. 🔐 Generate and Store SonarCloud Token
 
 - In SonarCloud: `My Account > Security > Generate Token`
-- In Jenkins: `Manage Jenkins > Credentials > Global > Add Credentials`
+- In [[Jenkins]]: `Manage Jenkins > Credentials > Global > Add Credentials`
     - Type: `Secret Text`
     - ID: `sonarcloud-token`
 
-### 3. ⚙️ Configure SonarCloud in Jenkins
+### 3. ⚙️ Configure SonarCloud in [[Jenkins]]
 
 - Go to `Manage Jenkins > Configure System`
 - Under **SonarQube Servers**:

@@ -62,7 +62,7 @@ Automation of coding workflows for efficient, secure releases:
 1. **Source**: Code pushed to a shared repo with version control and branch protections.
 2. **Build**: Workflow triggers compile, dependency installation, or static site build.
 3. **Test**: Automated validation: unit tests, security scans, linting.
-4. **Deploy**: Delivery to platforms like GitHub Pages, Vercel, Docker Hub, etc.
+4. **Deploy**: Delivery to platforms like GitHub Pages, Vercel, [[Docker]] Hub, etc.
 
 ---
 
@@ -213,7 +213,7 @@ Machine-readable inventory of software components:
 | Tool           | Scans                                                                     | Integrations       |
 | -------------- | ------------------------------------------------------------------------- | ------------------ |
 | **Snyk**       | Code, [[Infrastructure Automation#🛠️ Infrastructure as Code (IaC)\|IaC]] | GitHub, GitLab     |
-| **Trivy**      | Containers, FS                                                            | Docker, K8s        |
+| **Trivy**      | Containers, FS                                                            | [[Docker]], K8s        |
 | **Dependabot** | GitHub PRs                                                                | Native integration |
 | **OWASP DC**   | Java, .NET                                                                | CI/CD pipelines    |
 
@@ -225,7 +225,7 @@ Machine-readable inventory of software components:
 | ----------------- | ------------ | ---------------------- |
 | JFrog Artifactory | ✅            | Built-in Xray          |
 | GitHub Packages   | ✅            | Linked with Dependabot |
-| Docker Hub        | ✅            | Basic scan shown       |
+| [[Docker]] Hub        | ✅            | Basic scan shown       |
 
 ---
 

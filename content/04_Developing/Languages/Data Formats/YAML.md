@@ -55,8 +55,8 @@ key: value  # Inline comment
 ## Common Use Cases
 
 - [[Developing Methodologies#What is CI/CD?|CI/CD]] configuration (e.g., GitHub Actions, GitLab CI)
-- Docker Compose files
-- Kubernetes manifests
+- [[Docker]] Compose files
+- [[Kubernetes]] manifests
 - Static site generator settings (e.g., Hugo)
 
 > [!example] Example: GitHub Actions Workflow

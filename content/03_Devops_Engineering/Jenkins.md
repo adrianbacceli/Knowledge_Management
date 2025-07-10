@@ -7,13 +7,108 @@ tags:
   - DevOps
   - DevSecOps
   - Jenkins
-NeedsReview: true
+NeedsReview: false
 ---
 > [!note]  
 > This note captures Jenkins core architecture and operational concepts for quick onboarding and reference in CI/CD infrastructure documentation.
 
+# 🔄 Jenkins in the CI/CD Lifecycle
+
+Jenkins is a cornerstone of modern DevOps pipelines, automating and orchestrating tasks from code integration to deployment.
+
+> [!note]  
+> Jenkins is an open-source automation server that supports continuous integration and delivery through an extensible plugin-based system.
+
 ---
-# Jenkins in the center of CI/CD Pipeline
+
+## 🔁 Continuous Integration (CI) Explained
+
+CI involves integrating code from multiple contributors into a shared repository, ensuring automated testing and verification.
+
+**Typical CI Flow:**
+
+1. Developers commit code changes.
+2. Jenkins detects merges and triggers a build.
+3. Each change is tested automatically.
+4. Interacting changes may introduce bugs or defects.
+5. Once validated, changes are merged into the main codebase.
+
+> [!example]  
+> CI ensures that new features from different developers don't break existing functionality by testing merged code frequently.
+
+---
+
+## 🧰 Traditional Manual Flow (Before Jenkins)
+
+- Manual code changes and merges.
+- Manual builds and test execution.
+- [[Docker]] image creation and cloud deployment.
+- [[Kubernetes]] orchestration done manually.
+
+> [!warning]  
+> Manual processes are slow, error-prone, and not scalable for modern software delivery.
+
+---
+
+## 🚀 Jenkins Automation Enhancements
+
+Jenkins replaces manual CI/CD processes with automated pipelines.
+
+**How Jenkins works:**
+1. Monitors a repository branch for commits.
+2. On change, performs tests to verify integrity.
+3. Compiles and builds if tests pass.
+4. Pushes the resulting container image to a registry.
+5. Deploys to the cloud (e.g., via [[Kubernetes]]).
+6. Sends a success or failure notification.
+
+
+> [!tip]  
+> Jenkins jobs can target specific branches (`dev`, `main`, `lab`) to deploy to corresponding environments.
+
+---
+
+## 🧬 Jenkins Characteristics and Benefits
+
+### ✅ Features
+
+- Easy setup (running in ~10 minutes)
+- Plugin-based extensibility
+- Cross-cloud support (AWS, Azure, GCP, IBM)
+- Open-source and actively maintained
+- Can distribute jobs across multiple agents
+
+### 🧩 Benefits
+
+1. Free and open-source
+2. Platform-agnostic
+3. Automated monitoring of repositories
+4. Rapid error detection (every 3–4 commits)
+5. User-friendly and customizable
+6. Faster issue resolution
+
+---
+
+## ⚠️ Drawbacks of Jenkins
+
+1. UI-based configurations can be fragile
+2. Setup and plugin management may require expertise
+3. Server management knowledge is often needed 
+4. Misconfigured settings can break the pipeline
+
+---
+
+## 🏗️ CI Pillars Supported by Jenkins
+
+- **Build Automation**
+- **Version Control Integration**
+- **Continuous Monitoring**
+- **Automated Testing**
+- **Configuration Management**
+- **Continuous Deployment**
+
+---
+# Jenkins at the center of CI/CD Pipeline
 
 Jenkins doesn't do _everything_, but **Jenkins handles most of the automation in a CI/CD pipeline** — it's the **central orchestrator**. Here's a breakdown of what Jenkins typically does and what it relies on other tools for:
 
@@ -52,9 +147,6 @@ graph TD
     Selenium <--> Prod
 
 ```
-
----
-# 🏗️ Core Jenkins Concepts
 
 ## 🔹 Projects and Jobs
 
@@ -277,7 +369,7 @@ graph LR
     - Pulls code from Git repositories
     - Builds the application (e.g., compiles, packages)
     - Runs automated tests (unit, integration, etc.)
-    - Performs static code analysis (e.g., SonarQube, Checkmarx)
+    - Performs static code analysis (e.g., [[SonarQube]], Checkmarx)
 
 2. **Continuous Delivery/Deployment (CD)**
     - Deploys to staging or production environments
@@ -285,21 +377,21 @@ graph LR
     - Sends notifications (Slack, email, dashboards)
 
 3. **Pipeline Orchestration**
-    - Coordinates tools like Docker, Kubernetes, Selenium, etc.
+    - Coordinates tools like [[Docker]], [[Kubernetes]], Selenium, etc.
     - Manages complex workflows using Jenkinsfiles (written in Groovy)
 
 
 #### 🧰 Jenkins Plugin Automation Breakdown 
 
-| **Task**                          | **Tool**                    | **Jenkins Plugin(s)**                                                                     |
-| --------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------- |
-| **Code Hosting**                  | GitHub, GitLab, Bitbucket   | GitHub Plugin<br>GitLab Plugin<br>Bitbucket Plugin                                        |
-| **Containerization**              | Docker                      | Docker Pipeline Plugin<br>Docker Commons Plugin                                           |
-| **Infrastructure as Code**        | Terraform, Ansible          | Terraform Plugin<br>Ansible Plugin                                                        |
-| **Build & Dependency Management** | Maven, npm                  | Maven Integration Plugin (Java)<br>NodeJS Plugin (for npm javascript)                     |
-| **Testing**                       | JUnit, Selenium, Cypress    | JUnit Plugin<br>Selenium Plugin<br>HTML Publisher Plugin                                  |
-| **Security Scanning**             | OWASP ZAP, Snyk, Trivy      | OWASP ZAP Plugin<br>Snyk Security Plugin<br>custom shell steps for Trivy                  |
-| **Deployment**                    | Kubernetes, AWS, Azure, GCP | Kubernetes Plugin<br>AWS CodeDeploy Plugin<br>Azure CLI Plugin<br>Google Cloud SDK Plugin |
+| **Task**                          | **Tool**                        | **Jenkins Plugin(s)**                                                                         |
+| --------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Code Hosting**                  | GitHub, GitLab, Bitbucket       | GitHub Plugin<br>GitLab Plugin<br>Bitbucket Plugin                                            |
+| **Containerization**              | [[Docker]]                      | [[Docker]] Pipeline Plugin<br>[[Docker]] Commons Plugin                                       |
+| **Infrastructure as Code**        | Terraform, Ansible              | Terraform Plugin<br>Ansible Plugin                                                            |
+| **Build & Dependency Management** | Maven, npm                      | Maven Integration Plugin (Java)<br>NodeJS Plugin (for npm javascript)                         |
+| **Testing**                       | JUnit, Selenium, Cypress        | JUnit Plugin<br>Selenium Plugin<br>HTML Publisher Plugin                                      |
+| **Security Scanning**             | OWASP ZAP, Snyk, Trivy          | OWASP ZAP Plugin<br>Snyk Security Plugin<br>custom shell steps for Trivy                      |
+| **Deployment**                    | [[Kubernetes]], AWS, Azure, GCP | [[Kubernetes]] Plugin<br>AWS CodeDeploy Plugin<br>Azure CLI Plugin<br>Google Cloud SDK Plugin |
 
 #### Plugin Categories:
 - UI Plugins: Deal with how things look like.
@@ -339,7 +431,7 @@ graph LR
 ## 🟩 Jenkins Agent (Node)
 
 - Executes actual workloads (build, test, deploy).
-- Connects via SSH, JNLP, Docker, or Kubernetes.
+- Connects via SSH, JNLP, [[Docker]], or [[Kubernetes]].
 - Can be labeled (e.g., `docker`, `nodejs`) for job routing.
 
 ---

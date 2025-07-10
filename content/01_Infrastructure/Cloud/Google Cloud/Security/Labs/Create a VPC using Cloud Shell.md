@@ -12,7 +12,7 @@ NeedsReview: true
 
 A **Virtual Private Cloud** (VPC) network is a private cloud hosted within a public cloud, enabling organizations to use the public cloud’s resources while being completely isolated from other cloud users.
 
-A VPC provides networking functionality to Compute Engine virtual machine (VM) instances, Kubernetes Engine containers, and other Google Cloud services. Each Google Cloud project by default has a default VPC network, which provides each region with an automatically-created subnet network.
+A VPC provides networking functionality to Compute Engine virtual machine (VM) instances, [[Kubernetes]] Engine containers, and other Google Cloud services. Each Google Cloud project by default has a default VPC network, which provides each region with an automatically-created subnet network.
 
 In this lab, you’ll learn how to use Cloud Shell to create a custom VPC network with subnets.
 

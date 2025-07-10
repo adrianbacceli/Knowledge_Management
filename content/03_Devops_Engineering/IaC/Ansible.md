@@ -147,7 +147,7 @@ You’ll be prompted for a password when running the playbook, or you can use `-
 
 # 🌐 3. **Dynamic Inventory** – _Real-Time Infrastructure Awareness_
 
-By default, Ansible uses a static `inventory.ini` file. But in dynamic environments (like AWS, Azure, GCP, Kubernetes), you want Ansible to **discover hosts automatically**.
+By default, Ansible uses a static `inventory.ini` file. But in dynamic environments (like AWS, Azure, GCP, [[Kubernetes]]), you want Ansible to **discover hosts automatically**.
 
 ## 🌐 **Dynamic Inventory with GCP**
 

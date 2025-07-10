@@ -137,10 +137,10 @@ NeedsReview: false
 
 |Name|Description|
 |---|---|
-|Docker|Containerization platform|
-|Kubernetes|Container orchestration system|
-|OpenShift|Red Hat’s Kubernetes-based platform|
-|Podman|Alternative to Docker for container management|
+|[[Docker]]|Containerization platform|
+|[[Kubernetes]]|Container orchestration system|
+|OpenShift|Red Hat’s [[Kubernetes]]-based platform|
+|Podman|Alternative to [[Docker]] for container management|
 
 ---
 
