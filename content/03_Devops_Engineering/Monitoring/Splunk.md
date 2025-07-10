@@ -1,5 +1,5 @@
 ---
-title: Splunk >
+title: Splunk
 draft: false
 tags:
   - Splunk

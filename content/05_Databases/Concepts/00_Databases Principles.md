@@ -47,7 +47,7 @@ Optimized for time-stamped or time-series data.
 
 - **InfluxDB**
 - **TimescaleDB**
-- **Prometheus** (often used for monitoring)
+- **[[Prometheus]]** (often used for monitoring)
 
 ---
 

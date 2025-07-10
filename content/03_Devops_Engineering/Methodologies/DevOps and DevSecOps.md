@@ -130,6 +130,7 @@ Even if you're not writing code, your role is **critical**. Here's what you sho
 - **SAST (Static Application Security Testing)**: Scans source code for vulnerabilities.
 - **DAST (Dynamic Application Security Testing)**: Tests running applications for security flaws.
 - You may **review reports**, **triage findings**, and **work with developers** to prioritize fixes.
+- **SCA (Software Composition Analysis):** Help identify vulnerabilities in third-party dependencies (e.g., libraries, packages).
 
 ### 🧪 **SAST (Static Application Security Testing) Tools**
 
@@ -152,6 +153,21 @@ Even if you're not writing code, your role is **critical**. Here's what you sho
 | **[[OWASP ZAP]]** | Open-source scanner for finding vulnerabilities in web applications.      | Finding vulnerabilities during runtime.             |
 | **Netsparker**    | Web application security scanner with dynamic analysis capabilities.      | Scanning live web applications for vulnerabilities. |
 | **Acunetix**      | Automated web application security scanner.                               | Identifying vulnerabilities in web applications.    |
+
+### 🧰 **Open Source SCA (Software Composition Analysis) Tools**
+
+| Tool                             | Language Support                     | Highlights                                                          |
+| -------------------------------- | ------------------------------------ | ------------------------------------------------------------------- |
+| **[[OWASP Dependency-Check]]**   | Java, .NET, Python, Node.js, Ruby    | CVE scanning, SBOM support, Jenkins/CI plugins                      |
+| **Syft + Grype** (by Anchore)    | All (Docker, OS, Python, Go, etc.)   | Syft generates SBOM, Grype scans for vulns                          |
+| **Trivy** (by Aqua Security)     | Docker, Kubernetes, Filesystem, SBOM | Fast, easy to use, also scans for IaC misconfigs                    |
+| **OSV-Scanner** (by Google)      | Go, Rust, npm, PyPI, Maven, etc.     | CVE scanner using [osv.dev](https://osv.dev) vulnerability database |
+| **Safety** (by PyUp)             | Python                               | Scans `requirements.txt` against CVE list                           |
+| **npm audit / yarn audit**       | JavaScript (Node.js)                 | Built into npm/yarn CLI for quick SCA                               |
+| **pip-audit** (by Trail of Bits) | Python                               | CLI tool, uses PyPI metadata and CVE databases                      |
+| **Cargo Audit**                  | Rust                                 | Scans Cargo.lock for vulnerabilities                                |
+| **GoSec + govulncheck**          | Go                                   | govulncheck uses Go’s own CVE feed                                  |
+| **CycloneDX CLI / SBOM Tools**   | Any                                  | Generates and validates SBOMs in standard format                    |
 
 ---
 

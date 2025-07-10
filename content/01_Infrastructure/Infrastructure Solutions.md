@@ -125,9 +125,9 @@ NeedsReview: false
 |---|---|
 |Nagios|Infrastructure monitoring tool|
 |Zabbix|Network and server monitoring|
-|Prometheus|Monitoring and alerting toolkit|
+|[[Prometheus]]|Monitoring and alerting toolkit|
 |Grafana|Visualization and dashboarding|
-|Splunk|Log analysis and monitoring|
+|[[Splunk]]|Log analysis and monitoring|
 |Ansible|Configuration management and automation|
 |Puppet/Chef|Infrastructure as code tools|
 

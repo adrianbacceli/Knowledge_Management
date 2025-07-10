@@ -19,24 +19,24 @@ Securing the CI/CD pipeline ensures that security is baked into every step of th
 ## 🛡️ Key Practices
 
 1. Define security requirements, policies, standards, and controls.
-2. Conduct static analysis, code reviews, and vulnerability assessments.
-3. Secure all infrastructure: build servers, version control, artifact repos.
+2. Conduct code reviews, and vulnerability assessments.
+3. Secure all infrastructure: build-servers, version control, artifact repos.
 4. Integrate security testing into pipeline stages.
-5. Use secure authentication and role-based access controls (RBAC).
-6. Encrypt data in transit and at rest.
+5. Use secure authentication and role-based access controls ([[Identity & Access Management (IAM)#🧩 RBAC (Role-Based Access Control)|RBAC]]).
+6. [[Encryption|Encrypt]] data in transit and at rest.
 7. Enforce secure coding: input validation, parameterized queries, secure cryptography.
 8. Harden systems in the toolchain.
 9. Implement pre-commit hooks for local code checks.
-10. Apply continuous SAST, DAST, IAST, and SCA testing.
+10. Apply continuous [[DevOps and DevSecOps#🧪 **SAST (Static Application Security Testing) Tools**|SAST]], [[DevOps and DevSecOps#🧪 **DAST (Dynamic Application Security Testing) Tools** |DAST]], Interactive Application Security Testing (IAST), and [[DevOps and DevSecOps#🧰 **Open Source SCA (Software Composition Analysis) Tools**|SCA]] testing.
 11. Manage secrets and credentials securely.
 12. Segregate duties and enforce environment isolation.
-13. Automate security scans (e.g., SonarQube). 
-14. Monitor and alert with tools like Prometheus and Splunk. 
-15. Perform container image scanning (e.g., Clair).
+13. Automate security scans (e.g., [[SonarQube]]). 
+14. Monitor and alert with tools like [[Prometheus]] and [[Splunk]]. 
+15. Perform container image scanning (e.g., [[Clair]]).
 16. Foster collaboration between development, security, and operations teams.
-17. Involve IR teams for incident readiness and post-mortems.
+17. Involve [[NIST SP 800-61 R2 (Incident Response)|Incident Response]] teams for incident readiness and post-mortems.
 18. Provide ongoing security education.
-19. Run red, blue, and purple team exercises.
+19. Run red, blue, and purple [[Unified Kill Chain (UKC)|Penetration Testing]] exercises.
 20. Implement runtime protection for pipeline components.
 
 ## 👥 Secure the People
@@ -47,11 +47,11 @@ Securing the CI/CD pipeline ensures that security is baked into every step of th
 
 ## 🛠️ Tools by Category
 
-- **Code Analysis:** SAST, DAST, IAST
-- **Dependency Scanning:** SCA
+- **Code Analysis:** [[DevOps and DevSecOps#🧪 **SAST (Static Application Security Testing) Tools**|SAST]], [[DevOps and DevSecOps#🧪 **DAST (Dynamic Application Security Testing) Tools** |DAST]], IAST
+- **Dependency Scanning:** [[DevOps and DevSecOps#🧰 **Open Source SCA (Software Composition Analysis) Tools**|SCA]]
 - **Secrets Management:** Vaults, secret scanning tools
 - **Infrastructure Security:** IaC scanning, container scanners
-- **Compliance & Monitoring:** Compliance enforcement, vulnerability management, Prometheus, Splunk
+- **Compliance & Monitoring:** Compliance enforcement, vulnerability management, [[Prometheus]], [[Splunk]]
 - **Automation:** Pre-commit hooks, automated pentests, AI-driven security tools
 
 ## 📋 Best Practices
@@ -127,12 +127,12 @@ graph LR
 1. **Source (CodeCommit/GitHub)**
     - Repository triggers pipeline.
 2. **CI Surveillance**
-    - **SAST** with tools like SonarQube.
+    - **[[DevOps and DevSecOps#🧪 **SAST (Static Application Security Testing) Tools**|SAST]]** with tools like SonarQube.
     - **SCA** for dependency vulnerabilities.
 3. **Artifact Build & Container Build**
     - Creates Docker images.
     - Pushes to a registry.
-4. **DAST in Staging**
+4. **[[DevOps and DevSecOps#🧪 **DAST (Dynamic Application Security Testing) Tools** |DAST]] in Staging**
     - Penetration test in a staging environment.
 5. **Vulnerability Aggregation**
     - All scan results feed into a risk dashboard.
@@ -140,15 +140,10 @@ graph LR
     - Secure deployment with least-privilege IAM and compliance checks.
 
 
-## 🔗 Related Topics
 
-- [[DevOps and DevSecOps#🧪 **SAST (Static Application Security Testing) Tools**|SAST]]
+- 
 - [[Software Composition Analysis - SCA]]
-- [[DevOps and DevSecOps#🧪 **DAST (Dynamic Application Security Testing) Tools** |DAST]]
 - [[IAST]]
-- [[SonarQube]]    
-- [[Splunk!]]
-- [[Clair]]    
 
 > [!warning]  
 > CI/CD security is never a one-time task. Regular audits, tool updates, and team awareness are key.
