@@ -1,206 +1,227 @@
 ---
 title: Splunk >
-draft: true
+draft: false
 tags:
   - Splunk
-NeedsReview: true
+  - search
+  - Dashboard
+  - Alert
+  - KnowledgeObjects
+NeedsReview: false
+---
 ---
 
+> [!note]  
+> This guide provides a practical and comprehensive explanation of Splunk's components and how they're used in real-world scenarios—from ingesting logs to building dashboards and automating alerts.
 
-# Components of Splunk >
+# What is Splunk Index
 
-## Index
+The **Index** is the core of Splunk’s data storage system. It holds all incoming data, structured as individual events. Here's how the indexing process works:
 
-The Index contains data from sources
+1. **Data Entry**: Raw data is ingested from various sources like logs, syslog servers, APIs, or file uploads.
+2. **Sourcetyping**: Splunk assigns a **sourcetype** to categorize data by structure and format. This helps in parsing and querying later.
+3. **Event Breaking**: Data is split into individual events. For example, each log line becomes an event.
+4. **Timestamp Normalization**: Dates are converted into a consistent format to support time-based searching.
+5. **Indexing**: Events are stored with metadata for fast retrieval.
 
-1. Data enters
-2. Inspectors lable data with source type
-3. Data is broken into single events
-4. Timestamps are normalized to a consistent format
-5. Data Is added to the index
+> [!example]  
+> If you're monitoring Apache logs, Splunk will categorize entries as `sourcetype=access_combined` and store them for time-series analysis.
 
-## Search language
+# Search Language (SPL)
 
-Query helps Search events across multiple data sources and run statistics on data using splunk search language
+Splunk uses **Search Processing Language (SPL)** to retrieve and analyze data.
 
-## Report and dashboard panels
-Provides insight into data and powers dashboards
+Use cases:
+
+- Find all failed login attempts  
+- Count number of events from a specific host
+- Track error rate over time
+
+Common features:
+
+- **Wildcards**: `error*` matches `error`, `errors`, etc.
+- **Logical Operators**: `AND`, `OR`, `NOT` to refine results
+- **Quotes**: Use `"exact phrase"` for precise matches
+- **Escape Characters**: `\` to include special characters
+
+---
+## Search Mechanics
+
+Searching in Splunk involves defining:
+
+- **Search Terms** (e.g., `index=firewall`)
+- **Commands** (e.g., `stats`)
+- **Functions** (e.g., `count`, `avg`)
+- **Arguments** (e.g., `(bytes)`)
+- **Clauses** (e.g., `as total_bytes`)
+
+> [!example]  
+> `index=web sourcetype=access_combined status=500 | stats count by uri` helps identify pages causing errors.
 
 
-# Data Model
-Data sets are called Data Model
-Avoid creating reports and searches.
+---
+# Reports and Dashboards
 
-# Alerts
-Triggers notifications as events occur
+Reports are saved searches that return data in a readable format, often on a schedule. Dashboards are visual collections of such reports.
 
-# Splunk! Web 
+> [!tip]  
+> Use dashboards to monitor metrics like website traffic or application errors in real time.
 
-## Roles 
-### Splunk > Enterprise
+## Reports
 
-* Admin
-* Power 
-* User
-### Splunk > Cloud
-* sc_admin
-* power
-* user
-* can_delete
-* token_auth
-* apps
-## Splunk > Apps
+Reports are persistent search results. Benefits:
+- Schedule automatic runs
+- Share with teams
+- Use in dashboards
 
-* Search & Reporting
-* Splunkbase: Market - Workspaces, set up by the administrator with apps
+### Scheduling
 
-# Splunk > Search
+- Changes report to run as the owner
+- Removes the time picker
+- Allows alert-style actions like email or logging
 
-# Search 
-* Used to run searches
-## Operators
-* Wildcard
-* AND / OR / NOT
-* "Exact"
-* \ Escape quotes
+> [!example]  
+> Weekly security report for failed SSH logins, emailed every Monday at 6:00 AM.
 
-## Search Syntax
+---
+## Dashboards
 
-Sample: 
-* index = network sourcetype=cisco_wsa_squid usage=Vi01ation | stats count (usage) as Visits   
+Visual tools to monitor key metrics. Built by:
 
-| Element      | What it is                                              | Example from string                                       |
-| ------------ | ------------------------------------------------------- | --------------------------------------------------------- |
-| Search Terms | index, source, host, sourcetype                         | ndex = network sourcetype=cisco_wsa_squid usage=Vi01ation |
-| Command      | What we want to do (Charts, statistics, formatting)     | stats                                                     |
-| Functions    | Tell how we want to chart, compute and evaluate results | count                                                     |
-| Arguments    | Variables to apply to a function                        | (usage)                                                   |
-| Clauses      | Group or define of results                              | Visits                                                    |
+1. Running a search
+2. Clicking **Visualization**
+3. Saving as a new or existing dashboard
+4. Adding and editing panels
+
+### Dashboard Studio
+
+Advanced dashboard editor with two modes:
+### Layout Modes
+
+|Feature|Absolute Mode|Grid Mode|
+|---|---|---|
+|Custom Canvas Size|✅|Limited|
+|Shapes, Icons, Images|✅|❌|
+|Visualizations|Unlimited|Width-constrained|
+
+> [!warning]  
+> Converting a dashboard may result in format loss. Always clone before editing.
+
+### Edit Mode
+
+- Interactive editor for arranging panels
+- Supports drag-and-drop and property editing
+
+---
+## Alerts
+
+**Alerts** notify you when specific conditions occur, such as system failures or security breaches. You can:
+
+- Send emails
+- Trigger scripts
+- Push data to other systems
+
+> [!example]  
+> Set an alert for more than 5 failed SSH attempts in 10 minutes to detect brute-force attacks.
+
+---
+## Splunk Web Interface
+
+### Roles
+
+Permissions vary by role:
+
+### Splunk Enterprise
+
+- **Admin**: Full control over configuration and data
+- **Power**: Can create alerts, reports, and dashboards
+- **User**: Limited to search and view data
+
+### Splunk Cloud
+
+- Includes additional roles like `can_delete` and `token_auth` for cloud-specific tasks.
+
+### Apps
+
+Apps extend Splunk’s capabilities:
+
+- **Search & Reporting**: Default app for querying data
+- **Splunkbase**: Community marketplace for prebuilt apps like Cisco Security Suite or AWS CloudTrail
+
+
+
+---
 # Knowledge Objects
+```mermaid
+graph TD
+  A[Knowledge Objects]
 
-## What they are
-- Useful to share between users
-- Can be reused by people and apps
-- Can be used in searches.
+  A1[Goals]:::goals
+  A2[Types]:::types
 
-## Goals:
-- Oversee knowledge object creation   
-- Normalize Event Data 
-- Implement naming conventions   
-- Create Data Models
+  A --> A1
+  A --> A2
 
-## Types
-### Data Interpretation   
-• Fields   
-• Field Extractions   
-• Calculated Fields   
+  A1 --> A1a[Make event data meaningful]
+  A1 --> A1b[Standardize naming]
+  A1 --> A1c[Enable shared use]
 
-#### FIELDS   
-a action   
-a categorylD   
-a clientip   
-a product_name   
+  A2 --> B1[Interpretation]
+  B1 --> B1a[Fields]
+  B1 --> B1b[Calculated Fields]
 
-### Data Classification   
-* Event Types
-* Transactions   
+  A2 --> B2[Classification]
+  B2 --> B2a[Event Types]
+  B2 --> B2b[Transactions]
 
-### Data Enrichment   
-* Lookups
-* Workflow Actions   
-### Data Normalization   
-Labels for data:
-• Tags   
-• Field Aliases   
+  A2 --> B3[Enrichment]
+  B3 --> B3a[Lookups]
+  B3 --> B3b[Workflow Actions]
 
-### Data Models
-* Hierarchically structured  Datasets
+  A2 --> B4[Normalization]
+  B4 --> B4a[Tags]
+  B4 --> B4b[Aliases]
 
----
-# Reports
+  A2 --> B5[Data Models]
 
-They help interpreting data based on a specific search criteria defined when the report is created
 
-## Create reports
+```
 
-## Schedule Reports
 
-Edit Schedule   
-A Scheduling this report:   
-• Causes its permissions to change from Run as User to Run as Owner.   
-• Results in removal of the time range picker from the report display.   
-x   
-Report   
-Schedule Report   
-Schedule   
-Time Range   
-Schedule Window   
-Trigger Actions   
-Security_Report_FaiIedSshAttempts   
-Learn More   
-On   
-Run every week •   
-Monday at 6:00 •   
-Last 24 hours   
-No window   
-+ Add Actions •Add actions to this report
-+ Log Event   
-- Send log event to Splunk receiver endpoint   
-- Output results to lookup   
-- Output the results of the search to a CSV lookup file   
-- Output results to telemetry endpoint   
-- Custom action to output results to telemetry endpoint   
-- Run a script   
-- Invoke a custom script   
-- Send email   
-- Send an email notification to specified recipients   
-- Send to Splunk Mobile
----
-# Dashboards
-Any search that returns status, can be used to create a dashboard.
+## Data Models
 
-To create dashboards from search do a search, go to visualization, save as Existing dashnboard or new dashboard. 
- Then you can edit the dashboard
- 
-You can add panels and save to dashboard
+**Data Models** structure raw data into reusable datasets. They're essential for:
+
+- Speeding up complex queries
+- Creating pivot tables without SPL
+- Powering dashboard panels and reports
+
+> [!example]  
+> A data model for firewall logs might include fields like `src_ip`, `dest_ip`, `action`, making it easier to build security analytics.
+
 
 ---
-# Dashboard studio
-## Clone in Dashboard Studio   
-Dashboard Title   
-Description   
-Permissions   
-Select layout mode   
-Absolute   
-Full layout control   
-BCG Logins - Dashboard Studio   
-Optional   
-a Private   
-Grid   
-Quick organization   
-x   
-Edit ID   
-CZI   
-O   
-Some custom formatting and configurations to your dashboard may be   
-lost during the cloning and conversion process. Your original dashboard   
-will not be affected.   
-Cancel   
-Convert & Save
 
-## Edit mode
+> Knowledge Objects in Splunk are reusable configurations that enhance search efficiency, data consistency, and collaboration across teams.
 
-Interactive dashboard editor
+## Goals
 
-## Layouts
+- **Meaning**: Add structure and semantic clarity to raw event data
+- **Consistency**: Standardize naming and data interpretation
+- **Reusability**: Shareable across users, apps, and dashboards
 
-| Option                                  | Absolute   | Grid                                                                              |
-| --------------------------------------- | ---------- | --------------------------------------------------------------------------------- |
-| Charts                                  | Yes        | Yes                                                                               |
-| Customizable Background Color           | Yes        | -                                                                                 |
-| Customizable Canvas size                | Yes        | Customize row height and visualization widths only                                |
-| Unlimited visualizations on a dashboard | Yes        | Number per row depends on the width of the visualizations - which can be modified |
-| Shapes: rectangles, lines, and ellipses | Yes        | -                                                                                 |
-| Icons: built-in and custom              | Yes        | -                                                                                 |
-| Images                                  | up to 16MB | -                                                                                 |
+## Types of Knowledge Objects
 
+| **Category**     | **Elements**                        | **Purpose**                                                  |
+|------------------|-------------------------------------|--------------------------------------------------------------|
+| Interpretation   | Fields, Calculated Fields           | Extract and compute meaningful attributes                    |
+| Classification   | Event Types, Transactions           | Categorize and correlate related events                      |
+| Enrichment       | Lookups, Workflow Actions           | Augment data with external context and user-driven actions   |
+| Normalization    | Tags, Aliases                       | Harmonize labels and field names for unified access          |
+| Data Modeling    | Data Models                         | Create structured, hierarchical datasets for reporting       |
+
+> [!tip]
+> Knowledge Objects fuel dashboards, alerts, and reports—use them to reduce redundancy and simplify your SPL workflows.
+
+---
+Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)
