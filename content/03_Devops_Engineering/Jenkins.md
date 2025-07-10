@@ -434,5 +434,83 @@ graph LR
 - Connects via SSH, JNLP, [[Docker]], or [[Kubernetes]].
 - Can be labeled (e.g., `docker`, `nodejs`) for job routing.
 
+
 ---
+# Securing Jenkins: Best Practices
+
+## 🔐 Jenkins Security Checklist
+
+Jenkins must be secured through a layered approach that includes controller isolation, access control, and environment immutability. This guide summarizes best practices for hardening Jenkins deployments.
+
+### 🛡️ Controller Isolation
+
+- Run the Jenkins controller on a hardened, isolated system.
+- Limit network access to the controller.
+- Avoid running builds on the controller node.
+
+### 👥 Access Control
+
+- Use built-in user database or integrate with external identity providers (e.g., LDAP, SSO).
+- Configure user permissions based on roles using _Matrix-based security_ or _Project-based Matrix Authorization_.
+
+> [!tip]  
+> Always apply the **Principle of Least Privilege** — grant only the minimum access necessary for users and jobs.
+
+### 🔐 Build Access Control
+
+- Restrict which users can configure or trigger builds.
+- Use _Job Restrictions Plugin_ or similar for finer control.
+
+### 🧬 Environment Variable Handling
+
+- Treat environment variables as immutable.
+- Avoid exposing sensitive variables in console output.
+- Use _Credentials Plugin_ to securely manage secrets.
+
+### ⚔️ CSRF Protection (Enabled by Default)
+
+- Ensure that **Prevent Cross Site Request Forgery exploits** is checked under _Configure Global Security_.
+
+### 📝 Markup Formatter (Enabled by Default)
+
+- Use the **Safe HTML** formatter to sanitize user input.
+- Prevent injection of potentially malicious markup.
+
+### ⚠️ Rendered User Content (Safe by Default)
+
+- Jenkins restricts how user-generated content is rendered.
+- Do not disable this unless absolutely required and audited.
+
+---
+
+## ⚙️ Jenkins Dashboard Configurations
+
+Navigate to `Dashboard > Manage Jenkins`:
+
+1. **Manage Nodes and Clouds**
+    - Define new agents with strong connection security (e.g., SSH with public key auth).
+2. **Configure Users**
+    - Enforce strong password policies.
+    - Consider SSO integration for centralized control.
+3. **Access Control**
+    - Regularly audit credentials and access permissions.
+    - Use credential domains and restrict visibility to authorized users only.
+4. **Security Documentation**
+    - Follow the [official Securing Jenkins guide](https://www.jenkins.io/doc/book/security/securing-jenkins/).
+
+---
+
+## 🧩 Additional Hardening Tips
+
+> [!note] Jenkins security is only as strong as the infrastructure it runs on.
+
+- Harden the **host server** with OS-level security best practices.
+- Use **HTTPS** and configure reverse proxies to enforce secure connections.
+- Restrict public access via **URL ACLs** or **firewalls**.
+- Store pipelines and configurations in **private version control repositories**.
+- Regularly update Jenkins core and plugins to patch vulnerabilities.
+
+---
+
+Stay frosty, fellow Penguin! 🐧 Your CI/CD fortress is now one step closer to invincible.
 Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)
