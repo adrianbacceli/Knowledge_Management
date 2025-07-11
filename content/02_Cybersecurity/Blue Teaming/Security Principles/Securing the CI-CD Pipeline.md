@@ -27,7 +27,7 @@ Securing the CI/CD pipeline ensures that security is baked into every step of th
 7. Enforce secure coding: input validation, parameterized queries, secure cryptography.
 8. Harden systems in the toolchain.
 9. Implement pre-commit hooks for local code checks.
-10. Apply continuous [[DevOps and DevSecOps#🧪 **SAST (Static Application Security Testing) Tools**|SAST]], [[DevOps and DevSecOps#🧪 **DAST (Dynamic Application Security Testing) Tools** |DAST]], Interactive Application Security Testing (IAST), and [[DevOps and DevSecOps#🧰 **Open Source SCA (Software Composition Analysis) Tools**|SCA]] testing.
+10. Apply continuous [[DevOps and DevSecOps#🧪 **SAST (Static Application Security Testing) Tools**|SAST]], [[DevOps and DevSecOps#🧪 **DAST (Dynamic Application Security Testing) Tools** |DAST]], [[Interactive Application Security Testing (IAST)]], and [[DevOps and DevSecOps#🧰 **Open Source SCA (Software Composition Analysis) Tools**|SCA]] testing.
 11. Manage secrets and credentials securely.
 12. Segregate duties and enforce environment isolation.
 13. Automate security scans (e.g., [[SonarQube]]). 
@@ -47,10 +47,10 @@ Securing the CI/CD pipeline ensures that security is baked into every step of th
 
 ## 🛠️ Tools by Category
 
-- **Code Analysis:** [[DevOps and DevSecOps#🧪 **SAST (Static Application Security Testing) Tools**|SAST]], [[DevOps and DevSecOps#🧪 **DAST (Dynamic Application Security Testing) Tools** |DAST]], IAST
+- **Code Analysis:** [[DevOps and DevSecOps#🧪 **SAST (Static Application Security Testing) Tools**|SAST]], [[DevOps and DevSecOps#🧪 **DAST (Dynamic Application Security Testing) Tools** |DAST]], [[Interactive Application Security Testing (IAST)|IAST]]
 - **Dependency Scanning:** [[DevOps and DevSecOps#🧰 **Open Source SCA (Software Composition Analysis) Tools**|SCA]]
-- **Secrets Management:** Vaults, secret scanning tools
-- **Infrastructure Security:** IaC scanning, container scanners
+- **[[Secrets Management]]:** Vaults, secret scanning tools
+- **Infrastructure Security:** IaC scanning, container scanners (e.g., [[Clair]])
 - **Compliance & Monitoring:** Compliance enforcement, vulnerability management, [[Prometheus]], [[Splunk]]
 - **Automation:** Pre-commit hooks, automated pentests, AI-driven security tools
 
@@ -97,7 +97,7 @@ graph LR
         WebApp[🌐 Web App]
         Sonar[🔍 SonarCloud + SAST + Lint + CodeQL]
         Test[🧪 Unit + Integration + Security Tests]
-        Docker[🐳 Build Docker Image + Container Scan]
+        Docker[🐳 Build Docker Image + Container Scan with Clair]
         Registry[📦 Push to Secure Container Registry]
         IaC[⚙️ IaC Scan + Ansible/Terraform Hardening]
         Cloud{☁️ GCP / AWS with IAM + Compliance Checks}
@@ -128,7 +128,7 @@ graph LR
     - Repository triggers pipeline.
 2. **CI Surveillance**
     - **[[DevOps and DevSecOps#🧪 **SAST (Static Application Security Testing) Tools**|SAST]]** with tools like SonarQube.
-    - **SCA** for dependency vulnerabilities.
+    - **[[DevOps and DevSecOps#🧰 **Open Source SCA (Software Composition Analysis) Tools**|SCA]]** for dependency vulnerabilities.
 3. **Artifact Build & Container Build**
     - Creates Docker images.
     - Pushes to a registry.
@@ -138,12 +138,6 @@ graph LR
     - All scan results feed into a risk dashboard.
 6. **Deploy to Prod**
     - Secure deployment with least-privilege IAM and compliance checks.
-
-
-
-- 
-- [[Software Composition Analysis - SCA]]
-- [[IAST]]
 
 > [!warning]  
 > CI/CD security is never a one-time task. Regular audits, tool updates, and team awareness are key.

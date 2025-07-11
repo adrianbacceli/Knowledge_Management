@@ -12,7 +12,7 @@ NeedsReview: false
 ---
 
 > [!summary] Core Concept  
-This note outlines various software development methodologies and security strategies—from traditional waterfall approaches to modern [CI/CD pipelines](Jenkins), including insights into supply chain security and SBOM implementation.
+This note outlines various software development methodologies and security strategies—from traditional waterfall approaches to modern [CI/CD pipelines](Jenkins.md), including insights into supply chain security and SBOM implementation.
 
 # 🧱 Traditional Development
 

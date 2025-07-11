@@ -179,7 +179,7 @@ Even if you're not writing code, your role is **critical**. Here's what you sho
     - Monitor cloud environments for misconfigurations.
 
 ---
-## 4. **Secrets Management**
+## 4. **[[Secrets Management]]**
 
 - Ensure that **secrets** (passwords, tokens, keys) are stored securely (e.g., in Vault, AWS Secrets Manager).
 - Audit access to secrets and ensure **rotation policies** are in place.

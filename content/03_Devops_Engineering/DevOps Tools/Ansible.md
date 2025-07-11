@@ -112,7 +112,7 @@ You can then use a role in a playbook like this:
 
 ---
 
-# 🔐 2. **Ansible Vault** – _Secure Secrets Management_
+# 🔐 2. **Ansible Vault** – _Secure [[Secrets Management]]_
 
 Ansible Vault allows you to **encrypt sensitive data** like passwords, API keys, or private variables.
 
