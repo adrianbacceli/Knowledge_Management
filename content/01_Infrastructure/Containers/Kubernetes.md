@@ -5,7 +5,7 @@ tags:
   - Kubernetes
   - Cointainer
   - K8s
-NeedsReview: true
+NeedsReview: false
 ---
 # ☸️ **Kubernetes**: Tool to _Orchestrate_ Containers
 
