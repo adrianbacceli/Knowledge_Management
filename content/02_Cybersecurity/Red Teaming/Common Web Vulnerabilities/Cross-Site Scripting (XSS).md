@@ -109,4 +109,3 @@ If the application does not sanitize this input before storing and later renderi
 ## 🔗 Resources
 
 - 🌐 PortSwigger: [Stored Cross-Site Scripting (XSS)](https://portswigger.net/web-security/cross-site-scripting/stored) / [Reflected Cross-Site Scripting (XSS)](https://portswigger.net/web-security/cross-site-scripting/reflected)
-- 🌐 OWASP: [XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Prevention_Cheat_Sheet.html)
