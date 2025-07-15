@@ -12,16 +12,90 @@ tags:
   - incident-response
 NeedsReview: false
 ---
-# Threat Hunting
+# Threat Modeling
 
-* Thread Modeling using [Microsoft Threat Modeling Tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
+* Threat Modeling using [Microsoft Threat Modeling Tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
+
+## Threat Modeling Methodologies
+
+
+### 🔐 **1. STRIDE**
+
+- **Focus**: Categorizing threats
+- **Categories**: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege
+- **Best for**: Identifying threats in software systems, especially during design.
+
+---
+
+### 🧠 **2. PASTA (Process for Attack Simulation and Threat Analysis)**
+
+- **Focus**: Risk-centric and attacker-focused
+- **Stages**: 7 stages from defining business objectives to threat analysis and risk mitigation
+- **Best for**: Organizations needing a comprehensive, risk-based approach.
+
+---
+
+### 🧱 **3. LINDDUN**
+
+- **Focus**: Privacy threat modeling
+- **Categories**: Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, Non-compliance
+- **Best for**: Systems where privacy is a key concern (e.g., healthcare, finance).
+
+---
+
+### 🧮 **4. Trike**
+
+- **Focus**: Risk management and security auditing
+- **Approach**: Builds a requirements model and threat model, then assesses risk
+- **Best for**: Teams that want to integrate threat modeling with risk assessment.
+
+---
+
+### 🧰 **5. VAST (Visual, Agile, and Simple Threat Modeling)**
+
+- **Focus**: Scalability and integration with Agile/DevOps
+- **Approach**: Uses automated tools and visual models
+- **Best for**: Large organizations with complex systems and fast development cycles.
+
+
+---
+
+
+## Different Approaches based on Common Scenarios:
+
+|Scenario|Recommended Approach|
+|---|---|
+|**You’re building general-purpose apps and want a simple, structured method**|**STRIDE**|
+|**You need to model privacy threats (e.g., GDPR, HIPAA)**|**LINDDUN**|
+|**You want a risk-based, attacker-focused model**|**PASTA**|
+|**You’re in a fast-paced Agile/DevOps environment**|**VAST**|
+|**You want to integrate threat modeling with risk management**|**Trike**|
+
+---
+### 🔍 Key Questions:
+
+1. **What type of systems are you building?**
+    - Web apps, mobile apps, embedded systems, cloud infrastructure, etc.
+
+2. **What’s your primary concern?** 
+    - Security, privacy, compliance, risk management, scalability?
+
+3. **How mature is your security process?**
+    - Just starting, moderately mature, or well-established?
+
+4. **What’s your team’s workflow like?**    
+    - Agile, DevOps, Waterfall, etc.
+
+5. **How large is your team and how technical are they?**    
+    - Are they mostly developers, security engineers, or a mix?
+
 
 ---
 
 > [!info]
 > Threat hunting is a **proactive** cybersecurity process aimed at identifying Indicators of Compromise (IOCs) and uncovering gaps in Tactics, Techniques, and Procedures ([[TTPs]]) before they are exploited.
 
-## MITRE ATT&CK [[TTPs]] for Threat Hunting
+# MITRE ATT&CK [[TTPs]] for Threat Hunting
 
 The MITRE ATT&CK framework is central to modern threat hunting and categorizes adversary behavior into:
 
@@ -86,6 +160,14 @@ The MITRE ATT&CK framework is central to modern threat hunting and categorizes a
 # Incident Response
 
 View the [[NIST SP 800-61 R2 (Incident Response)|NIST Incident Response Framework]] for more details.
+
+---
+
+# Mitigation and Avoidance
+
+Refer to:
+- [[Vulnerability Assessment & Hardening#SANS Institute and the SWAT Checklist|SANS Institute and the SWAT Checklist]]
+- [[Vulnerability Assessment & Hardening#Introduction to CWE and MITRE|Introduction to CWE and MITRE]]
 
 ---
 Stay sharp and hunt on, Penguin! 🐧
