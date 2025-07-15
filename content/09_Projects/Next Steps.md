@@ -129,6 +129,41 @@ These are great **expansion areas** if you're interested in long-term growth or 
 | • Kubernetes and Docker security                                                                                                                                    |                                                                                                                                                                                          |                                                                                                                                                                                                                                               |
 
 
+---
+
+# Job Tasks Profiling 
+
+✅ Experiencia profesional mínima de 4 años en gestión de vulnerabilidades web 
+✅ Experiencia profesional mínima de 4 años en evaluación de riesgos
+✅ Experiencia profesional mínima de 4 años en ingeniería de seguridad. 
+✅ Se requiere inglés avanzado.
+
+Experiencia práctica con herramientas de escaneo y gestión de vulnerabilidades:
+⚠️ Burp Suite
+❌ AppScan
+❌ Nexpose // To try community edition
+⚠️ Tenable (Nessus)
+❌ Kenna Security
+✅ JIRA ---> https://support.atlassian.com/jira-software-cloud/docs/manage-security-vulnerabilities-in-jira/
+
+Familiaridad con:
+⚠️✅ prácticas de codificación Segura // [[Vulnerability Assessment & Hardening#Introduction to CWE and MITRE|MITRE Common Weakness Enumeration (CWE)]]
+✅ OWASP Top 10 // Check [[OWASP Top 10]] Note --- Upcoming OWASP 2025.
+⚠️ modelado de amenazas // [[MITRE ATT&CK (Threat Modeling and Hunting)]]
+
+✅ Experiencia con prácticas [[DevOps and DevSecOps]] e integración de seguridad en pipelines [[Securing the CI-CD Pipeline|CI/CD]] (por ejemplo: Jenkins, GitLab, Azure DevOps).
+✅✅ Dominio de lenguajes de scripting como [[Python]] y [[Bash Scripting|Bash]] para automatización de tareas.
+
+Habilidades sólidas de 
+✅ comunicación
+✅ presentación 
+✅ visualización de datos
+
+Capacidad para crear dashboards e informes impactantes para la alta dirección. 
+✅ Familiaridad con metodologías ágiles 
+✅ Familiaridad con herramientas como Jira
+✅ Familiaridad con herramientas como Agile Dashboard // Monday.com, Trello, and Jira
+✅ Familiaridad con herramientas como Kanban Board // Monday.com, Trello, and Jira
 
 ---
 # This is the list of next steps  
