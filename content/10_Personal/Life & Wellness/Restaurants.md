@@ -1,5 +1,5 @@
 ---
-title: 
+title: Restaurants
 draft: true
 tags:
   - tag1
