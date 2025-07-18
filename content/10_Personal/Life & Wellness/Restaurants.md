@@ -54,6 +54,3 @@ https://www.degustapanama.com/panama/restaurante/os-segredos-da-carne_217.html
 Brasilera · Rodizio
 $37 por persona 
 + Estacionamientos
-
----
-Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)
