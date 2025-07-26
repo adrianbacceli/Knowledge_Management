@@ -1,5 +1,5 @@
 ---
-title: 
+title: Latency
 draft: false
 tags:
   - tag1

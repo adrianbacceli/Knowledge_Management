@@ -1,9 +1,9 @@
 ---
 title: Web Requests
-draft: true
+draft: false
 tags:
-  - tag1
-  - tag2
+  - HTB
+  - Web-Requests
 NeedsReview: true
 ---
 ## URL
