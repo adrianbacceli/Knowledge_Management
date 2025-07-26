@@ -12,7 +12,7 @@ NeedsReview: false
 ---
 
 > [!summary] Core Concept  
-This note outlines various software development methodologies and security strategies—from traditional waterfall approaches to modern [CI/CD pipelines](Jenkins.md), including insights into supply chain security and SBOM implementation.
+This note outlines various software development methodologies and security strategies—from traditional waterfall approaches to modern [[3. CI-CD Pipeline|CI/CD Pipelines]] including insights into supply chain security and SBOM implementation.
 
 # 🧱 Traditional Development
 
@@ -38,56 +38,12 @@ Divided into 6 steps:
 
 Automated processes used to streamline the software lifecycle:
 
-### Common Features:
+### Common Features ([[3. CI-CD Pipeline|CI/CD Pipelines]]):
 1. Automated integration and testing  
 2. Code validation  
 3. Reporting measures  
 
 > Helps developers release updates rapidly and reduce disruptions.
-
----
-
-## 🚀 CI/CD Pipeline (Continuous Integration / Continuous Delivery)
-
-### What is CI/CD?
-Automation of coding workflows for efficient, secure releases:
-
-- **CI**: Auto-build/test code on changes  
-- **CD**: Deliver (manual gate) or deploy (auto-publish) code  
-
----
-
-### 📍 CI/CD 4-Step Flow
-
-1. **Source**: Code pushed to a shared repo with version control and branch protections.
-2. **Build**: Workflow triggers compile, dependency installation, or static site build.
-3. **Test**: Automated validation: unit tests, security scans, linting.
-4. **Deploy**: Delivery to platforms like GitHub Pages, Vercel, [[Docker]] Hub, etc.
-
----
-
-### 🔧 CI/CD with GitHub Actions
-
-1. Source (Git):  Code is committed and pushed to GitHub Triggering workflows, reviewed via PRs and protection rules.
-2. Build: GitHub Actions compile/build your app/site  
-3. Test:  Run checks automatically; stop on failure
-4. Deploy: Auto-release to staging, production, or site hosting platforms  
-
----
-
-> [!danger] CI/CD Automation with Jenkins
-> [[Jenkins]] Is a cornerstone tool that automates CI/CD,  for modern DevOps pipelines,  orchestrating tasks from code integration to deployment.
-
----
-
-### 📊 CI/CD Summary Table
-
-| **Phase** | **What You Do**  | **GitHub Tools**     |
-| --------- | ---------------- | -------------------- |
-| Source    | Push code        | Git, GitHub          |
-| Build     | Compile app/site | GitHub Actions       |
-| Test      | Automated checks | GitHub Actions       |
-| Deploy    | Release to users | GitHub Pages, Vercel |
 
 ---
 
