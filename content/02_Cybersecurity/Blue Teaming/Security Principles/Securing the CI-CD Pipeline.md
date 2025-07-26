@@ -10,11 +10,11 @@ NeedsReview: true
 ---
 
 > [!note]  
-> This document outlines key concepts, practices, and tools to implement robust security throughout the CI/CD pipeline.
+> This document outlines key concepts, practices, and tools to implement robust security throughout the [[3. CI-CD Pipeline|CI/CD Pipeline]].
 
 ## 🧊 Overview
 
-Securing the CI/CD pipeline ensures that security is baked into every step of the software delivery lifecycle. It emphasizes early detection (shift-left), strong authentication, automated testing, and secure toolchains.
+Securing the [[3. CI-CD Pipeline|CI/CD Pipeline]] ensures that security is baked into every step of the software delivery lifecycle. It emphasizes early detection (shift-left), strong authentication, automated testing, and secure toolchains.
 
 ## 🛡️ Key Practices
 
