@@ -36,6 +36,7 @@ These tools automate the detection of secrets inadvertently committed to code re
 - **truffleHog** – Searches git history for high-entropy strings or known secret patterns.
 - **gitleaks** – Lightweight tool to scan for secrets via regex patterns and entropy analysis.
 - **Talisman** – Pre-commit hook that prevents sensitive files or secrets from being committed.
+- Sonarsource – Free Open Source detection code and rules [Secrets Detection by Sonar | Sonar](https://www.sonarsource.com/solutions/secrets-detection/)
 
 > [!warning]  
 > Scanning tools should be part of your CI/CD pipelines to prevent secrets from entering version control in the first place.
