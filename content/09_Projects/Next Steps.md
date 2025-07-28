@@ -21,7 +21,18 @@ NeedsReview: false
 # ✅ **Priority Areas to Learn Now** (Gap-Filling & Job-Relevant)
 
 
-## HTB CBBH
+1. Cracking into Hack the Box
+2. Operating System Fundamentals
+3. Information Security Foundations
+4. SOC Analyst Prerequisites
+5. Basic Toolset
+
+6. Junior Cybersecurity Analyst
+7. Bug Bounty Hunter
+8. SOC Analyst
+9. Penetration Tester
+10. AI Red Teamer
+
 
 ---
 
