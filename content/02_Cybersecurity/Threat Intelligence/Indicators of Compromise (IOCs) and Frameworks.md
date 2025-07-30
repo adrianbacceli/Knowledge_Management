@@ -62,7 +62,7 @@ There isn't a single **global IOC detector**, but there are **collaborative syst
 - **STIX/TAXII**: Structured formats and protocols for threat sharing.
 
 > [!tip]
-> These platforms aggregate and distribute IOCs, but detection is handled by tools like SIEMs, IDS/IPS, and EDR platforms.
+> These platforms aggregate and distribute IOCs, but detection is handled by tools like SIEMs, [[IDS-IPS]], and EDR platforms.
 
 ---
 

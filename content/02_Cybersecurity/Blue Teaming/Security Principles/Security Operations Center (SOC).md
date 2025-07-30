@@ -120,12 +120,13 @@ NeedsReview: false
 
 # 🛠️ SOC Tools
 
-|Tool|Description|
-|---|---|
-|**SIEM** (Security Information & Event Management)|Aggregates and analyzes log data from across the organization to detect suspicious activity.|
-|**IDS** (Intrusion Detection System)|Monitors network traffic for signs of known threats and alerts when detected.|
-|**IPS** (Intrusion Prevention System)|Similar to IDS, but actively blocks detected threats.|
-|**EDR** (Endpoint Detection & Response)|Provides visibility and response capabilities on endpoint devices (e.g., laptops, servers).|
+| Tool                                               | Description                                                                                  |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| **SIEM** (Security Information & Event Management) | Aggregates and analyzes log data from across the organization to detect suspicious activity. |
+| **IDS** (Intrusion Detection System)               | Monitors network traffic for signs of known threats and alerts when detected.                |
+| **IPS** (Intrusion Prevention System)              | Similar to IDS, but actively blocks detected threats.                                        |
+| **EDR** (Endpoint Detection & Response)            | Provides visibility and response capabilities on endpoint devices (e.g., laptops, servers).  |
+For more information see [[IDS-IPS]]
 
 ---
 

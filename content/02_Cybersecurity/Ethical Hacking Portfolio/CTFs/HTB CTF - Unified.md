@@ -7,6 +7,8 @@ tags:
   - log4j
   - unifi
   - enumeration
+  - Hack-The-Box
+  - CTF
 NeedsReview: false
 ---
 > [!summary] Core Concept  

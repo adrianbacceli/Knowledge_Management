@@ -51,7 +51,7 @@ NeedsReview: false
 ## 🧠 Software-Defined Data Center (SDDC)
 
 1. **SDDC Architecture**  
-   - Fully virtualized compute, storage, networking, and security.  
+   - Fully virtualized compute, storage, networking, and security (E.g. [[Software-Defined Architecture (SDN)]]  
    - Managed via platforms like **VMware Cloud Foundation**.  
    - Supports policy-driven operations and automation.
 

@@ -300,7 +300,7 @@ flowchart LR
 - Network segmentation
 - 802.1x authentication
 - Conditional Access Policies
-- IDS/IPS, SIEM, SOAR, WAF
+- [[IDS-IPS]], SIEM, SOAR, WAF
 
 ---
 

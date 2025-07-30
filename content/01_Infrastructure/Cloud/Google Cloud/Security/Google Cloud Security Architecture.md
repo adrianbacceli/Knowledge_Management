@@ -179,7 +179,7 @@ Acts as a **primary key** for:
 
 > [!tip] Defense-in-depth model secures infrastructure holistically.
 
-- **Application Security:** WAF, IPS
+- **Application Security:** WAF, [[IDS-IPS|IPS]]
 - **Logical Security:** Authorization, Authentication, Access Control
 - **Database Security:** DBF, DAM, Encryption
 - **Monitoring:** SIEM, logs, alerts
@@ -405,7 +405,7 @@ Two key log types:
 | Characteristic   | Traditional Perimeter Security Measures                                                                                           | Zero Trust Measures                                                                                                                                                                                                                         |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Focus            | Creates a strong barrier between the internal network and the outside world                                                       | Verifies access to resources on a case-by-case basis, regardless of location                                                                                                                                                                |
-| Key Technologies | Firewalls, IDS, IPS, Physical security controls                                                                                   | Identity and access management (IAM), Multi-Factor Authentication (MFA), Micro-segmentation, Network Access Control (NAC), Continuous monitoring with Cloud Access Security Brokers (CASBs) and Secure Access Service Edge (SASE) platforms |
+| Key Technologies | Firewalls, [[IDS-IPS]], Physical security controls                                                                                | Identity and access management (IAM), Multi-Factor Authentication (MFA), Micro-segmentation, Network Access Control (NAC), Continuous monitoring with Cloud Access Security Brokers (CASBs) and Secure Access Service Edge (SASE) platforms |
 | Benefits         | Can be relatively simple to implement and manage                                                                                  | Can provide more comprehensive security and visibility for a large number of users than traditional perimeter security measures                                                                                                             |
 | Drawbacks        | Can be difficult to protect against sophisticated attacks, Provide limited protection once an attacker is in the internal network | Can be more complex to implement and manage than traditional perimeter security measures                                                                                                                                                    |
 

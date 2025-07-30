@@ -46,7 +46,7 @@ Google Cloud equips you with tools mapped neatly to each SecOps stage:
 
 ---
 
-## 🌐 3. Intrusion Detection Systems (IDS) in GCP
+## 🌐 3. Intrusion Detection Systems ([[IDS-IPS|IDS]]) in GCP
 
 The IDS enhances lateral network visibility and complements SecOps detection capabilities.
 
@@ -115,8 +115,8 @@ Logging is the bedrock for detection, investigation, and continuous improvement.
 
 ## 🔄 6. Workflow: SecOps in Action
 
-1. **Monitor & log**: events flow into SCC, IDS, and SIEM  
-2. **Detect**: anomalous patterns via SIEM + IDS intelligence  
+1. **Monitor & log**: events flow into SCC, [[IDS-IPS|IDS]], and SIEM  
+2. **Detect**: anomalous patterns via SIEM + [[IDS-IPS|IDS]] intelligence  
 3. **Triage**: SOAR invokes response playbook  
 4. **Contain & instruct**: VirusTotal and Mandiant guide actions  
 5. **Recover**: DR restores needed state; audit for lessons learned  

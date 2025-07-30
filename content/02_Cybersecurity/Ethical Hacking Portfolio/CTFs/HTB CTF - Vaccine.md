@@ -8,6 +8,8 @@ tags:
   - ssh
   - php
   - postgresql
+  - Hack-The-Box
+  - CTF
 NeedsReview: false
 ---
 > [!summary] Core Concept  

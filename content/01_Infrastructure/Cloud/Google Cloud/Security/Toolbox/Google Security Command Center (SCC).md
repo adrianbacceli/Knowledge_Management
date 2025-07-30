@@ -94,7 +94,7 @@ graph TD
 
 Google Security Command Center (SCC) proactively scans your cloud environment for common misconfigurations that could expose resources to risk.
 
-> [!warning] Example Open firewall rules exposing ports like SSH (22) or RDP (3389) to the internet can be detected and flagged as misconfigurations.
+> [!warning] Example Open [[Firewall]] rules exposing ports like SSH (22) or RDP (3389) to the internet can be detected and flagged as misconfigurations.
 
 These detections help teams enforce security best practices and avoid accidental exposures.
 
