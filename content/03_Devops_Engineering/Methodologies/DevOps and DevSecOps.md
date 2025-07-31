@@ -149,7 +149,7 @@ Even if you're not writing code, your role is **critical**. Here's what you sho
 | **Tool Name**     | **Description**                                                           | **Typical Use Case**                                |
 | ----------------- | ------------------------------------------------------------------------- | --------------------------------------------------- |
 | **[[Nikto]]**     | Web server scanner that performs comprehensive tests against web servers. | Testing web servers for security vulnerabilities.   |
-| **[[Burpsuite]]** | Web vulnerability scanner for dynamic analysis of web applications.       | Performing dynamic analysis of web applications.    |
+| **[[0. Burp Suite Core]]** | Web vulnerability scanner for dynamic analysis of web applications.       | Performing dynamic analysis of web applications.    |
 | **[[OWASP ZAP]]** | Open-source scanner for finding vulnerabilities in web applications.      | Finding vulnerabilities during runtime.             |
 | **Netsparker**    | Web application security scanner with dynamic analysis capabilities.      | Scanning live web applications for vulnerabilities. |
 | **Acunetix**      | Automated web application security scanner.                               | Identifying vulnerabilities in web applications.    |

@@ -97,7 +97,7 @@ gobuster vhost -w Documents/BruteForcing/subdomains-top1million-5000.txt -u http
 ---
 ## 🧪 Typical Workflow
 
-1. **[[Burpsuite|Burp]] the site** to observe structure and gather cookies/headers.
+1. **[[0. Burp Suite Core|Burp]] the site** to observe structure and gather cookies/headers.
 2. **[[- Reconnaissance#Spidering|Spider]] the site** to collect known paths.
 3. Use **Gobuster** with a tailored wordlist to find hidden directories or vhosts.
 

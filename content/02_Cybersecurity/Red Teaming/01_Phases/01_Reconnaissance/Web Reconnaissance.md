@@ -76,7 +76,7 @@ This builds a **map of the site**, including:
 
 **Burping** is a slang term used by penetration testers to describe the process of:
 
-1. **Intercepting web traffic** using [[Burpsuite|Burp Suite]]’s proxy.
+1. **Intercepting web traffic** using [[0. Burp Suite Core|Burp Suite]]’s proxy.
 2. **Inspecting and modifying requests/responses**.
 3. **Spidering the application** to discover endpoints.
 4. **Testing for vulnerabilities** like SQL injection, XSS, CSRF, etc.

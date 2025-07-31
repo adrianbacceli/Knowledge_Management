@@ -87,5 +87,5 @@ Injectable fields:
 
 - [[nuclei]] - CVE scanning
 - [`log4j-scan`](https://github.com/fullhunt/log4j-scan)
-- [[Burpsuite]] - Manual fuzzing
+- [[0. Burp Suite Core]] - Manual fuzzing
 - [`ldap-ref-server`](https://github.com/mbechler/marshalsec) - LDAP exploitation
