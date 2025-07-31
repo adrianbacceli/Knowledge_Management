@@ -1,0 +1,1 @@
+![[Pasted image 20250731163122.png]][Setting Up](https://academy.hackthebox.com/module/87/section/880)
