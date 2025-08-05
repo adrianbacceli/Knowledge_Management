@@ -59,15 +59,15 @@ IAST tools are typically integrated into a running application and observe the a
 ## Example of IAST
 
 > [!quote] 
->  ### Interactive Application Security Testing (IAST) in AppScan Enterprise
+>  ### Interactive Application Security Testing (IAST) in [[AppScan]] Enterprise
 > 
 > The Interactive Application Security Testing (IAST) technology uses an agent deployed on the web server of the tested application to monitor traffic sent during runtime, and report vulnerabilities it finds. Unlike DAST scans, an IAST monitoring session doesn't generate its own traffic, but monitors your system tests, manual exploring, or traffic sent during a DAST or SAST scan. Thereby, you can have ongoing identification of runtime issues without a need to send dedicated test requests to the application for monitoring issues.
 > 
 > Whereas DAST scan sees the application as a "black box", the IAST agent sees "inside" the box, enabling it to provide greater detail about vulnerabilities such as the location of the vulnerability in the code, the URL, and the specific vulnerable entity (such as parameter, header, or cookie), while SAST would provide the location only, and DAST the URL and entity only.
 > 
-> When you install the IAST agent on your web server and start an IAST monitoring session, the agent monitors the traffic (requests, call stack, variables and so on) sent to the application, and reports to AppScan Enterprise on the vulnerabilities it finds. Unlike SAST and DAST scans, an IAST session can run indefinitely.
+> When you install the IAST agent on your web server and start an IAST monitoring session, the agent monitors the traffic (requests, call stack, variables and so on) sent to the application, and reports to [[AppScan]] Enterprise on the vulnerabilities it finds. Unlike SAST and DAST scans, an IAST session can run indefinitely.
 > 
-> You can set up the IAST agent that communicates with AppScan Enterprise either through the UI or through the REST API. For more information on IAST REST API, refer to the REST API documentation.
+> You can set up the IAST agent that communicates with [[AppScan]] Enterprise either through the UI or through the REST API. For more information on IAST REST API, refer to the REST API documentation.
 
 Reference: [Interactive Application Security Testing (IAST) in AppScan Enterprise](https://help.hcl-software.com/appscan/Enterprise/10.7.0/topics/c_ase_iast_scanning.html)
 

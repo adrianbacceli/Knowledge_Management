@@ -9,7 +9,7 @@ NeedsReview: false
 
 * ~~**How to integrate SAST/DAST in Jenkins/Azure DevOps**~~
 * ~~**Security assurance in CI/CD**~~
-* ~~**Pipeline tools**: Terrascan, sonar, kube-hunter, Salesforce CLI, Blackduck, Coverity, Appscan~~
+* ~~**Pipeline tools**: Terrascan, sonar, kube-hunter, Salesforce CLI, Blackduck, Coverity, [[Appscan]]~~
 
 > ~~*Why:* You’ll likely work in environments where builds and deployments are automated. Learning how to plug in security scanners and enforce policies will elevate you to a DevSecOps-ready level.~~
 
@@ -63,7 +63,7 @@ NeedsReview: false
 
 * ~~**Linux/Windows configuration for security**~~
 * ~~**Git & version control**~~
-* ~~**Nmap, sqlmap, OWASP Zap, Appscan basics**~~
+* ~~**Nmap, sqlmap, OWASP Zap, [[Appscan]] basics**~~
 * ~~**Network traffic analysis (Wireshark, tcpdump, etc.)**~~
 * ~~**Python, Bash, and Powershell scripting for automation**~~
 * ~~**Creating vulnerability reports and remediation suggestions**~~
@@ -112,12 +112,12 @@ These are great **expansion areas** if you're interested in long-term growth or 
 
 | Proficient                                                                                                                                                          | Maybe                                                                                                                                                                                    | To Research                                                                                                                                                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| • Provide evidence for the viability of the scanning program to meet PCI, FDIC, New York cyber law, enterprise security policy, control tests, and internal audits. | • Identifying vulnerabilities in the applications based on OWASP Top 10 and SANS 25 and prioritizing them based on the criticality.                                                      | • Experience using security tools as part of a CI/CD pipeline with output to Azure Devops. (Terrascan, Salesforce cli, kube-hunter, sonar, blackduck, Coverity, Appscan)                                                                      |
+| • Provide evidence for the viability of the scanning program to meet PCI, FDIC, New York cyber law, enterprise security policy, control tests, and internal audits. | • Identifying vulnerabilities in the applications based on OWASP Top 10 and SANS 25 and prioritizing them based on the criticality.                                                      | • Experience using security tools as part of a CI/CD pipeline with output to Azure Devops. (Terrascan, Salesforce cli, kube-hunter, sonar, blackduck, Coverity, [[Appscan]])                                                                  |
 | CI/CD Security assurance.                                                                                                                                           | • Conducted security checkers of the database with CIS Benchmark.                                                                                                                        | • Having good experience in Secure SDLC and Source Code Analysis on Web Application (manual and automated)<br>                                                                                                                                |
 | Maintain and support security tools in Jenkins                                                                                                                      | • Nessus vulnerability and audit scans of environment.                                                                                                                                   | • Identify all open-source components and detect any open-source security vulnerabilities with Blackduck.<br>                                                                                                                                 |
 | Identify improvements in Continuous Testing area.                                                                                                                   | • Knowledge of FedRAMP and PCI DSS compliance.                                                                                                                                           | • Security testing of APIs.<br>                                                                                                                                                                                                               |
 | • Good understanding of agile methodology.                                                                                                                          | • Process documentation, scanner expansion, increased scan cadence, as well as engagements with automation team to automate repetitive processes.                                        | • Daily administrative activities within Tenable Security Center and Nessus as needed.<br>                                                                                                                                                    |
-| • Expertise in different web application security testing tools like Appscan, Owasp Zap, Nmap, Coverity, sqlmap.                                                    | • Implemented externally owned IP range network vulnerability scanning.                                                                                                                  | • CIS benchmarking and hardening.<br>                                                                                                                                                                                                         |
+| • Expertise in different web application security testing tools like [[Appscan]], Owasp Zap, Nmap, Coverity, sqlmap.                                                | • Implemented externally owned IP range network vulnerability scanning.                                                                                                                  | • CIS benchmarking and hardening.<br>                                                                                                                                                                                                         |
 | • Monitor the security of critical system and update with the new hackings and latest vulnerabilities to ensure no risks are present.                               | • Implemented Linux Server, Macintosh workstation certificate-based authenticated scanning enterprise wide.                                                                              | SRO Vulnerability Management Solutions Engineering (platform, framework management)                                                                                                                                                           |
 | • Maintain, support and execution of security tools (SAST and DAST).                                                                                                | • Implemented Qualys Cloud Agent on workstations and servers to increase asset network vulnerability scanning coverage.                                                                  | • Scan, and apply threat intelligence, and analyze on premise and Cloud based infrastructure vulnerabilities using Qualys scanning solutions on a timely cadence<br>                                                                          |
 | • Training development team on how to exploit or reproduce a vulnerability.                                                                                         | • Implemented Qualys Cloud Agent in AWS AMIs to address vulnerabilities in cloud-based instances.                                                                                        | • Proficient on agent health, re-deployment and troubleshooting for Qualys Cloud Agents and Tanium clients<br>                                                                                                                                |
@@ -150,17 +150,17 @@ These are great **expansion areas** if you're interested in long-term growth or 
 ✅ Se requiere inglés avanzado.
 
 Experiencia práctica con herramientas de escaneo y gestión de vulnerabilidades:
-⚠️ Burp Suite
-❌ AppScan
+✅  Burp Suite
+✅  [[AppScan]]
 ❌ Nexpose // To try community edition
-⚠️ Tenable (Nessus)
+❌ Tenable (Nessus)
 ❌ Kenna Security
 ✅ JIRA ---> https://support.atlassian.com/jira-software-cloud/docs/manage-security-vulnerabilities-in-jira/
 
 Familiaridad con:
-⚠️✅ prácticas de codificación Segura // [[Vulnerability Assessment & Hardening#Introduction to CWE and MITRE|MITRE Common Weakness Enumeration (CWE)]]
+✅ prácticas de codificación Segura // [[Vulnerability Assessment & Hardening#Introduction to CWE and MITRE|MITRE Common Weakness Enumeration (CWE)]]
 ✅ OWASP Top 10 // Check [[OWASP Top 10]] Note --- Upcoming OWASP 2025.
-⚠️ modelado de amenazas // [[MITRE ATT&CK (Threat Modeling and Hunting)]]
+❌ modelado de amenazas // [[MITRE ATT&CK (Threat Modeling and Hunting)]]
 
 ✅ Experiencia con prácticas [[DevOps and DevSecOps]] e integración de seguridad en pipelines [[Securing the CI-CD Pipeline|CI/CD]] (por ejemplo: Jenkins, GitLab, Azure DevOps).
 ✅✅ Dominio de lenguajes de scripting como [[Python]] y [[Bash Scripting|Bash]] para automatización de tareas.
