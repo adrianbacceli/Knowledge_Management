@@ -1,5 +1,5 @@
 ---
-title: Automation
+title: Homebrew
 draft: true
 tags:
   - tag1

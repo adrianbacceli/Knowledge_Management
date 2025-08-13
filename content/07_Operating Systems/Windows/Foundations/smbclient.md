@@ -1,28 +1,12 @@
 ---
-title: Flameshot
-draft: false
+title: smbclient
+draft: true
 tags:
-  - Screenshots
-  - documentation
-  - note-taking
-NeedsReview: false
+  - tag1
+  - tag2
+NeedsReview: true
 ---
-## Features
 
-[Features](https://github.com/flameshot-org/flameshot#features)
-
-- Customizable appearance.
-- Easy to use.
-- In-app screenshot editing.
-- DBus interface.
-- Upload to Imgur.
-
----
-## Usage
-
-[Usage](https://github.com/flameshot-org/flameshot#usage)
-
-Executing the command `flameshot` without parameters will launch a running instance of the program in the background without taking actions. If your desktop environment provides tray area, a tray icon will also appear in the tray for users to perform configuration and management.
 ### 🔹 `> [!note]` — **Note**
 
 > [!note] Quick Reminder  

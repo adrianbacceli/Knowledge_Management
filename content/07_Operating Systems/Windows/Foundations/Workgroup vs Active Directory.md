@@ -1,5 +1,5 @@
 ---
-title: GitHub
+title: Workgroup vs Active Directory
 draft: true
 tags:
   - tag1

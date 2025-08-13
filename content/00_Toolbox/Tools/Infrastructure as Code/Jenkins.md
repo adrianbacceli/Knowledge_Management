@@ -3,10 +3,10 @@ title: Jenkins
 draft: false
 tags:
   - Continuous-Integration
-  - CI
   - DevOps
   - DevSecOps
   - Jenkins
+  - CI/CD
 NeedsReview: false
 ---
 > [!note]  

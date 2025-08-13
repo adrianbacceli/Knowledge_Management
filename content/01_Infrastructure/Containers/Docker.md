@@ -11,6 +11,11 @@ NeedsReview: false
 > [!abstract]  
 > Docker is a platform for building, running, and managing containerized applications. It streamlines development and deployment workflows across environments.
 
+> [!quote]
+> [Docker](https://www.docker.com/get-started) is open-source software that can isolate applications in containers, similar to operating system virtualization. This approach significantly simplifies the deployment of applications. The application data stored in the containers can be transported and installed easily. The use of containers ensures that computer resources are strictly separated from each other. Docker stores programs together with their dependencies in images. These form the basis for virtualized containers that can run on almost any operating system. This makes applications portable and uncomplicated, whether during development or when scaling [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) clusters.
+
+[Setting Up - Hack the Box Academy](https://academy.hackthebox.com/module/87/section/3680)
+
 ---
 # 🐳 Docker Overview
 
@@ -117,6 +122,14 @@ This decouples your deployment from the host system, ensures version consistency
 
 ---
 # ⚙️ Docker Engine
+
+> [!quote]
+> [Docker Engine](https://docs.docker.com/engine/) is the main component of container virtualization. The software provides the interface between host resources and running containers. Any system that has Docker Engine installed can use Docker containers. Originally, Docker was designed to be used on Linux systems. However, with virtualization via VMware or Hyper-V, the engine also works on Windows or Mac OS devices. Docker can therefore be used in virtually all common scenarios.
+> 
+
+[Setting Up - Hack the Box Academy](https://academy.hackthebox.com/module/87/section/3680)
+
+----
 
 The Docker Engine is the core runtime that executes containerized applications. It includes:
 

@@ -75,3 +75,11 @@ NeedsReview: true
 - **Why it's valuable:** Teaches how to connect without aggression or manipulation
 - **Use it for:** Conflict resolution, emotional intelligence, improving connection
 
+
+---
+
+## 7. 7 habitos de las personas altamente efectivas – Stephen covey (XX/10)
+
+- **Focus:** Empathetic and honest communication
+- **Why it's valuable:** Teaches how to connect without aggression or manipulation
+- **Use it for:** Conflict resolution, emotional intelligence, improving connection

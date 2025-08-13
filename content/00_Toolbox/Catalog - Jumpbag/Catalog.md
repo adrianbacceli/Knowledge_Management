@@ -8,7 +8,7 @@ NeedsReview: true
 ---
 # Documentation:
 - Notes: [[Obsidian]]
-- Screenshots: [[Flameshot]], [[Peek]]
+- Screenshots: [[Flameshot]], [[Peek & Kooha]]
 - Mindmaps: [[Xmind]]
 
 # Web App Security
@@ -17,7 +17,7 @@ NeedsReview: true
 
 
 - Password Manager: [[Bitwarden]]
-- Automation: [[GitHub]]
+- Automation: [[GitHub Actions]]
 
 
 
