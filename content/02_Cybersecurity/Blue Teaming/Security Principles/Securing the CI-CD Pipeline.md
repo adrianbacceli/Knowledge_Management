@@ -26,7 +26,7 @@ Securing the [[3. CI-CD Pipeline|CI/CD Pipeline]] ensures that security is baked
 6. [[Encryption|Encrypt]] data in transit and at rest.
 7. Enforce secure coding: input validation, parameterized queries, secure cryptography.
 8. Harden systems in the toolchain.
-9. Implement pre-commit hooks for local code checks.
+9. Implement  [Pre-commit](https://github.com/pre-commit/pre-commit-hooks?tab=readme-ov-file#readme) hooks for local code checks.
 10. Apply continuous [[DevOps and DevSecOps#🧪 **SAST (Static Application Security Testing) Tools**|SAST]], [[DevOps and DevSecOps#🧪 **DAST (Dynamic Application Security Testing) Tools** |DAST]], [[Interactive Application Security Testing (IAST)]], and [[DevOps and DevSecOps#🧰 **Open Source SCA (Software Composition Analysis) Tools**|SCA]] testing.
 11. Manage secrets and credentials securely.
 12. Segregate duties and enforce environment isolation.
