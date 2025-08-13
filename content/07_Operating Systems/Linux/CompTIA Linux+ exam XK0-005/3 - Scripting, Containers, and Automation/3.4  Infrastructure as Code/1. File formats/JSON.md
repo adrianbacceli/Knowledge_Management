@@ -1,86 +1,13 @@
 ---
 title: JSON
-draft: true
+draft: false
 tags:
-  - tag1
-  - tag2
+  - JSON
 NeedsReview: true
 ---
+JSON (JavaScript Object Notation) is a widely used and effective format for storing objects, particularly in scenarios involving data interchange and web applications. Its human-readable, text-based structure and native compatibility with JavaScript make it highly convenient for many use cases.
 
-### 🔹 `> [!note]` — **Note**
-
-> [!note] Quick Reminder  
-> This is general-purpose information you want to keep in mind.
+It is very useful to take snapshots of objects captured/created by programs to be reused. It's great with Python, RestAPIs, and more.
 
 ---
-
-### 🔹 `> [!tip]` — **Tip**
-
-> [!tip] Helpful Tip  
-> 💡 Try running small variations in your prompts to test model sensitivity.
-
-
----
-
-### 🔹 `> [!info]` — **Info**
-
-> [!info] Did You Know?  
-> You can chain prompts to simulate multi-turn conversations.
-
-
----
-
-### 🔹 `> [!warning]` — **Warning**
-
-> [!warning] Caution Ahead  
-> ⚠️ Incorrect prompt phrasing may lead to hallucinated outputs.
-
-
----
-
-### 🔹 `> [!danger]` — **Danger**
-
-> [!danger] Risk Zone  
-> 🚨 Avoid copying prompts blindly without verifying context.
-
-
----
-
-### 🔹 `> [!quote]` — **Quote**
-
-> [!quote] Prompt Wisdom  
-> “A good prompt is like a good question—it gets the right conversation started.”
-
-
----
-
-### 🔹 `> [!example]` — **Example**
-
-> [!example] Prompt Example  
-> "Summarize this article in 3 bullet points, using plain language."
-
-
----
-
-### 🔹 `> [!abstract]` — **Abstract**
-
-> [!abstract] Key Concept  
-> Prompt engineering involves crafting input that guides the model’s response effectively.
-
-
----
-
-### 🔹 `> [!question]` — **Question**
-
-> [!question] Ask Yourself  
-> ❓What is the *true* goal of this prompt?
-
-
----
-
-### 🔹 `> [!success]` — **Success**
-
-> [!success] Well Done!  
-> ✅ Your prompt returned the expected output with clarity and precision.
-
 Penguinified by [https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify](https://chatgpt.com/g/g-683f4d44a4b881919df0a7714238daae-penguinify)
