@@ -96,7 +96,7 @@ python3 mssqlclient.py DOMAIN/username@ip -windows-auth
 - `DOMAIN/username@ip`: Specify the domain and user (e.g., ACME/jdoe@10.10.10.10).
 - `-windows-auth`: Enables Windows Authentication (e.g., NTLM).
 
-This is typically used _after_ credential discovery (via [13_Credential_Access](13_Credential_Access.md) or [bruteforce](1433%20-%20MSSQL.md)). Once connected, you get an interactive SQL prompt where you can run queries or stored procedures like `xp_cmdshell`.
+This is typically used _after_ credential discovery (via [13_Credential_Access](13_Credential_Access.md) or [[bruteforce]]. Once connected, you get an interactive SQL prompt where you can run queries or stored procedures like `xp_cmdshell`.
 
 ---
 
