@@ -5,7 +5,9 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.FixExplorer(),   // Added to fix bug Explorer/sidebar duplicates on SPA navigation for specific page; Mermaid errors during render #24
+  ],
   footer: Component.Footer({
     links: {
       LinkedIn: "https://www.linkedin.com/in/adri%C3%A1n-bacceli/",
