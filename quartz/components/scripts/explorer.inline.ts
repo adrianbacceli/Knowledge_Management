@@ -2,8 +2,7 @@ import { FileTrieNode } from "../../util/fileTrie"
 import { FullSlug, resolveRelative, simplifySlug } from "../../util/path"
 import { ContentDetails } from "../../plugins/emitters/contentIndex"
 
-let previousSlug: FullSlug | null = null
-let building = false
+let previousSlug: FullSlug | null = null;
 
 type MaybeHTMLElement = HTMLElement | undefined
 
@@ -153,6 +152,7 @@ function createFolderNode(
   return li
 }
 
+let building = false
 async function setupExplorer(currentSlug: FullSlug) {
   if (building) return
   building = true
@@ -209,27 +209,27 @@ async function setupExplorer(currentSlug: FullSlug) {
 
       const explorerUl = explorer.querySelector(".explorer-ul")
       if (!explorerUl) continue
-
-      // Build new content
-      const fragment = document.createDocumentFragment()
+      
+      // === Clear existing sidebar children BEFORE inserting new ones ===
+      // explorerUl.textContent = ""; -- Replace explorerUl.textContent = "" and explorerUl.appendChild(fragment) with explorerUl.replaceChildren(fragment) It’s a clean, atomic “clear & insert.”
+      
+      // Create and insert new content
+      const fragment = document.createDocumentFragment();
       for (const child of trie.children) {
         const node = child.isFolder
           ? createFolderNode(currentSlug, child, opts)
-          : createFileNode(currentSlug, child)
-        fragment.appendChild(node)
+          : createFileNode(currentSlug, child);
+        fragment.appendChild(node);
       }
-      // Only replace if there’s something to insert (prevents accidental emptying)
-      if (fragment.hasChildNodes()) {
-        ;(explorerUl as HTMLElement).replaceChildren(fragment)
-      }
+      explorerUl.replaceChildren(fragment)
 
       // restore explorer scrollTop position if it exists
       const scrollTop = sessionStorage.getItem("explorerScrollTop")
       if (scrollTop) {
-        ;(explorerUl as HTMLElement).scrollTop = parseInt(scrollTop)
+        explorerUl.scrollTop = parseInt(scrollTop)
       } else {
         // try to scroll to the active element if it exists
-        const activeElement = (explorerUl as HTMLElement).querySelector(".active")
+        const activeElement = explorerUl.querySelector(".active")
         if (activeElement) {
           activeElement.scrollIntoView({ behavior: "smooth" })
         }
@@ -270,45 +270,31 @@ async function setupExplorer(currentSlug: FullSlug) {
 
 document.addEventListener("prenav", async () => {
   // save explorer scrollTop position
-  const explorer = document.querySelector(".explorer-ul") as HTMLElement | null
+  const explorer = document.querySelector(".explorer-ul")
   if (!explorer) return
   sessionStorage.setItem("explorerScrollTop", explorer.scrollTop.toString())
 })
 
 document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
-  const currentSlug = e.detail.url as FullSlug
-  const norm = (s: string) => decodeURI(s).split("#")[0].replace(/\/+$/, "")
-
-  // Skip if same path (ignoring hash / trailing slash)
+  const currentSlug = e.detail.url;
+  const norm = (s: string) => s.split("#")[0]
   if (previousSlug && norm(currentSlug) === norm(previousSlug)) {
-    return
+    return // same path (hash-only or repeat) → skip entirely
   }
+  previousSlug = currentSlug;
+  await setupExplorer(currentSlug);
 
-  const oldSlug = previousSlug
-  try {
-    await setupExplorer(currentSlug)
-    previousSlug = currentSlug
-  } catch (err) {
-    console.error(err)
-    // If build failed, keep previousSlug so we attempt a rebuild next time
-    previousSlug = oldSlug
-  }
-
-  // if mobile hamburger is visible, collapse by default (once per session)
+  // if mobile hamburger is visible, collapse by default
   for (const explorer of document.getElementsByClassName("explorer")) {
-    const mobileExplorer = (explorer as HTMLElement).querySelector(".mobile-explorer") as Element | null
+    const mobileExplorer = explorer.querySelector(".mobile-explorer")
     if (!mobileExplorer) continue
 
-    const isVisible = (el: Element) =>
-      (el as any).checkVisibility ? (el as any).checkVisibility() : getComputedStyle(el).display !== "none"
+    if (mobileExplorer.checkVisibility()) {
+      explorer.classList.add("collapsed")
+      explorer.setAttribute("aria-expanded", "false")
 
-    const COLLAPSE_KEY = "explorerCollapsedOnce"
-    if (isVisible(mobileExplorer) && !sessionStorage.getItem(COLLAPSE_KEY)) {
-      (explorer as HTMLElement).classList.add("collapsed")
-      ;(explorer as HTMLElement).setAttribute("aria-expanded", "false")
       // Allow <html> to be scrollable when mobile explorer is collapsed
       document.documentElement.classList.remove("mobile-no-scroll")
-      sessionStorage.setItem(COLLAPSE_KEY, "1")
     }
 
     mobileExplorer.classList.remove("hide-until-loaded")
@@ -328,3 +314,4 @@ window.addEventListener("resize", function () {
 function setFolderState(folderElement: HTMLElement, collapsed: boolean) {
   return collapsed ? folderElement.classList.remove("open") : folderElement.classList.add("open")
 }
+
