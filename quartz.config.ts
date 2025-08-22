@@ -13,8 +13,7 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      // provider: "plausible",
-      provider: "null" // Commenting this line due to bugs when multiple POST requests exceed the Rate Limit from Plausible "script.manual.js:1   POST https://plausible.io/api/event net::ERR_FAILED 429 (Too Many Requests)"
+      provider: "plausible",
     },
     locale: "en-US",
     baseUrl: "https://adrianbacceli.github.io/Knowledge_Management/",
