@@ -23,6 +23,7 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import FixExplorer from "./FixExplorer"            // Added to fix bug Explorer/sidebar duplicates on SPA navigation for specific page; Mermaid errors during render #24
 
 export {
   ArticleTitle,
@@ -50,4 +51,5 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  FixExplorer             // Added to fix bug Explorer/sidebar duplicates on SPA navigation for specific page; Mermaid errors during render #24
 }
