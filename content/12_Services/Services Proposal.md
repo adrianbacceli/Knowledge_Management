@@ -64,7 +64,7 @@ Initially focus only on **assessments and reports** (no implementation).
 - Use templates for speed.
 - Map results to known frameworks.
 - Keep scope to SMBs for efficiency.
-- Translate findings to **business impact**.
+- Translate findings to **[[Business Impact Analysis|business impact]]**.
 
 ---
 
