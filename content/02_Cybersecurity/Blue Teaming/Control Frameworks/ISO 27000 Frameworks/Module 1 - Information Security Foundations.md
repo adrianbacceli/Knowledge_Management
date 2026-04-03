@@ -11,8 +11,7 @@ tags:
   - Foundations
 NeedsReview: false
 ---
----
-# Principles
+# Security Principles
 
 ---
 ## Data Core Pilars: Confidentiality, Integrity, Availability
@@ -85,6 +84,18 @@ Is onboarded in [[Module 3]] and contains a list of *6 controls in 4 domains
 
 [[RPO, RTO, and calculating Uptime|RPO and RTO]] are established under this standard along with a [[Business Impact Analysis]].
 
+
+---
+## ISO 27005:2022
+
+There are 3 key Inputs that will help define the risk management strategy
+
+4.1. Interested parties
+4.2. Context
+4.3 Asset Management
+
+All inside the ISMS Scope that has been defined.
+This scope should be limited and not open nor broad; Otherwise if the scope is ambiguous or too wide, it will be very hard to deal with all parties involved.
 
 ---
 ## ISO 27035:2022 
