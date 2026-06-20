@@ -13,19 +13,19 @@ An exposed instance of **Scriptcase** on a local transportation government websi
 ## 🔍 Identified Vulnerabilities
 
 ### 1. Exposed Apache Default Page
-- **URL Example:** `http://192.0.2.10/`
+- **URL Example:** `http://x.x.x.10/`
 - **Local Path:** `/var/www/html/index.html`
 - **Risk:** Reveals server version and stack; suggests incomplete or insecure deployment.
 
 ### 2. Publicly Accessible Scriptcase Admin Interface
-- **Admin Login:** `http://192.0.2.10:8091/scriptcase9/devel/iface/login.php`
+- **Admin Login:** `http://x.x.x.10:8091/scriptcase9/devel/iface/login.php`
 - **Exposed Applications:**
   - `/scriptcase9/app/SampleApp/`
   - `/scriptcase9/app/SearchModule/`, `/scriptcase9/app/FullSearch/`
 - **Risk:** Admin and app endpoints are open to the public; may be exploited via brute-force or injection attacks.
 
 ### 3. Default Credentials in Production Panel
-- **Production Panel:** `http://192.0.2.10:8091/scriptcase9/prod/lib/php/?login`
+- **Production Panel:** `http://x.x.x.10:8091/scriptcase9/prod/lib/php/?login`
 - **Active Default Password:** `scriptcase`
 - **Critical Risk:** Grants full administrative access to the Scriptcase production environment.
 

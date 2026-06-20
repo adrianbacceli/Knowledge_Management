@@ -53,7 +53,7 @@ Determine what are the multiple groups that live in the organization and own ass
 ---
 # Final: Inventory
 
-| Serial | Group | Assigned | Owner (BU) | Description | C   | I   | A   | Criticality |
-| ------ | ----- | -------- | ---------- | ----------- | --- | --- | --- | ----------- |
-|        |       |          |            |             |     |     |     |             |
+| Serial | Group | Assigned | Owner (BU) | Description | C score | I score | A score | Criticality score |
+| ------ | ----- | -------- | ---------- | ----------- | ------- | ------- | ------- | ----------------- |
+|        |       |          |            |             |         |         |         |                   |
 
